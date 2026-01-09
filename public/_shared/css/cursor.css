@@ -1,0 +1,111 @@
+/* ============================================
+   NW Designs - Custom Cursor
+   Ring + Dot cursor system (GSAP-powered)
+   ============================================ */
+
+/* Hide default cursor on desktop */
+@media (min-width: 768px) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* ---- Cursor Ring (32px border circle) ---- */
+.cursor-ring {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--nw-dark, #1E1E1E);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: var(--z-cursor-ring, 9999);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  will-change: transform, border-color, width, height;
+  /* Ring follows with CSS transition for non-GSAP fallback */
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+}
+
+/* ---- Cursor Dot (32px filled circle per DESIGN-PROMPT.md) ---- */
+.cursor-dot {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  background: var(--nw-dark, #1E1E1E);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: var(--z-cursor-dot, 10000);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  will-change: transform, background-color, width, height;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+/* ---- Cursor Visible State ---- */
+.cursor-ring.visible,
+.cursor-dot.visible {
+  opacity: 1;
+}
+
+/* ---- Cursor Hover State ---- */
+.cursor-ring.hover {
+  width: 48px;
+  height: 48px;
+  border-color: var(--nw-accent, #D61313);
+}
+
+.cursor-dot.hover {
+  width: 48px;
+  height: 48px;
+  background: var(--nw-accent, #D61313);
+}
+
+/* ---- Cursor on Dark Backgrounds ---- */
+.cursor-ring.light {
+  border-color: var(--nw-accent, #D61313);
+}
+
+.cursor-dot.light {
+  background: var(--nw-accent, #D61313);
+}
+
+/* Combined light + hover */
+.cursor-ring.light.hover {
+  border-color: var(--nw-accent, #D61313);
+}
+
+.cursor-dot.light.hover {
+  background: var(--nw-accent, #D61313);
+}
+
+/* ---- Mobile: Hide Cursor ---- */
+@media (max-width: 767px) {
+  * {
+    cursor: auto !important;
+  }
+
+  .cursor-ring,
+  .cursor-dot {
+    display: none !important;
+  }
+}
+
+/* ---- Reduced Motion: Hide Cursor ---- */
+@media (prefers-reduced-motion: reduce) {
+  .cursor-ring,
+  .cursor-dot {
+    display: none !important;
+  }
+
+  * {
+    cursor: auto !important;
+  }
+}
+
+/* ---- Print: Hide Cursor ---- */
+@media print {
+  .cursor-ring,
+  .cursor-dot {
+    display: none !important;
+  }
+}

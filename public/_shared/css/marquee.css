@@ -1,0 +1,88 @@
+/* ============================================
+   NW Designs - Marquee Animation
+   Infinite scroll for logos and text
+   ============================================ */
+
+/* ---- Logo Marquee Container ---- */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 60px;
+  animation: marquee 60s linear infinite;
+  width: max-content;
+}
+
+.marquee-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+/* Logo items with grayscale */
+.marquee-item img {
+  max-width: 150px;
+  max-height: 50px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.marquee-item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* ---- Marquee Keyframes ---- */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* ---- Service Text Marquee ---- */
+.service-marquee {
+  height: 40px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.service-marquee-track {
+  display: flex;
+  gap: 29px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 40.64px;
+  line-height: 39.827px;
+  text-transform: uppercase;
+  color: var(--nw-muted);
+  animation: marquee 60s linear infinite;
+}
+
+.service-marquee-track span {
+  flex-shrink: 0;
+}
+
+/* ---- Reduced Motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .service-marquee-track {
+    animation: none;
+  }
+}

@@ -1,0 +1,112 @@
+/* ============================================
+   NW Designs - Design Tokens
+   Refined Italian Minimalism
+   ============================================ */
+
+:root {
+  /* Colors - Core Palette */
+  --nw-background: #F0F0F0;
+  --nw-background-alt: #EDEDED;
+  --nw-foreground: #2B2B2B;
+  --nw-foreground-secondary: #545454;
+  --nw-accent: #D61313;
+  --nw-muted: #828282;
+  --nw-white: #FFFFFF;
+  --nw-dark: #1E1E1E;
+  --nw-light: #F0F0F0;
+
+  /* Typography - Letter Spacing */
+  --ls-label: 2.8px;
+  --ls-footer: 1.4px;
+  --ls-wide: 3px;
+
+  /* Radius */
+  --radius-pill: 50px;
+  --radius-navbar: 80px;
+
+  /* Shadows */
+  --shadow-navbar: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-floating-cta: 0 4px 20px rgba(214, 19, 19, 0.4);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  /* Z-Index Scale */
+  --z-cursor-ring: 9999;
+  --z-cursor-dot: 10000;
+  --z-navbar: 50;
+  --z-floating-cta: 50;
+}
+
+/* ---- Base Styles ---- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---- Selection Color ---- */
+::selection {
+  background: var(--nw-accent);
+  color: var(--nw-white);
+}
+
+::-moz-selection {
+  background: var(--nw-accent);
+  color: var(--nw-white);
+}
+
+/* ---- Focus Visible ---- */
+:focus-visible {
+  outline: 2px solid var(--nw-accent);
+  outline-offset: 2px;
+}
+
+/* Remove focus outline when using mouse */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ---- Typography Adjustments ---- */
+.font-aktiv {
+  letter-spacing: 0.01em;
+}
+
+h1.font-aktiv,
+h2.font-aktiv {
+  letter-spacing: -0.01em;
+}
+
+/* ---- Link Underline Animation ---- */
+a[class*="border-b-2"] {
+  text-decoration: none;
+}
+
+/* ---- Reduced Motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---- Print Styles ---- */
+@media print {
+  nav,
+  .floating-cta,
+  .marquee-container {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}

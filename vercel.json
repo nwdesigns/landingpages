@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/luxury", "destination": "/luxury/" },
+    { "source": "/automotive", "destination": "/automotive/" },
+    { "source": "/gold-traders", "destination": "/gold-traders/" },
+    { "source": "/watch-dealers", "destination": "/watch-dealers/" },
+    { "source": "/private-schools", "destination": "/private-schools/" },
+    { "source": "/senior-living", "destination": "/senior-living/" },
+    { "source": "/family-companies", "destination": "/family-companies/" }
+  ]
+}
