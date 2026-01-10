@@ -3,21 +3,49 @@
    Buttons, Forms, Cards, Stats
    ============================================ */
 
-/* ---- Typographic Watermark ---- */
+/* ---- Typographic Watermark Marquee ---- */
+.watermark-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.watermark-track {
+  display: flex;
+  gap: 0.5em;
+  width: max-content;
+  animation: watermark-scroll 20s linear infinite;
+}
+
 .watermark-text {
   font-family: 'aktiv-grotesk-extended', 'Inter', system-ui, sans-serif;
-  font-size: clamp(120px, 25vw, 350px);
+  font-size: clamp(80px, 20vw, 350px);
   font-weight: 400;
   color: rgba(43, 43, 43, 0.06);
   text-transform: uppercase;
   white-space: nowrap;
   letter-spacing: -0.02em;
   user-select: none;
+  flex-shrink: 0;
 }
 
-@media (max-width: 767px) {
-  .watermark-text {
-    display: none;
+@keyframes watermark-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Reduced motion: pause animation */
+@media (prefers-reduced-motion: reduce) {
+  .watermark-track {
+    animation: none;
   }
 }
 
