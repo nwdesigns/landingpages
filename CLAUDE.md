@@ -57,7 +57,8 @@ adv.nwdesigns.it/
 bun install          # Install dependencies
 bun dev              # Start dev server (port 3000)
 bun build            # Build for production
-vercel --prod        # Deploy to production
+./deploy.sh          # Deploy to production
+./deploy.sh --preview # Deploy preview
 ```
 
 ## Form Submission
@@ -103,6 +104,22 @@ Inherits from main nwdesigns.it design system:
 
 ## Deployment
 
-Deployed via Vercel:
+Deployed via Vercel using token-based authentication:
 - **Project:** adv-nwdesigns-it
 - **Subdomain:** adv.nwdesigns.it
+- **Account:** admin-11417679
+
+### Deploy Commands
+
+```bash
+./deploy.sh          # Production deployment
+./deploy.sh --preview # Preview deployment
+```
+
+### Setup (if .env.deployment missing)
+
+```bash
+echo 'VERCEL_TOKEN=your_token' > .env.deployment
+```
+
+Get token from: https://vercel.com/account/tokens
