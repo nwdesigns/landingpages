@@ -116,6 +116,11 @@ Deployed via Vercel using token-based authentication:
 ./deploy.sh --preview # Preview deployment
 ```
 
+Or manually (note: `--token` flag is required!):
+```bash
+source .env.deployment && vercel --token "$VERCEL_TOKEN" --prod --yes
+```
+
 ### Setup (if .env.deployment missing)
 
 ```bash

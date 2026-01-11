@@ -18,13 +18,13 @@ if [ -z "$VERCEL_TOKEN" ]; then
   exit 1
 fi
 
-# Check for preview flag
+# CRITICAL: --token flag must be passed explicitly!
 if [ "$1" = "--preview" ]; then
   echo "Deploying preview..."
-  vercel --yes
+  vercel --token "$VERCEL_TOKEN" --yes
 else
   echo "Deploying to production..."
-  vercel --prod --yes
+  vercel --token "$VERCEL_TOKEN" --prod --yes
 fi
 
 echo "Done!"
