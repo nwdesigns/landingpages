@@ -18,14 +18,14 @@
   display: flex;
   gap: 0.5em;
   width: max-content;
-  animation: watermark-scroll 20s linear infinite;
+  animation: watermark-scroll 25s linear infinite;
 }
 
 .watermark-text {
   font-family: 'aktiv-grotesk-extended', 'Inter', system-ui, sans-serif;
-  font-size: clamp(80px, 20vw, 350px);
+  font-size: clamp(300px, 30vw, 418px);
   font-weight: 400;
-  color: rgba(43, 43, 43, 0.06);
+  color: rgba(43, 43, 43, 0.2);
   text-transform: uppercase;
   white-space: nowrap;
   letter-spacing: -0.02em;
@@ -58,10 +58,14 @@
 
 .stat-number {
   font-family: 'aktiv-grotesk-extended', 'Inter', system-ui, sans-serif;
-  font-size: clamp(3rem, 8vw, 5rem);
+  font-size: 48px;
   font-weight: 400;
   line-height: 1;
   color: var(--nw-foreground);
+}
+
+.stat-number--small {
+  font-size: 40px;
 }
 
 /* Stats on dark background */
@@ -72,11 +76,16 @@
 
 .stat-label {
   font-family: 'Mulish', sans-serif;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: var(--ls-wide, 3px);
+  font-size: 20px;
+  line-height: 1.2;
   color: var(--nw-muted);
-  margin-top: 0.5rem;
+  margin-top: 7px;
+  max-width: 140px;
+}
+
+.stat-label--small {
+  font-size: 16px;
+  max-width: 120px;
 }
 
 .bg-nw-dark .stat-label,

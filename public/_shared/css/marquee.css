@@ -13,7 +13,7 @@
 .marquee-track {
   display: flex;
   gap: 60px;
-  animation: marquee 60s linear infinite;
+  animation: marquee 120s linear infinite;
   width: max-content;
 }
 
@@ -32,7 +32,7 @@
   max-height: 50px;
   object-fit: contain;
   filter: grayscale(100%);
-  opacity: 0.85;
+  opacity: 0.6;
   transition: all 0.3s ease;
 }
 
