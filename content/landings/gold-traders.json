@@ -1,0 +1,180 @@
+{
+  "slug": "gold-traders",
+  "metaTitle": "Marketing Digitale per Compro Oro | nwdesigns",
+  "metaDescription": "Strategie digitali per operatori compro oro e OPO. Reputation management, local SEO e lead generation per il settore oro usato.",
+  "ogImage": "/_shared/img/og-gold.jpg",
+  "video": {
+    "src": "/_shared/video/gold.mp4",
+    "poster": "/_shared/video/gold-poster.jpg"
+  },
+  "hero": {
+    "label": "Marketing Digitale per Compro Oro",
+    "headline": "Il 30% degli italiani ha venduto oro.",
+    "headlineAccent": "Ti hanno scelto per fiducia?",
+    "subheadline": "Costruiamo la reputazione che converte.",
+    "subheadlineBold": "Fiducia che genera valore",
+    "ctaText": "Costruisci la tua reputazione",
+    "watermarkText": "COMPRO ORO"
+  },
+  "clientLogos": {
+    "sectionLabel": "Operatori Partner",
+    "logos": [
+      { "src": "/_shared/img/clients/client-hassler.svg", "alt": "Hassler Roma" },
+      { "src": "/_shared/img/clients/client-trenitalia.svg", "alt": "Trenitalia" },
+      { "src": "/_shared/img/clients/client-eurobet.svg", "alt": "Eurobet" },
+      { "src": "/_shared/img/clients/client-kraft.svg", "alt": "Kraft" },
+      { "src": "/_shared/img/clients/client-bonanno.svg", "alt": "Bonanno" },
+      { "src": "/_shared/img/clients/client-ambrosiano.svg", "alt": "Ambrosiano" },
+      { "src": "/_shared/img/clients/client-imago.svg", "alt": "Imago" }
+    ]
+  },
+  "stats": {
+    "sectionLabel": "Il mercato dell'oro usato",
+    "items": [
+      {
+        "value": "30%",
+        "counterValue": 30,
+        "suffix": "%",
+        "label": "degli italiani ha venduto oro almeno una volta"
+      },
+      {
+        "value": "500+",
+        "counterValue": 500,
+        "suffix": "+",
+        "label": "recensioni lette prima di scegliere un operatore"
+      },
+      {
+        "value": "80%",
+        "counterValue": 80,
+        "suffix": "%",
+        "label": "controlla le recensioni online prima di vendere"
+      }
+    ]
+  },
+  "painPoints": {
+    "sectionLabel": "Le sfide del settore oro",
+    "items": [
+      {
+        "title": "Diffidenza diffusa",
+        "description": "Il settore sconta una reputazione difficile.",
+        "descriptionBold": "Come ti differenzi?"
+      },
+      {
+        "title": "Concorrenza locale intensa",
+        "description": "Decine di operatori nella stessa zona.",
+        "descriptionBold": "Perché dovrebbero scegliere te?"
+      },
+      {
+        "title": "Recensioni negative visibili",
+        "description": "Una sola recensione negativa può costarti",
+        "descriptionBold": "decine di clienti"
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "I nostri servizi",
+    "headline": "Dalla diffidenza alla",
+    "headlineEmphasis": "fiducia",
+    "description": "Costruiamo reputazioni solide che convertono i visitatori in clienti —",
+    "descriptionBold": "e i clienti in ambasciatori",
+    "ctaText": "Scopri come possiamo aiutarti",
+    "items": [
+      {
+        "title": "Reputation Management Avanzato",
+        "description": "Monitoraggio recensioni, risposta professionale, strategie per aumentare feedback positivi.",
+        "highlighted": true
+      },
+      {
+        "title": "Local SEO Dominante",
+        "description": "Prima pagina per \"compro oro + città\". Google Business ottimizzato, citazioni locali.",
+        "highlighted": false
+      },
+      {
+        "title": "Content Marketing Educativo",
+        "description": "Guide, FAQ, video che costruiscono fiducia e posizionano come esperti del settore.",
+        "highlighted": false
+      },
+      {
+        "title": "Campagne Google & Social",
+        "description": "Targeting geografico preciso, remarketing, campagne stagionali ottimizzate.",
+        "highlighted": false
+      }
+    ]
+  },
+  "faq": {
+    "sectionLabel": "Domande frequenti",
+    "headline": "Le risposte che cercavi",
+    "items": [
+      {
+        "question": "Come gestite le recensioni negative esistenti?",
+        "answer": "Analizziamo ogni recensione negativa e definiamo una strategia di risposta professionale. Parallelamente, implementiamo sistemi per incentivare i clienti soddisfatti a lasciare feedback positivi, migliorando il rating complessivo nel tempo."
+      },
+      {
+        "question": "Quanto tempo serve per migliorare la visibilità locale?",
+        "answer": "I primi miglioramenti nel posizionamento locale si vedono in 4-8 settimane. Per risultati consolidati (prima pagina per le keyword principali), servono 3-6 mesi di lavoro costante."
+      },
+      {
+        "question": "Lavorate anche con operatori multi-sede?",
+        "answer": "Sì, gestiamo strategie per catene e franchising con ottimizzazione locale per ogni punto vendita e coordinamento della comunicazione a livello centrale."
+      },
+      {
+        "question": "Offrite anche servizi di formazione?",
+        "answer": "Sì, formiamo il personale sulla gestione delle interazioni con i clienti, sulla richiesta di recensioni e sulle best practice di comunicazione digitale."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionLabel": "Perché nwdesigns",
+    "headline": "Conosciamo le dinamiche del settore.",
+    "items": [
+      {
+        "title": "Esperienza Settoriale",
+        "description": "Lavoriamo con operatori oro da anni.",
+        "icon": "star"
+      },
+      {
+        "title": "Reputation First",
+        "description": "La fiducia è il nostro focus principale.",
+        "icon": "chart"
+      },
+      {
+        "title": "Local Expertise",
+        "description": "Dominiamo le ricerche locali.",
+        "icon": "grid"
+      },
+      {
+        "title": "Risultati Misurabili",
+        "description": "KPI chiari: recensioni, ranking, lead.",
+        "icon": "check"
+      }
+    ]
+  },
+  "cta": {
+    "sectionLabel": "Costruisci fiducia",
+    "headline": "Pronto a costruire una reputazione solida?",
+    "description": "Richiedi un'analisi gratuita della tua presenza online.",
+    "buttonText": "Richiedi consulenza gratuita"
+  },
+  "form": {
+    "sectionLabel": "Inizia ora",
+    "headline": "Richiedi una consulenza strategica",
+    "description": "Analizziamo insieme le opportunità per la tua attività.",
+    "submitText": "Richiedi una consulenza",
+    "sectorOptions": [
+      { "value": "compro-oro", "label": "Compro Oro" },
+      { "value": "gioielleria-usato", "label": "Gioielleria con Usato" },
+      { "value": "opo", "label": "Operatore Professionale Oro" },
+      { "value": "catena", "label": "Catena / Franchising" },
+      { "value": "franchising", "label": "Affiliazione Franchising" },
+      { "value": "altro", "label": "Altro" }
+    ]
+  },
+  "navigation": {
+    "navbarCtaText": "Richiedi consulenza",
+    "floatingCtaText": "Richiedi consulenza"
+  },
+  "structuredData": {
+    "serviceName": "Marketing Digitale per Compro Oro",
+    "serviceDescription": "Agenzia di marketing digitale specializzata nel settore compro oro e OPO"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "slug": "watch-dealers",
+  "metaTitle": "Marketing Digitale per Orologeria | nwdesigns",
+  "metaDescription": "Strategie digitali per gioiellerie e dealer di orologi. Brand storytelling, local SEO e lead generation per il mercato orologiero.",
+  "ogImage": "/_shared/img/og-watches.jpg",
+  "video": {
+    "src": "/_shared/video/watches.mp4",
+    "poster": "/_shared/video/watches-poster.jpg"
+  },
+  "hero": {
+    "label": "Marketing Digitale per Orologeria",
+    "headline": "Il 35% delle vendite inizia online.",
+    "headlineAccent": "Ma il 74% del valore resta in boutique.",
+    "subheadline": "Connettiamo il digitale all'esperienza in negozio.",
+    "subheadlineBold": "Visibilità che converte",
+    "ctaText": "Potenzia la tua visibilità",
+    "watermarkText": "OROLOGERIA"
+  },
+  "clientLogos": {
+    "sectionLabel": "Gioiellerie Partner",
+    "logos": [
+      { "src": "/_shared/img/clients/client-hassler.svg", "alt": "Hassler Roma" },
+      { "src": "/_shared/img/clients/client-trenitalia.svg", "alt": "Trenitalia" },
+      { "src": "/_shared/img/clients/client-eurobet.svg", "alt": "Eurobet" },
+      { "src": "/_shared/img/clients/client-kraft.svg", "alt": "Kraft" },
+      { "src": "/_shared/img/clients/client-bonanno.svg", "alt": "Bonanno" },
+      { "src": "/_shared/img/clients/client-ambrosiano.svg", "alt": "Ambrosiano" },
+      { "src": "/_shared/img/clients/client-imago.svg", "alt": "Imago" }
+    ]
+  },
+  "stats": {
+    "sectionLabel": "Il mercato orologiero oggi",
+    "items": [
+      {
+        "value": "€1,89 MLD",
+        "prefix": "€",
+        "counterValue": 1.89,
+        "suffix": " MLD",
+        "label": "il valore del mercato orologi in Italia"
+      },
+      {
+        "value": "27%",
+        "counterValue": 27,
+        "suffix": "%",
+        "label": "preoccupazioni sull'autenticità nell'acquisto online"
+      },
+      {
+        "value": "35%",
+        "counterValue": 35,
+        "suffix": "%",
+        "label": "delle vendite sarà online entro il 2026"
+      }
+    ]
+  },
+  "painPoints": {
+    "sectionLabel": "Le sfide del settore orologiero",
+    "items": [
+      {
+        "title": "Mercato grigio in crescita",
+        "description": "I clienti cercano alternative ai canali ufficiali.",
+        "descriptionBold": "Come ti posizioni?"
+      },
+      {
+        "title": "Fiducia e autenticità",
+        "description": "Il 27% teme i falsi negli acquisti online.",
+        "descriptionBold": "Come rassicuri?"
+      },
+      {
+        "title": "Concorrenza digitale",
+        "description": "I marketplace erodono quote di mercato.",
+        "descriptionBold": "Qual è il tuo vantaggio?"
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "I nostri servizi",
+    "headline": "Dal digitale alla",
+    "headlineEmphasis": "boutique",
+    "description": "Costruiamo strategie che valorizzano la tua expertise e portano clienti qualificati —",
+    "descriptionBold": "in negozio e online",
+    "ctaText": "Scopri come possiamo aiutarti",
+    "items": [
+      {
+        "title": "Strategia Digitale Orologeria",
+        "description": "Posizionamento premium, analisi competitor, piano di comunicazione multi-canale.",
+        "highlighted": true
+      },
+      {
+        "title": "Content Marketing & Storytelling",
+        "description": "Raccontiamo la storia dei brand, educhiamo i collezionisti, creiamo contenuti di valore.",
+        "highlighted": false
+      },
+      {
+        "title": "Local SEO & Google Business",
+        "description": "Domina le ricerche locali per orologi e gioielli. Gestione recensioni e schede ottimizzate.",
+        "highlighted": false
+      },
+      {
+        "title": "Social Media & Community",
+        "description": "Instagram, Facebook, TikTok. Costruiamo community di appassionati attorno al tuo brand.",
+        "highlighted": false
+      }
+    ]
+  },
+  "faq": {
+    "sectionLabel": "Domande frequenti",
+    "headline": "Le risposte che cercavi",
+    "items": [
+      {
+        "question": "Lavorate con rivenditori autorizzati e non?",
+        "answer": "Sì, adattiamo la strategia alle specificità di ogni business. Per i rivenditori autorizzati enfatizziamo la relazione con i brand, per gli indipendenti valorizziamo l'expertise e la selezione curata."
+      },
+      {
+        "question": "Come gestite la comunicazione sui social per prodotti di lusso?",
+        "answer": "Creiamo contenuti che bilanciano accessibilità e esclusività: storytelling dei brand, dietro le quinte, contenuti educational e momenti lifestyle che ispirano senza banalizzare."
+      },
+      {
+        "question": "Offrite servizi di e-commerce?",
+        "answer": "Sì, sviluppiamo e-commerce ottimizzati per il settore orologiero con focus su sicurezza percepita, certificazioni di autenticità e esperienza utente premium."
+      },
+      {
+        "question": "Come misurate il successo delle campagne?",
+        "answer": "Tracciamo visite in negozio (quando possibile), lead qualificati, engagement sui social, posizionamento SEO e, naturalmente, vendite attribuibili alle attività digitali."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionLabel": "Perché nwdesigns",
+    "headline": "Parliamo la lingua dell'orologeria.",
+    "items": [
+      {
+        "title": "Esperienza Premium",
+        "description": "Conosciamo le dinamiche del mercato orologiero.",
+        "icon": "star"
+      },
+      {
+        "title": "Storytelling",
+        "description": "Raccontiamo storie che creano connessioni.",
+        "icon": "chart"
+      },
+      {
+        "title": "Omnichannel",
+        "description": "Online e offline, un'esperienza coerente.",
+        "icon": "grid"
+      },
+      {
+        "title": "Risultati",
+        "description": "Lead qualificati, non vanity metrics.",
+        "icon": "check"
+      }
+    ]
+  },
+  "cta": {
+    "sectionLabel": "Potenzia il tuo brand",
+    "headline": "Pronto a potenziare la tua visibilità?",
+    "description": "Richiedi un'analisi gratuita della tua presenza digitale.",
+    "buttonText": "Richiedi consulenza gratuita"
+  },
+  "form": {
+    "sectionLabel": "Inizia ora",
+    "headline": "Richiedi una consulenza strategica",
+    "description": "Analizziamo insieme le opportunità per la tua attività.",
+    "submitText": "Richiedi una consulenza",
+    "sectorOptions": [
+      { "value": "gioielleria-orologi", "label": "Gioielleria con Orologi" },
+      { "value": "rivenditore-autorizzato", "label": "Rivenditore Autorizzato" },
+      { "value": "vintage-preowned", "label": "Vintage & Pre-owned" },
+      { "value": "riparazioni-service", "label": "Riparazioni & Service" },
+      { "value": "multibrand", "label": "Multibrand" },
+      { "value": "altro", "label": "Altro" }
+    ]
+  },
+  "navigation": {
+    "navbarCtaText": "Richiedi consulenza",
+    "floatingCtaText": "Richiedi consulenza"
+  },
+  "structuredData": {
+    "serviceName": "Marketing Digitale per Orologeria",
+    "serviceDescription": "Agenzia di marketing digitale specializzata nel settore orologiero e gioielleria"
+  }
+}

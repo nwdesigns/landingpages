@@ -1,0 +1,181 @@
+{
+  "slug": "senior-living",
+  "metaTitle": "Branding per Senior Living | nwdesigns",
+  "metaDescription": "Strategie di branding e comunicazione per residenze senior e strutture di assistenza. Lead generation qualificata e comunicazione rassicurante.",
+  "ogImage": "/_shared/img/og-senior.jpg",
+  "video": {
+    "src": "/_shared/video/senior.mp4",
+    "poster": "/_shared/video/senior-poster.jpg"
+  },
+  "hero": {
+    "label": "Branding per Senior Living",
+    "headline": "Vita Indipendente, Comunità Vibrante, Il Tuo Spazio Personale.",
+    "headlineAccent": "La nuova età della libertà.",
+    "subheadline": "Comunichiamo il lifestyle che le famiglie cercano.",
+    "subheadlineBold": "Lead qualificati, conversioni reali",
+    "ctaText": "Richiedi una visita privata",
+    "watermarkText": "VITA"
+  },
+  "clientLogos": {
+    "sectionLabel": "Residenze Partner",
+    "logos": [
+      { "src": "/_shared/img/clients/client-hassler.svg", "alt": "Hassler Roma" },
+      { "src": "/_shared/img/clients/client-trenitalia.svg", "alt": "Trenitalia" },
+      { "src": "/_shared/img/clients/client-eurobet.svg", "alt": "Eurobet" },
+      { "src": "/_shared/img/clients/client-kraft.svg", "alt": "Kraft" },
+      { "src": "/_shared/img/clients/client-bonanno.svg", "alt": "Bonanno" },
+      { "src": "/_shared/img/clients/client-ambrosiano.svg", "alt": "Ambrosiano" },
+      { "src": "/_shared/img/clients/client-imago.svg", "alt": "Imago" }
+    ]
+  },
+  "stats": {
+    "sectionLabel": "Il mercato senior living in Italia",
+    "items": [
+      {
+        "value": "24%",
+        "counterValue": 24,
+        "suffix": "%",
+        "label": "degli italiani ha più di 65 anni"
+      },
+      {
+        "value": "€15 MLD",
+        "prefix": "€",
+        "counterValue": 15,
+        "suffix": " MLD",
+        "label": "il valore previsto del mercato entro il 2030"
+      },
+      {
+        "value": "65%",
+        "counterValue": 65,
+        "suffix": "%",
+        "label": "cerca soluzioni premium per i propri cari"
+      }
+    ]
+  },
+  "painPoints": {
+    "sectionLabel": "Le sfide del senior living",
+    "items": [
+      {
+        "title": "Stigma culturale",
+        "description": "La \"casa di riposo\" evoca immagini negative.",
+        "descriptionBold": "Come cambi la percezione?"
+      },
+      {
+        "title": "Decisione complessa",
+        "description": "Figli, genitori, aspetti emotivi e pratici.",
+        "descriptionBold": "Come li guidi?"
+      },
+      {
+        "title": "Differenziazione difficile",
+        "description": "Strutture simili, comunicazione generica.",
+        "descriptionBold": "Qual è il tuo valore unico?"
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "I nostri servizi",
+    "headline": "Dal primo contatto alla",
+    "headlineEmphasis": "scelta serena",
+    "description": "Costruiamo strategie di comunicazione che rassicurano e convertono —",
+    "descriptionBold": "famiglie e residenti",
+    "ctaText": "Scopri come possiamo aiutarti",
+    "items": [
+      {
+        "title": "Lifestyle Branding",
+        "description": "Riposizioniamo la vostra struttura come scelta di vita positiva, non come ultima spiaggia.",
+        "highlighted": true
+      },
+      {
+        "title": "Tour Virtuali & Contenuti Premium",
+        "description": "Video, foto, virtual tour che mostrano la qualità della vita nella vostra residenza.",
+        "highlighted": false
+      },
+      {
+        "title": "Comunicazione Rassicurante",
+        "description": "Contenuti che rispondono alle paure e alle domande delle famiglie con empatia e professionalità.",
+        "highlighted": false
+      },
+      {
+        "title": "Lead Generation Qualificata",
+        "description": "Campagne mirate che portano visite e richieste da famiglie realmente interessate.",
+        "highlighted": false
+      }
+    ]
+  },
+  "faq": {
+    "sectionLabel": "Domande frequenti",
+    "headline": "Le risposte che cercavi",
+    "items": [
+      {
+        "question": "Come gestite la sensibilità del tema?",
+        "answer": "Con grande attenzione. La nostra comunicazione è sempre rispettosa, positiva e focalizzata sulla qualità della vita. Evitiamo toni paternalistici e valorizziamo l'autonomia e la dignità dei residenti."
+      },
+      {
+        "question": "A chi vi rivolgete: ai senior o ai figli?",
+        "answer": "A entrambi, con messaggi differenziati. I figli cercano rassicurazione e praticità, i senior autonomia e qualità di vita. Creiamo contenuti specifici per ogni audience."
+      },
+      {
+        "question": "Lavorate con strutture di tutte le dimensioni?",
+        "answer": "Sì, dalla piccola residenza familiare alla grande struttura con centinaia di posti. Adattiamo budget e strategia alle esigenze specifiche."
+      },
+      {
+        "question": "Come misurate i risultati?",
+        "answer": "Tracciamo richieste informazioni, prenotazioni visite, tasso di conversione da visita a ingresso. Forniamo report mensili con tutti i KPI concordati."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionLabel": "Perché nwdesigns",
+    "headline": "Comunichiamo con rispetto e professionalità.",
+    "items": [
+      {
+        "title": "Esperienza Healthcare",
+        "description": "Conosciamo le dinamiche del settore.",
+        "icon": "star"
+      },
+      {
+        "title": "Comunicazione Empatica",
+        "description": "Rispetto, dignità, positività.",
+        "icon": "chart"
+      },
+      {
+        "title": "Lead Qualificati",
+        "description": "Famiglie realmente interessate, non curiosi.",
+        "icon": "grid"
+      },
+      {
+        "title": "ROI Misurabile",
+        "description": "Costo per visita, costo per ingresso, tracciabili.",
+        "icon": "check"
+      }
+    ]
+  },
+  "cta": {
+    "sectionLabel": "Cresci con noi",
+    "headline": "Pronto a riempire le tue stanze?",
+    "description": "Richiedi un'analisi gratuita della tua comunicazione.",
+    "buttonText": "Richiedi una visita privata"
+  },
+  "form": {
+    "sectionLabel": "Inizia ora",
+    "headline": "Richiedi una consulenza strategica",
+    "description": "Analizziamo insieme le opportunità per la tua struttura.",
+    "submitText": "Richiedi una consulenza",
+    "sectorOptions": [
+      { "value": "residenza-assistita", "label": "Residenza Assistita" },
+      { "value": "casa-riposo-luxury", "label": "Casa di Riposo Premium" },
+      { "value": "centro-diurno", "label": "Centro Diurno" },
+      { "value": "comunita-alloggio", "label": "Comunità Alloggio" },
+      { "value": "rsa", "label": "RSA" },
+      { "value": "altro", "label": "Altro" }
+    ]
+  },
+  "navigation": {
+    "navbarCtaText": "Richiedi una visita",
+    "floatingCtaText": "Richiedi una visita"
+  },
+  "structuredData": {
+    "serviceName": "Branding per Senior Living",
+    "serviceDescription": "Agenzia di branding e comunicazione specializzata nel settore senior living"
+  }
+}

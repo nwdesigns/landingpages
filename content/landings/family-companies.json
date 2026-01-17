@@ -1,0 +1,180 @@
+{
+  "slug": "family-companies",
+  "metaTitle": "Branding per Aziende Familiari | nwdesigns",
+  "metaDescription": "Strategie di branding e comunicazione per aziende familiari. Rebranding internazionale, heritage marketing e comunicazione per passaggio generazionale.",
+  "ogImage": "/_shared/img/og-family.jpg",
+  "video": {
+    "src": "/_shared/video/family.mp4",
+    "poster": "/_shared/video/family-poster.jpg"
+  },
+  "hero": {
+    "label": "Branding per Aziende Familiari",
+    "headline": "L'80% delle aziende italiane sono familiari. Solo il 30% sopravvive al secondo passaggio.",
+    "headlineAccent": "Onora la tua storia. Conquista il futuro.",
+    "subheadline": "Proiettiamo il vostro heritage verso nuovi mercati.",
+    "subheadlineBold": "Tradizione che innova",
+    "ctaText": "Prenota un audit strategico",
+    "watermarkText": "FAMIGLIA"
+  },
+  "clientLogos": {
+    "sectionLabel": "Aziende Partner",
+    "logos": [
+      { "src": "/_shared/img/clients/client-hassler.svg", "alt": "Hassler Roma" },
+      { "src": "/_shared/img/clients/client-trenitalia.svg", "alt": "Trenitalia" },
+      { "src": "/_shared/img/clients/client-eurobet.svg", "alt": "Eurobet" },
+      { "src": "/_shared/img/clients/client-kraft.svg", "alt": "Kraft" },
+      { "src": "/_shared/img/clients/client-bonanno.svg", "alt": "Bonanno" },
+      { "src": "/_shared/img/clients/client-ambrosiano.svg", "alt": "Ambrosiano" },
+      { "src": "/_shared/img/clients/client-imago.svg", "alt": "Imago" }
+    ]
+  },
+  "stats": {
+    "sectionLabel": "Le aziende familiari in Italia",
+    "items": [
+      {
+        "value": "85%",
+        "counterValue": 85,
+        "suffix": "%",
+        "label": "delle aziende italiane è a conduzione familiare"
+      },
+      {
+        "value": "30%",
+        "counterValue": 30,
+        "suffix": "%",
+        "label": "sopravvive al passaggio alla seconda generazione"
+      },
+      {
+        "value": "45%",
+        "counterValue": 45,
+        "suffix": "%",
+        "label": "del fatturato proviene dall'export"
+      }
+    ]
+  },
+  "painPoints": {
+    "sectionLabel": "Le sfide delle aziende familiari",
+    "items": [
+      {
+        "title": "Passaggio generazionale",
+        "description": "La nuova generazione ha visioni diverse.",
+        "descriptionBold": "Come concili tradizione e innovazione?"
+      },
+      {
+        "title": "Internazionalizzazione",
+        "description": "Il mercato italiano non basta più.",
+        "descriptionBold": "Come ti presenti all'estero?"
+      },
+      {
+        "title": "Digitalizzazione",
+        "description": "Il mercato cambia, l'azienda deve adattarsi.",
+        "descriptionBold": "Hai una strategia digitale?"
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "I nostri servizi",
+    "headline": "Dall'heritage all'",
+    "headlineEmphasis": "innovazione",
+    "description": "Costruiamo brand che onorano il passato e conquistano il futuro —",
+    "descriptionBold": "in Italia e nel mondo",
+    "ctaText": "Scopri come possiamo aiutarti",
+    "items": [
+      {
+        "title": "Rebranding Internazionale",
+        "description": "Evoluzione dell'identità visiva e verbale per conquistare mercati esteri mantenendo l'autenticità.",
+        "highlighted": true
+      },
+      {
+        "title": "Digital Transformation",
+        "description": "Sito web multilingua, e-commerce B2B/B2C, presenza digitale integrata.",
+        "highlighted": false
+      },
+      {
+        "title": "Heritage Marketing",
+        "description": "Valorizzazione della storia aziendale, storytelling del fondatore, archivio digitale.",
+        "highlighted": false
+      },
+      {
+        "title": "Comunicazione per Passaggio Generazionale",
+        "description": "Supporto nella comunicazione interna ed esterna durante la transizione di leadership.",
+        "highlighted": false
+      }
+    ]
+  },
+  "faq": {
+    "sectionLabel": "Domande frequenti",
+    "headline": "Le risposte che cercavi",
+    "items": [
+      {
+        "question": "Come bilanciate tradizione e modernizzazione?",
+        "answer": "Partiamo sempre dall'heritage: i valori, la storia, l'artigianalità sono asset da valorizzare, non da nascondere. La modernizzazione riguarda la forma (visual, digitale, canali) non la sostanza."
+      },
+      {
+        "question": "Lavorate con aziende di tutte le dimensioni?",
+        "answer": "Sì, dalla piccola impresa artigianale alla media impresa con centinaia di dipendenti. Adattiamo scope e budget alle esigenze specifiche."
+      },
+      {
+        "question": "Come supportate l'internazionalizzazione?",
+        "answer": "Oltre al rebranding, creiamo materiali multilingua, adattiamo il messaggio ai mercati target, supportiamo la presenza alle fiere internazionali e sviluppiamo strategie digitali per i mercati esteri."
+      },
+      {
+        "question": "Offrite anche supporto durante il passaggio generazionale?",
+        "answer": "Sì, aiutiamo a comunicare la transizione in modo positivo a dipendenti, clienti, fornitori e mercato. È un momento delicato che richiede una comunicazione attenta e strategica."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionLabel": "Perché nwdesigns",
+    "headline": "Comprendiamo le dinamiche familiari.",
+    "items": [
+      {
+        "title": "Esperienza PMI",
+        "description": "Lavoriamo con aziende familiari da anni.",
+        "icon": "star"
+      },
+      {
+        "title": "Rispetto Heritage",
+        "description": "Valorizziamo la storia, non la cancelliamo.",
+        "icon": "chart"
+      },
+      {
+        "title": "Visione Internazionale",
+        "description": "Proiettiamo il made in Italy nel mondo.",
+        "icon": "grid"
+      },
+      {
+        "title": "Approccio Strategico",
+        "description": "Non solo comunicazione, ma consulenza.",
+        "icon": "check"
+      }
+    ]
+  },
+  "cta": {
+    "sectionLabel": "Cresci con noi",
+    "headline": "Pronto a portare la tua azienda nel futuro?",
+    "description": "Richiedi un audit strategico gratuito.",
+    "buttonText": "Prenota un audit strategico"
+  },
+  "form": {
+    "sectionLabel": "Inizia ora",
+    "headline": "Richiedi una consulenza strategica",
+    "description": "Analizziamo insieme le opportunità per la tua azienda.",
+    "submitText": "Richiedi una consulenza",
+    "sectorOptions": [
+      { "value": "manifattura", "label": "Manifattura" },
+      { "value": "food-wine", "label": "Food & Wine" },
+      { "value": "moda-design", "label": "Moda & Design" },
+      { "value": "servizi", "label": "Servizi" },
+      { "value": "retail", "label": "Retail" },
+      { "value": "altro", "label": "Altro" }
+    ]
+  },
+  "navigation": {
+    "navbarCtaText": "Prenota un audit",
+    "floatingCtaText": "Prenota un audit"
+  },
+  "structuredData": {
+    "serviceName": "Branding per Aziende Familiari",
+    "serviceDescription": "Agenzia di branding e comunicazione specializzata nel supporto alle aziende familiari"
+  }
+}

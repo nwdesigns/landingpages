@@ -1,0 +1,181 @@
+{
+  "slug": "private-schools",
+  "metaTitle": "Branding per Scuole Private | nwdesigns",
+  "metaDescription": "Strategie di branding e comunicazione per scuole private e istituti internazionali. Enrollment marketing, open day ed employer branding educativo.",
+  "ogImage": "/_shared/img/og-schools.jpg",
+  "video": {
+    "src": "/_shared/video/schools.mp4",
+    "poster": "/_shared/video/schools-poster.jpg"
+  },
+  "hero": {
+    "label": "Branding per Scuole Private",
+    "headline": "Oltre i confini dell'aula. Costruiamo i leader globali di domani.",
+    "headlineAccent": "L'investimento sul futuro.",
+    "subheadline": "Comunichiamo l'eccellenza educativa che vi distingue.",
+    "subheadlineBold": "Enrollment che cresce",
+    "ctaText": "Prenota un open day",
+    "watermarkText": "FUTURO"
+  },
+  "clientLogos": {
+    "sectionLabel": "Istituti Partner",
+    "logos": [
+      { "src": "/_shared/img/clients/client-hassler.svg", "alt": "Hassler Roma" },
+      { "src": "/_shared/img/clients/client-trenitalia.svg", "alt": "Trenitalia" },
+      { "src": "/_shared/img/clients/client-eurobet.svg", "alt": "Eurobet" },
+      { "src": "/_shared/img/clients/client-kraft.svg", "alt": "Kraft" },
+      { "src": "/_shared/img/clients/client-bonanno.svg", "alt": "Bonanno" },
+      { "src": "/_shared/img/clients/client-ambrosiano.svg", "alt": "Ambrosiano" },
+      { "src": "/_shared/img/clients/client-imago.svg", "alt": "Imago" }
+    ]
+  },
+  "stats": {
+    "sectionLabel": "L'istruzione privata in Italia",
+    "items": [
+      {
+        "value": "+15%",
+        "counterValue": 15,
+        "suffix": "%",
+        "prefix": "+",
+        "label": "crescita iscrizioni scuole internazionali"
+      },
+      {
+        "value": "75%",
+        "counterValue": 75,
+        "suffix": "%",
+        "label": "sceglie la scuola privata per carriere globali"
+      },
+      {
+        "value": "100%",
+        "counterValue": 100,
+        "suffix": "%",
+        "label": "fluency in inglese come obiettivo prioritario"
+      }
+    ]
+  },
+  "painPoints": {
+    "sectionLabel": "Le sfide delle scuole private",
+    "items": [
+      {
+        "title": "Comunicare il valore dell'investimento",
+        "description": "Le famiglie confrontano costi e benefici.",
+        "descriptionBold": "Come giustifichi la scelta?"
+      },
+      {
+        "title": "Raggiungere le famiglie giuste",
+        "description": "Target specifico, canali frammentati.",
+        "descriptionBold": "Dove le intercetti?"
+      },
+      {
+        "title": "Differenziarti dalla concorrenza",
+        "description": "Tante scuole, messaggi simili.",
+        "descriptionBold": "Qual è la tua unicità?"
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "I nostri servizi",
+    "headline": "Dal primo contatto all'",
+    "headlineEmphasis": "iscrizione",
+    "description": "Costruiamo strategie di comunicazione che attraggono le famiglie giuste —",
+    "descriptionBold": "e le convertono in iscrizioni",
+    "ctaText": "Scopri come possiamo aiutarti",
+    "items": [
+      {
+        "title": "Brand Identity Educativa",
+        "description": "Positioning, visual identity, tone of voice. Un brand che comunica eccellenza e valori.",
+        "highlighted": true
+      },
+      {
+        "title": "Digital Experience Premium",
+        "description": "Sito web, virtual tour, video testimonial. Un'esperienza digitale all'altezza del vostro istituto.",
+        "highlighted": false
+      },
+      {
+        "title": "Recruitment Marketing",
+        "description": "Campagne mirate per attrarre le famiglie ideali. Google, social, content marketing.",
+        "highlighted": false
+      },
+      {
+        "title": "Open Day & Eventi",
+        "description": "Promozione, gestione iscrizioni, follow-up. Massimizziamo le conversioni degli eventi.",
+        "highlighted": false
+      }
+    ]
+  },
+  "faq": {
+    "sectionLabel": "Domande frequenti",
+    "headline": "Le risposte che cercavi",
+    "items": [
+      {
+        "question": "Lavorate con tutti i livelli scolastici?",
+        "answer": "Sì, dalle scuole dell'infanzia ai licei internazionali. Adattiamo la strategia al target specifico: famiglie con bambini piccoli, genitori di adolescenti, studenti internazionali."
+      },
+      {
+        "question": "Come misurate il successo delle campagne?",
+        "answer": "Tracciamo ogni touchpoint: visite al sito, richieste informazioni, prenotazioni open day, iscrizioni completate. Calcoliamo il costo per lead e il costo per iscrizione."
+      },
+      {
+        "question": "Gestite anche la comunicazione interna?",
+        "answer": "Sì, supportiamo la comunicazione con le famiglie iscritte: newsletter, app, portali genitori, comunicazioni istituzionali."
+      },
+      {
+        "question": "Quanto tempo serve per vedere risultati?",
+        "answer": "Le campagne digitali generano lead già dalle prime settimane. Per il brand building e il posizionamento, lavoriamo su cicli annuali allineati al calendario scolastico."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionLabel": "Perché nwdesigns",
+    "headline": "Comprendiamo il mondo dell'education.",
+    "items": [
+      {
+        "title": "Esperienza Education",
+        "description": "Lavoriamo con istituti di ogni livello.",
+        "icon": "star"
+      },
+      {
+        "title": "Approccio Premium",
+        "description": "Comunicazione all'altezza del vostro posizionamento.",
+        "icon": "chart"
+      },
+      {
+        "title": "Full-Funnel",
+        "description": "Dalla awareness all'iscrizione, ogni touchpoint.",
+        "icon": "grid"
+      },
+      {
+        "title": "ROI Chiaro",
+        "description": "Costo per lead, costo per iscrizione, tracciabili.",
+        "icon": "check"
+      }
+    ]
+  },
+  "cta": {
+    "sectionLabel": "Cresci con noi",
+    "headline": "Pronto a far crescere le iscrizioni?",
+    "description": "Richiedi un'analisi gratuita della tua comunicazione.",
+    "buttonText": "Prenota un open day"
+  },
+  "form": {
+    "sectionLabel": "Inizia ora",
+    "headline": "Richiedi una consulenza strategica",
+    "description": "Analizziamo insieme le opportunità per il tuo istituto.",
+    "submitText": "Richiedi una consulenza",
+    "sectorOptions": [
+      { "value": "infanzia", "label": "Scuola dell'Infanzia" },
+      { "value": "primaria", "label": "Scuola Primaria" },
+      { "value": "secondaria", "label": "Scuola Secondaria" },
+      { "value": "liceo", "label": "Liceo / IB School" },
+      { "value": "boarding", "label": "Boarding School" },
+      { "value": "altro", "label": "Altro" }
+    ]
+  },
+  "navigation": {
+    "navbarCtaText": "Prenota un open day",
+    "floatingCtaText": "Prenota un open day"
+  },
+  "structuredData": {
+    "serviceName": "Branding per Scuole Private",
+    "serviceDescription": "Agenzia di branding e comunicazione specializzata nel settore education"
+  }
+}

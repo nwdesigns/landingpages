@@ -1,0 +1,184 @@
+{
+  "slug": "luxury",
+  "metaTitle": "Branding per il Lusso | nwdesigns",
+  "metaDescription": "Creiamo identità di brand che ispirano. Agenzia di branding e comunicazione specializzata nel segmento luxury italiano.",
+  "ogImage": "/_shared/img/og-luxury.jpg",
+  "video": {
+    "src": "/_shared/video/luxury.mp4",
+    "poster": "/_shared/video/luxury-poster.jpg"
+  },
+  "hero": {
+    "label": "Branding per il Lusso Italiano",
+    "headline": "I brand che vincono",
+    "headlineAccent": "creano significato.",
+    "subheadline": "Preserviamo la vostra eredità proiettandola nel futuro digitale.",
+    "subheadlineBold": "Heritage che conquista il mondo",
+    "ctaText": "Costruisci il tuo brand",
+    "watermarkText": "LUSSO"
+  },
+  "clientLogos": {
+    "sectionLabel": "Heritage Partners",
+    "logos": [
+      { "src": "/_shared/img/clients/client-hassler.svg", "alt": "Hassler Roma" },
+      { "src": "/_shared/img/clients/client-trenitalia.svg", "alt": "Trenitalia" },
+      { "src": "/_shared/img/clients/client-eurobet.svg", "alt": "Eurobet" },
+      { "src": "/_shared/img/clients/client-kraft.svg", "alt": "Kraft" },
+      { "src": "/_shared/img/clients/client-bonanno.svg", "alt": "Bonanno" },
+      { "src": "/_shared/img/clients/client-ambrosiano.svg", "alt": "Ambrosiano" },
+      { "src": "/_shared/img/clients/client-imago.svg", "alt": "Imago" }
+    ]
+  },
+  "stats": {
+    "sectionLabel": "Il mercato del lusso italiano",
+    "items": [
+      {
+        "value": "€54 MLD",
+        "prefix": "€",
+        "counterValue": 54,
+        "suffix": " MLD",
+        "label": "il valore delle aziende di lusso italiane"
+      },
+      {
+        "value": "50+",
+        "counterValue": 50,
+        "suffix": "+",
+        "label": "touchpoint attraversati prima dell'acquisto"
+      },
+      {
+        "value": "70%",
+        "counterValue": 70,
+        "suffix": "%",
+        "label": "acquisti da Gen Z e Millennials entro il 2025"
+      }
+    ]
+  },
+  "painPoints": {
+    "sectionLabel": "Le sfide del lusso oggi",
+    "items": [
+      {
+        "title": "Il valore percepito è in crisi",
+        "description": "Il 50% dei consumatori considera i brand di lusso sopravvalutati. La qualità è attesa —",
+        "descriptionBold": "l'emozione differenzia"
+      },
+      {
+        "title": "50+ touchpoint. Una sola storia.",
+        "description": "Messaggi incoerenti e visual disallineati",
+        "descriptionBold": "erodono la fiducia"
+      },
+      {
+        "title": "Esclusività vs. accessibilità",
+        "description": "Come essere presenti ovunque",
+        "descriptionBold": "senza democratizzare"
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "Il nostro approccio",
+    "headline": "Dal touchpoint al",
+    "headlineEmphasis": "significato",
+    "description": "Costruiamo brand coerenti che conquistano mercati internazionali e convertono interesse in desiderio — e",
+    "descriptionBold": "desiderio in fedeltà",
+    "ctaText": "Scopri come possiamo aiutarti",
+    "items": [
+      {
+        "title": "Strategia di Brand",
+        "description": "Value proposition, architettura di brand, posizionamento nel segmento luxury.",
+        "highlighted": true
+      },
+      {
+        "title": "Identità Visiva",
+        "description": "Logo, brand identity, heritage marketing. L'85% dei consumatori vuole più contenuti sulla storia del brand.",
+        "highlighted": false
+      },
+      {
+        "title": "Esperienza Omnicanale",
+        "description": "Web, e-commerce, social, retail. Coerenza su 50+ touchpoint senza compromettere l'esclusività.",
+        "highlighted": false
+      },
+      {
+        "title": "Strategia Gen Z",
+        "description": "TikTok, Instagram, live commerce. Li raggiungiamo dove sono, senza perdere l'essenza del brand.",
+        "highlighted": false
+      }
+    ]
+  },
+  "faq": {
+    "sectionLabel": "Domande frequenti",
+    "headline": "Le risposte che cercavi",
+    "items": [
+      {
+        "question": "Come si misura il ROI nel settore lusso?",
+        "answer": "Nel lusso, il ROI va oltre le metriche tradizionali. Misuriamo brand equity, share of voice nel segmento premium, lifetime value dei clienti HNWI, e conversione dei touchpoint digitali. Ogni progetto include KPI personalizzati e report mensili dettagliati."
+      },
+      {
+        "question": "Quali canali usate per raggiungere il target HNWI?",
+        "answer": "Definiamo una strategia omnicanale che include digital advertising su piattaforme premium (LinkedIn, Instagram), partnership con media di settore, eventi esclusivi, e CRM personalizzato. Per la Gen Z luxury, integriamo TikTok e influencer marketing selezionato."
+      },
+      {
+        "question": "Come proteggete l'esclusività del brand online?",
+        "answer": "Creiamo esperienze digitali che replicano l'esclusività del retail fisico: accesso su invito, contenuti gated, storytelling immersivo, e customer journey personalizzati. Il digitale diventa un'estensione naturale del mondo luxury, non una democratizzazione."
+      },
+      {
+        "question": "Quanto tempo richiede un progetto di rebranding luxury?",
+        "answer": "Un rebranding completo nel segmento luxury richiede tipicamente 4-6 mesi per la fase strategica e creativa, più 2-3 mesi per l'implementazione. I tempi variano in base alla complessità del progetto e al numero di touchpoint da aggiornare."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionLabel": "Perché nwdesigns",
+    "headline": "Parliamo la lingua del lusso.",
+    "items": [
+      {
+        "title": "Esperienza Luxury",
+        "description": "Lavoriamo esclusivamente con brand del segmento alto.",
+        "icon": "star"
+      },
+      {
+        "title": "Data-Driven",
+        "description": "Ogni strategia è supportata da ricerche e analytics.",
+        "icon": "chart"
+      },
+      {
+        "title": "Multi-Canale",
+        "description": "Ogni touchpoint racconta la stessa storia.",
+        "icon": "grid"
+      },
+      {
+        "title": "Risultati Misurabili",
+        "description": "KPI chiari, report periodici, ROI tracciabile.",
+        "icon": "check"
+      }
+    ]
+  },
+  "cta": {
+    "sectionLabel": "Co-creiamo insieme",
+    "headline": "Sei pronto a co-creare con noi?",
+    "description": "Il tuo brand merita una strategia su misura. Parliamone.",
+    "buttonText": "Inizia il tuo progetto"
+  },
+  "form": {
+    "sectionLabel": "Inizia ora",
+    "headline": "Richiedi una consulenza strategica",
+    "description": "Analizziamo insieme le opportunità per il tuo brand.",
+    "submitText": "Richiedi una consulenza",
+    "sectorOptions": [
+      { "value": "moda", "label": "Moda & Accessori" },
+      { "value": "gioielleria", "label": "Gioielleria & Orologeria" },
+      { "value": "hospitality", "label": "Hospitality & Travel" },
+      { "value": "automotive", "label": "Automotive" },
+      { "value": "real-estate", "label": "Real Estate di Lusso" },
+      { "value": "yachting", "label": "Yachting & Nautica" },
+      { "value": "beauty", "label": "Beauty & Wellness" },
+      { "value": "food", "label": "Food & Wine" },
+      { "value": "altro", "label": "Altro" }
+    ]
+  },
+  "navigation": {
+    "navbarCtaText": "Parliamo del tuo brand",
+    "floatingCtaText": "Parliamo del tuo brand"
+  },
+  "structuredData": {
+    "serviceName": "Branding per il Lusso",
+    "serviceDescription": "Agenzia di branding specializzata nel segmento luxury italiano"
+  }
+}
