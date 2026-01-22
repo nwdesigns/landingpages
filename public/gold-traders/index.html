@@ -69,6 +69,7 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="/_shared/css/main.css">
+  <link rel="stylesheet" href="/gold-traders/css/custom.css">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -143,24 +144,25 @@
     </a>
 
     <!-- CTA (Desktop Only) -->
-    <a href="#contatto" class="hidden md:inline-flex interactive border border-nw-fg rounded-[50px] bg-transparent text-nw-fg px-[26px] py-2 font-mulish font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-fg hover:text-nw-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent">
-      Richiedi consulenza
+    <a href="#contatto" class="hidden md:inline-flex interactive bg-nw-accent text-white rounded-[50px] px-[26px] py-2 font-mulish font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent">
+      Analisi Gratuita
     </a>
   </nav>
 
   <!-- Floating CTA (Mobile Only) -->
-  <a href="#contatto" class="floating-cta md:hidden fixed bottom-5 left-1/2 -translate-x-1/2 z-50 interactive bg-nw-accent text-white px-6 py-3 rounded-[50px] font-aktiv font-bold text-xs uppercase tracking-wide shadow-lg transition-all duration-300 active:scale-95 text-center whitespace-nowrap">
-    Richiedi consulenza
+  <a href="#contatto" class="floating-cta md:hidden fixed bottom-5 right-5 z-50 interactive bg-nw-accent text-white px-6 py-3 rounded-[50px] font-aktiv font-bold text-xs uppercase tracking-wide shadow-lg transition-all duration-300 active:scale-95 text-center whitespace-nowrap" aria-label="Richiedi analisi gratuita">
+    Analisi Gratuita
   </a>
 
   <main id="main-content">
 
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center pt-32 md:pt-40 pb-20 px-5 md:px-20 overflow-hidden">
-      <!-- Video Background (placeholder - replace with gold/jewelry video) -->
-      <video autoplay muted loop playsinline preload="metadata" poster="/_shared/video/gold-poster.jpg" class="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none" aria-hidden="true">
-        <source src="/_shared/video/gold.mp4" type="video/mp4">
-      </video>
+      <!-- Hero Background Image -->
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30 pointer-events-none"
+           style="background-image: url('/_shared/video/gold-poster.jpg');"
+           aria-hidden="true">
+      </div>
 
       <!-- Watermark Marquee -->
       <div class="watermark-container" aria-hidden="true">
@@ -183,31 +185,76 @@
       </div>
 
       <div class="relative z-10 max-w-[1280px] mx-auto w-full">
-        <div class="max-w-4xl">
-          <!-- Label -->
-          <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
-            Marketing Digitale Compro Oro
-          </span>
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <!-- Left Column: Hero Content -->
+          <div class="max-w-2xl">
+            <!-- Label -->
+            <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
+              Marketing Digitale Compro Oro
+            </span>
 
-          <!-- Headline -->
-          <h1 class="font-aktiv text-[36px] md:text-[56px] lg:text-[72px] leading-[1.08] tracking-tight mb-8">
-            Il 30% degli italiani<br>
-            ha venduto oro.<br>
-            <span class="text-nw-accent">Ti hanno scelto per fiducia?</span>
-          </h1>
+            <!-- Headline -->
+            <h1 class="font-aktiv text-[36px] md:text-[56px] lg:text-[72px] leading-[1.08] tracking-tight mb-8">
+              Il 30% degli italiani<br>
+              ha venduto oro.<br>
+              <span class="text-nw-accent">Ti hanno scelto per fiducia?</span>
+            </h1>
 
-          <!-- Subheadline -->
-          <p class="font-mulish text-xl md:text-2xl leading-relaxed text-nw-fg max-w-2xl mb-10">
-            In un settore dove "c'è un compro oro in ogni angolo" e la reputazione è tutto, <strong>la tua presenza digitale fa la differenza</strong>.
-          </p>
+            <!-- Subheadline -->
+            <p class="font-mulish text-xl md:text-2xl leading-relaxed text-nw-fg max-w-2xl mb-10">
+              In un settore dove "c'è un compro oro in ogni angolo" e la reputazione è tutto, <strong>la tua presenza digitale fa la differenza</strong>.
+            </p>
 
-          <!-- CTA -->
-          <a href="#contatto" class="interactive inline-flex items-center gap-3 border border-nw-fg rounded-[50px] bg-transparent text-nw-fg px-8 py-3 font-aktiv font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-fg hover:text-nw-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent">
-            Costruisci la tua reputazione
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-          </a>
+            <!-- CTA -->
+            <a href="#contatto" class="interactive inline-flex items-center gap-3 bg-nw-accent text-white rounded-[50px] px-8 py-4 font-aktiv font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              Richiedi la tua Analisi Digitale Gratuita
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Right Column: Gold Widget (Desktop Only) -->
+          <div class="hidden lg:flex justify-end">
+            <div id="gold-widget" class="gold-widget gold-widget--light">
+              <!-- Header con live indicator -->
+              <div class="gold-widget-header">
+                <div class="gold-widget-title">
+                  <svg class="gold-widget-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
+                  <span>XAU/EUR</span>
+                </div>
+                <div class="gold-widget-status">
+                  <span class="gold-widget-live-dot"></span>
+                  <span>LIVE</span>
+                </div>
+              </div>
+
+              <!-- Main price display -->
+              <div class="gold-widget-price-container">
+                <span data-gold-price class="gold-widget-price">€--,--</span>
+                <span class="gold-widget-unit">/g</span>
+              </div>
+
+              <!-- Details grid -->
+              <div class="gold-widget-details">
+                <div class="gold-widget-detail">
+                  <span class="gold-widget-detail-label">Purezza</span>
+                  <span class="gold-widget-detail-value">24K (999,9)</span>
+                </div>
+                <div class="gold-widget-detail">
+                  <span class="gold-widget-detail-label">Aggiornato</span>
+                  <span data-gold-timestamp class="gold-widget-detail-value">--:--</span>
+                </div>
+              </div>
+
+              <!-- Footer -->
+              <div class="gold-widget-footer">
+                <span>Fonte: London Bullion Market</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -294,23 +341,6 @@
           <div class="stat-card">
             <div class="stat-number text-nw-bg" data-counter="80" data-suffix="%">80%</div>
             <div class="stat-label">dei clienti verifica le recensioni online prima di scegliere</div>
-          </div>
-        </div>
-
-        <!-- Gold Price Widget -->
-        <div class="max-w-[1280px] mx-auto">
-          <div id="gold-widget" class="gold-widget max-w-md mx-auto md:mx-0">
-            <div class="flex justify-between items-center mb-4">
-              <span class="gold-widget-label">Quotazione Oro Oggi</span>
-              <span data-gold-timestamp class="font-mono text-xs text-nw-muted">Aggiornato: --/--/----</span>
-            </div>
-            <div class="flex items-baseline gap-2">
-              <span data-gold-price class="gold-widget-price">€--,--</span>
-              <span class="gold-widget-unit">/grammo (24K)</span>
-            </div>
-            <p class="font-mulish text-sm text-nw-bg/70 mt-3">
-              Aiutiamo i tuoi clienti a fidarsi della tua quotazione.
-            </p>
           </div>
         </div>
       </div>
@@ -433,6 +463,115 @@
               <p class="font-mulish text-nw-bg/70">
                 Integrazione sul vostro sito con quotazione dell'oro in tempo reale. <em>Aumenta il tempo di permanenza</em>, dimostra trasparenza, differenzia dai competitor.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Showreel Section -->
+    <section id="showreel" class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
+      <div class="max-w-[1280px] mx-auto">
+        <div class="text-center mb-12">
+          <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
+            Il nostro lavoro
+          </span>
+          <h2 class="font-aktiv text-3xl md:text-5xl leading-tight mb-6">
+            Guarda come trasformiamo<br>
+            la presenza digitale
+          </h2>
+          <p class="font-mulish text-xl text-nw-fg/80 max-w-2xl mx-auto">
+            Scopri esempi concreti di come abbiamo aiutato operatori del settore a costruire reputazione e visibilità.
+          </p>
+        </div>
+
+        <div class="aspect-video max-w-4xl mx-auto rounded-2xl overflow-hidden bg-nw-dark">
+          <iframe
+            src="https://www.youtube.com/embed/edAWGZ5PLo4?rel=0&modestbranding=1"
+            title="nwdesigns Showreel"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+            class="w-full h-full"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonianze" class="py-20 md:py-32 px-5 md:px-20 bg-white">
+      <div class="max-w-[1280px] mx-auto">
+        <div class="text-center mb-16">
+          <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
+            Testimonianze
+          </span>
+          <h2 class="font-aktiv text-3xl md:text-5xl leading-tight">
+            Cosa dicono i nostri clienti
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial Card 1 -->
+          <div class="testimonial-card bg-nw-bg p-8 rounded-2xl">
+            <div class="mb-6">
+              <svg class="w-8 h-8 text-nw-accent/30" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="font-mulish text-lg italic text-nw-fg/90 mb-6">
+              "La strategia digitale ha aumentato la visibilità del mio negozio del 150% in soli 3 mesi. Ora i clienti ci trovano facilmente su Google e le recensioni positive parlano da sole."
+            </p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-nw-muted/30 rounded-full flex items-center justify-center">
+                <span class="font-aktiv font-bold text-nw-fg/60">MR</span>
+              </div>
+              <div>
+                <p class="font-aktiv font-semibold text-nw-fg">Marco R.</p>
+                <p class="font-mulish text-sm text-nw-muted">Compro Oro Milano</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="testimonial-card bg-nw-bg p-8 rounded-2xl">
+            <div class="mb-6">
+              <svg class="w-8 h-8 text-nw-accent/30" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="font-mulish text-lg italic text-nw-fg/90 mb-6">
+              "Avevamo un problema di reputazione online dopo alcune recensioni negative. Il team ha gestito tutto con professionalità, ora abbiamo 4.8 stelle su Google."
+            </p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-nw-muted/30 rounded-full flex items-center justify-center">
+                <span class="font-aktiv font-bold text-nw-fg/60">LB</span>
+              </div>
+              <div>
+                <p class="font-aktiv font-semibold text-nw-fg">Laura B.</p>
+                <p class="font-mulish text-sm text-nw-muted">Banco Metalli Roma</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div class="testimonial-card bg-nw-bg p-8 rounded-2xl">
+            <div class="mb-6">
+              <svg class="w-8 h-8 text-nw-accent/30" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="font-mulish text-lg italic text-nw-fg/90 mb-6">
+              "Con la campagna locale su Google Ads abbiamo triplicato le richieste di valutazione. Il ROI è stato incredibile, ogni euro investito ne ha portati 5."
+            </p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-nw-muted/30 rounded-full flex items-center justify-center">
+                <span class="font-aktiv font-bold text-nw-fg/60">GV</span>
+              </div>
+              <div>
+                <p class="font-aktiv font-semibold text-nw-fg">Giuseppe V.</p>
+                <p class="font-mulish text-sm text-nw-muted">Oro Compro Napoli</p>
+              </div>
             </div>
           </div>
         </div>
@@ -638,159 +777,75 @@
           <fieldset class="space-y-8">
             <legend class="sr-only">Informazioni di contatto</legend>
 
-          <div class="grid md:grid-cols-2 gap-8">
-            <!-- Nome -->
-            <div class="form-group">
-              <label for="nome" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-                Nome *
-              </label>
-              <input
-                type="text"
-                id="nome"
-                name="nome"
-                required
-                autocomplete="given-name"
-                class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
-                placeholder="Il tuo nome"
-              >
-              <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Inserisci il tuo nome</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Nome Completo -->
+              <div class="form-group">
+                <label for="nome" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
+                  Nome completo *
+                </label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  required
+                  autocomplete="name"
+                  class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
+                  placeholder="Mario Rossi"
+                >
+                <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Inserisci il tuo nome</span>
+              </div>
+
+              <!-- Email Aziendale -->
+              <div class="form-group">
+                <label for="email" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
+                  Email Aziendale *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
+                  placeholder="email@tuaattività.it"
+                >
+                <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Inserisci un'email valida</span>
+              </div>
+
+              <!-- Telefono -->
+              <div class="form-group">
+                <label for="telefono" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
+                  Telefono *
+                </label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  required
+                  autocomplete="tel"
+                  class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
+                  placeholder="+39 000 000 0000"
+                >
+                <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Inserisci il tuo telefono</span>
+              </div>
             </div>
 
-            <!-- Cognome -->
+            <!-- Privacy Consent -->
             <div class="form-group">
-              <label for="cognome" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-                Cognome *
+              <label class="flex items-start gap-3 cursor-pointer interactive">
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="privacy"
+                  required
+                  class="mt-1 w-5 h-5 accent-nw-accent cursor-pointer"
+                >
+                <span class="font-mulish text-sm text-nw-fg/80">
+                  Ho letto e accetto la <a href="https://www.nwdesigns.it/privacy-policy/" target="_blank" class="text-nw-fg underline hover:text-nw-accent transition-colors">Privacy Policy</a>. Autorizzo il trattamento dei miei dati personali ai sensi del GDPR. *
+                </span>
               </label>
-              <input
-                type="text"
-                id="cognome"
-                name="cognome"
-                required
-                autocomplete="family-name"
-                class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
-                placeholder="Il tuo cognome"
-              >
-              <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Inserisci il tuo cognome</span>
+              <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Accetta la privacy policy per continuare</span>
             </div>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-8">
-            <!-- Email -->
-            <div class="form-group">
-              <label for="email" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-                Email aziendale *
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                autocomplete="email"
-                class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
-                placeholder="email@tuaattività.it"
-              >
-              <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Inserisci un'email valida</span>
-            </div>
-
-            <!-- Telefono -->
-            <div class="form-group">
-              <label for="telefono" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-                Telefono
-              </label>
-              <input
-                type="tel"
-                id="telefono"
-                name="telefono"
-                autocomplete="tel"
-                class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
-                placeholder="+39 000 000 0000"
-              >
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-8">
-            <!-- Azienda -->
-            <div class="form-group">
-              <label for="azienda" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-                Nome Attività *
-              </label>
-              <input
-                type="text"
-                id="azienda"
-                name="azienda"
-                required
-                autocomplete="organization"
-                class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
-                placeholder="Nome dell'attività"
-              >
-              <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Inserisci il nome dell'attività</span>
-            </div>
-
-            <!-- Settore -->
-            <div class="form-group">
-              <label for="settore" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-                Tipo di attività
-              </label>
-              <select
-                id="settore"
-                name="settore"
-                class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg outline-none transition-colors duration-300 focus:border-nw-accent appearance-none cursor-pointer"
-              >
-                <option value="" class="bg-nw-bg">Seleziona tipologia</option>
-                <option value="compro-oro" class="bg-nw-bg">Compro oro / Banco metalli</option>
-                <option value="gioielleria-usato" class="bg-nw-bg">Gioielleria con servizio acquisto usato</option>
-                <option value="opo" class="bg-nw-bg">Operatore professionale oro (OPO)</option>
-                <option value="catena" class="bg-nw-bg">Catena con più punti vendita</option>
-                <option value="franchising" class="bg-nw-bg">Franchising compro oro</option>
-                <option value="altro" class="bg-nw-bg">Altro</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Sito Web -->
-          <div class="form-group">
-            <label for="sito" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-              Sito web attuale
-            </label>
-            <input
-              type="url"
-              id="sito"
-              name="sito"
-              class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
-              placeholder="https://www.tuaattività.it"
-            >
-          </div>
-
-          <!-- Messaggio -->
-          <div class="form-group">
-            <label for="messaggio" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-              Come possiamo aiutarti?
-            </label>
-            <textarea
-              id="messaggio"
-              name="messaggio"
-              rows="4"
-              class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent resize-none"
-              placeholder="Raccontaci le tue sfide: reputazione online, recensioni negative, visibilità locale, concorrenza..."
-            ></textarea>
-          </div>
-
-          <!-- Privacy Consent -->
-          <div class="form-group">
-            <label class="flex items-start gap-3 cursor-pointer interactive">
-              <input
-                type="checkbox"
-                id="privacy"
-                name="privacy"
-                required
-                class="mt-1 w-5 h-5 accent-nw-accent cursor-pointer"
-              >
-              <span class="font-mulish text-sm text-nw-fg/80">
-                Ho letto e accetto la <a href="https://www.nwdesigns.it/privacy-policy/" target="_blank" class="text-nw-fg underline hover:text-nw-accent transition-colors">Privacy Policy</a>. Autorizzo il trattamento dei miei dati personali ai sensi del GDPR. *
-              </span>
-            </label>
-            <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Accetta la privacy policy per continuare</span>
-          </div>
 
           </fieldset>
 
@@ -798,9 +853,9 @@
           <div class="pt-4">
             <button
               type="submit"
-              class="interactive w-full md:w-auto border border-nw-fg rounded-[50px] bg-transparent text-nw-fg px-12 py-4 font-aktiv font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-fg hover:text-nw-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent disabled:opacity-50 disabled:cursor-not-allowed"
+              class="interactive w-full bg-nw-accent text-white rounded-[50px] px-8 py-4 font-aktiv font-bold text-lg uppercase tracking-wide transition-all duration-300 hover:bg-nw-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Richiedi analisi gratuita
+              Richiedi la tua Analisi Digitale Gratuita
             </button>
           </div>
         </form>

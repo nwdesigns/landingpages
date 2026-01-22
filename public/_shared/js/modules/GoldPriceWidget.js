@@ -64,7 +64,7 @@ const GoldPriceWidget = {
         month: '2-digit',
         year: 'numeric'
       });
-      this.timestampElement.textContent = `Aggiornato: ${formatted}`;
+      this.timestampElement.textContent = formatted;
     }
 
     // Add update animation
