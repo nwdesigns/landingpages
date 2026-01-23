@@ -287,6 +287,57 @@ Se usi Visual Studio Code:
 3. Cerca "Claude" o "Claude Code"
 4. Installa l'estensione ufficiale
 
+### Integrazione con Google Chrome (Consigliato)
+
+L'estensione Claude per Chrome permette a Claude Code di interagire direttamente con il browser per testare le landing page, fare screenshot e debug visuale.
+
+#### Installazione Estensione Chrome
+
+1. Apri **Google Chrome**
+2. Vai sul [Chrome Web Store - Claude](https://chromewebstore.google.com/detail/claude/hbpcpokfkfaicanmepfimpijbmdnhdjp)
+3. Clicca **Aggiungi a Chrome**
+4. Conferma cliccando **Aggiungi estensione**
+5. L'icona di Claude apparirà nella barra delle estensioni
+
+#### Configurazione Connessione con Claude Code
+
+Per permettere a Claude Code Desktop di controllare Chrome:
+
+1. **Abilita l'estensione**:
+   - Clicca sull'icona di Claude nella barra delle estensioni
+   - Accedi con lo stesso account Anthropic usato in Claude Code Desktop
+
+2. **Verifica la connessione**:
+   - Apri Claude Code Desktop
+   - L'estensione Chrome dovrebbe connettersi automaticamente
+   - Puoi verificare lo stato nella barra delle estensioni (icona verde = connesso)
+
+3. **Permessi richiesti**:
+   - L'estensione richiede accesso alle schede per poter navigare e fare screenshot
+   - Accetta i permessi quando richiesto
+
+#### Cosa può fare Claude con Chrome
+
+Una volta configurato, Claude Code può:
+
+| Funzionalità | Descrizione |
+|--------------|-------------|
+| **Navigazione** | Aprire URL e navigare tra le pagine |
+| **Screenshot** | Catturare screenshot delle pagine per verifica visuale |
+| **Ispezione DOM** | Analizzare la struttura HTML delle pagine |
+| **Console** | Leggere errori e log dalla console JavaScript |
+| **Network** | Monitorare richieste di rete |
+| **Test visuale** | Verificare che le landing page siano renderizzate correttamente |
+
+#### Uso pratico per questo progetto
+
+Dopo aver avviato il server di sviluppo (`bun dev`), puoi chiedere a Claude:
+
+- *"Apri http://localhost:3000/luxury/ e fammi uno screenshot"*
+- *"Verifica che il form di contatto funzioni"*
+- *"Controlla se ci sono errori nella console"*
+- *"Testa la versione mobile della pagina"*
+
 ---
 
 ## 9. Clone e Setup Progetto
@@ -599,6 +650,7 @@ Prima di iniziare a lavorare, verifica di aver completato tutti i passaggi:
 - [ ] Accesso al repository ottenuto
 - [ ] glab autenticato
 - [ ] Claude Code Desktop installato
+- [ ] Estensione Claude per Chrome installata e connessa
 - [ ] Progetto clonato
 - [ ] Dipendenze installate (`bun install`)
 - [ ] Server di sviluppo funzionante (`bun dev`)
