@@ -396,30 +396,28 @@ adv.nwdesigns.it/
 
 Questa sezione è necessaria solo se devi effettuare deploy in produzione.
 
-### Prerequisiti
+### Ottenere il Token Vercel
 
-1. **Account Vercel**: Registrati su [vercel.com/signup](https://vercel.com/signup)
-2. **Accesso al team**: Richiedi l'accesso al team nwdesigns su Vercel
+Il token Vercel per il deploy viene fornito direttamente dall'admin del progetto. **Non è necessario creare un account Vercel.**
 
-### Generazione Token
+**Per richiedere il token:**
 
-1. Vai su [vercel.com/account/tokens](https://vercel.com/account/tokens)
-2. Clicca **Create Token**
-3. **Name**: "adv.nwdesigns.it deploy"
-4. **Scope**: Seleziona il team appropriato
-5. **Expiration**: Scegli la durata (o "No expiration")
-6. Clicca **Create**
-7. **IMPORTANTE**: Copia subito il token, non sarà più visibile!
+1. Contatta **lushano.perera** su GitLab
+2. Specifica che hai bisogno del token Vercel per il deploy di adv.nwdesigns.it
+3. Riceverai il token via canale sicuro
 
 ### Configurazione locale
 
-Crea il file `.env.deployment` nella root del progetto:
+Una volta ricevuto il token, crea il file `.env.deployment` nella root del progetto:
 
 ```bash
-echo 'VERCEL_TOKEN=il_tuo_token_qui' > .env.deployment
+echo 'VERCEL_TOKEN=il_token_ricevuto' > .env.deployment
 ```
 
-**Nota**: Questo file è nel `.gitignore` e non verrà committato.
+**Importante**:
+- Questo file è nel `.gitignore` e non verrà committato
+- Non condividere mai il token con altri
+- Non salvare il token in file che potrebbero essere committati
 
 ### Test Deploy
 
@@ -604,7 +602,7 @@ Prima di iniziare a lavorare, verifica di aver completato tutti i passaggi:
 - [ ] Progetto clonato
 - [ ] Dipendenze installate (`bun install`)
 - [ ] Server di sviluppo funzionante (`bun dev`)
-- [ ] (Opzionale) Token Vercel configurato
+- [ ] (Opzionale) Token Vercel ricevuto e configurato
 
 **Buon lavoro!**
 
