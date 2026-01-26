@@ -53,8 +53,8 @@ header() {
 }
 
 # Variabili
-PROJECT_NAME="adv.nwdesigns.it"
-REPO_URL="git@gitlab.com:nwdesigns/adv.nwdesigns.it.git"
+PROJECT_NAME="landingpages"
+REPO_URL="git@github.com:nwdesigns/landingpages.git"
 MIN_MACOS_VERSION="12.0"
 
 # Mostra aiuto
@@ -67,7 +67,7 @@ Uso:
 
 Opzioni:
     --check     Solo verifica dipendenze senza installare
-    --deps      Installa solo dipendenze di sistema (Homebrew, git, bun, glab)
+    --deps      Installa solo dipendenze di sistema (Homebrew, git, bun, gh)
     --project   Solo setup progetto (clone, install, verifica)
     --help      Mostra questo messaggio
 
@@ -153,15 +153,15 @@ check_bun() {
     fi
 }
 
-# Verifica glab
-check_glab() {
-    if command_exists glab; then
+# Verifica gh
+check_gh() {
+    if command_exists gh; then
         local version
-        version=$(glab --version | head -n1 | awk '{print $3}')
-        success "glab installato (v$version)"
+        version=$(gh --version | head -n1 | awk '{print $3}')
+        success "gh installato (v$version)"
         return 0
     else
-        warning "glab non installato"
+        warning "gh non installato"
         return 1
     fi
 }
@@ -192,22 +192,22 @@ check_ssh_key() {
     fi
 }
 
-# Verifica autenticazione glab
-check_glab_auth() {
-    if glab auth status &> /dev/null; then
+# Verifica autenticazione gh
+check_gh_auth() {
+    if gh auth status &> /dev/null; then
         local user
-        user=$(glab auth status 2>&1 | grep "Logged in" | awk '{print $NF}')
-        success "glab autenticato ($user)"
+        user=$(gh auth status 2>&1 | grep "Logged in" | awk '{print $NF}')
+        success "gh autenticato ($user)"
         return 0
     else
-        warning "glab non autenticato"
+        warning "gh non autenticato"
         return 1
     fi
 }
 
 # Installa pacchetti con Homebrew
 install_packages() {
-    local packages=("git" "bun" "glab")
+    local packages=("git" "bun" "gh")
     local to_install=()
 
     for pkg in "${packages[@]}"; do
@@ -257,8 +257,8 @@ generate_ssh_key() {
 
     success "Chiave SSH generata"
     echo ""
-    echo -e "${YELLOW}${KEY} IMPORTANTE: Copia questa chiave su GitLab${NC}"
-    echo -e "${YELLOW}   Vai su: https://gitlab.com/-/user_settings/ssh_keys${NC}"
+    echo -e "${YELLOW}${KEY} IMPORTANTE: Copia questa chiave su GitHub${NC}"
+    echo -e "${YELLOW}   Vai su: https://github.com/settings/keys${NC}"
     echo ""
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     cat ~/.ssh/id_ed25519.pub
@@ -270,14 +270,14 @@ generate_ssh_key() {
     success "Chiave copiata negli appunti (⌘+V per incollare)"
 
     echo ""
-    read -p "Premi INVIO dopo aver aggiunto la chiave su GitLab..."
+    read -p "Premi INVIO dopo aver aggiunto la chiave su GitHub..."
 }
 
-# Autentica glab
-authenticate_glab() {
-    info "Autenticazione glab..."
-    glab auth login --hostname gitlab.com
-    success "glab autenticato"
+# Autentica gh
+authenticate_gh() {
+    info "Autenticazione gh..."
+    gh auth login --hostname github.com
+    success "gh autenticato"
 }
 
 # Clone del progetto
@@ -354,13 +354,13 @@ check_all() {
     check_homebrew || all_ok=false
     check_git || all_ok=false
     check_bun || all_ok=false
-    check_glab || all_ok=false
+    check_gh || all_ok=false
 
     echo ""
     info "Configurazione"
     check_git_config || all_ok=false
     check_ssh_key || all_ok=false
-    check_glab_auth || all_ok=false
+    check_gh_auth || all_ok=false
 
     echo ""
     if $all_ok; then
@@ -394,9 +394,9 @@ setup_deps() {
         generate_ssh_key
     fi
 
-    # Autenticazione glab
-    if ! check_glab_auth; then
-        authenticate_glab
+    # Autenticazione gh
+    if ! check_gh_auth; then
+        authenticate_gh
     fi
 
     success "Dipendenze di sistema configurate!"

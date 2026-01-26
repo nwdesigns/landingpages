@@ -2,8 +2,6 @@
 
 Benvenuto nel progetto **adv.nwdesigns.it**! Questa guida ti accompagnerà nell'installazione di tutti gli strumenti necessari per lavorare su questo progetto.
 
-**Tempo stimato**: ~30 minuti
-
 ---
 
 ## Indice
@@ -12,13 +10,13 @@ Benvenuto nel progetto **adv.nwdesigns.it**! Questa guida ti accompagnerà nell'
 2. [Installazione Homebrew](#2-installazione-homebrew)
 3. [Installazione Pacchetti](#3-installazione-pacchetti)
 4. [Configurazione Git](#4-configurazione-git)
-5. [Registrazione GitLab](#5-registrazione-gitlab)
+5. [Registrazione GitHub](#5-registrazione-github)
 6. [Richiesta Accesso Repository](#6-richiesta-accesso-repository)
-7. [Configurazione glab (GitLab CLI)](#7-configurazione-glab-gitlab-cli)
+7. [Configurazione gh (GitHub CLI)](#7-configurazione-gh-github-cli)
 8. [Installazione Claude Code Desktop](#8-installazione-claude-code-desktop)
 9. [Clone e Setup Progetto](#9-clone-e-setup-progetto)
 10. [Struttura Progetto](#10-struttura-progetto)
-11. [Configurazione Deploy](#11-configurazione-deploy-opzionale)
+11. [Deploy](#11-deploy)
 12. [Comandi Utili](#12-comandi-utili)
 13. [Troubleshooting](#13-troubleshooting)
 14. [Risorse Utili](#14-risorse-utili)
@@ -34,6 +32,7 @@ Prima di iniziare, assicurati di avere:
 - **Connessione internet** stabile
 
 Per verificare la versione di macOS:
+
 ```bash
 sw_vers -productVersion
 ```
@@ -59,12 +58,14 @@ Segui le istruzioni a schermo. Ti verrà chiesta la password di amministratore.
 Dopo l'installazione, Homebrew mostrerà dei comandi da eseguire. Dipendono dal tipo di Mac:
 
 **Per Mac con Apple Silicon (M1/M2/M3/M4):**
+
 ```bash
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 **Per Mac con Intel:**
+
 ```bash
 echo 'eval "$(/usr/local/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/usr/local/bin/brew shellenv)"
@@ -85,25 +86,25 @@ Dovresti vedere qualcosa come `Homebrew 4.x.x`.
 Installa tutti i pacchetti necessari con un singolo comando:
 
 ```bash
-brew install git bun glab
+brew install git bun gh
 ```
 
 Oppure puoi usare lo script di bootstrap (vedi sezione 9).
 
 ### Cosa viene installato
 
-| Pacchetto | Descrizione |
-|-----------|-------------|
-| **git** | Sistema di controllo versione |
-| **bun** | Runtime JavaScript ultrarapido (alternativa a Node.js) |
-| **glab** | CLI ufficiale per GitLab (gestione MR da terminale) |
+| Pacchetto | Descrizione                                            |
+| --------- | ------------------------------------------------------ |
+| **git**   | Sistema di controllo versione                          |
+| **bun**   | Runtime JavaScript ultrarapido (alternativa a Node.js) |
+| **gh**    | CLI ufficiale per GitHub (gestione PR da terminale)    |
 
 ### Verifica installazioni
 
 ```bash
 git --version    # Dovrebbe mostrare git version 2.x.x
 bun --version    # Dovrebbe mostrare 1.x.x
-glab --version   # Dovrebbe mostrare glab version x.x.x
+gh --version     # Dovrebbe mostrare gh version x.x.x
 ```
 
 ---
@@ -119,11 +120,11 @@ git config --global user.name "Il Tuo Nome"
 git config --global user.email "tua.email@esempio.com"
 ```
 
-**Nota**: Usa la stessa email che userai per registrarti su GitLab.
+**Nota**: Usa la stessa email che userai per registrarti su GitHub.
 
 ### Genera chiave SSH
 
-La chiave SSH ti permette di autenticarti con GitLab senza inserire la password ogni volta.
+La chiave SSH ti permette di autenticarti con GitHub senza inserire la password ogni volta.
 
 ```bash
 # Genera una nuova chiave SSH
@@ -151,11 +152,11 @@ La chiave pubblica è ora copiata negli appunti. La userai nel prossimo passaggi
 
 ---
 
-## 5. Registrazione GitLab
+## 5. Registrazione GitHub
 
-Se non hai già un account GitLab, creane uno:
+Se non hai già un account GitHub, creane uno:
 
-1. Vai su [https://gitlab.com/users/sign_up](https://gitlab.com/users/sign_up)
+1. Vai su [https://github.com/signup](https://github.com/signup)
 2. Compila il form di registrazione:
    - **Username**: scegli un nome utente professionale
    - **Email**: usa la stessa email configurata in Git
@@ -165,19 +166,19 @@ Se non hai già un account GitLab, creane uno:
 
 ### Aggiungi la chiave SSH
 
-1. Vai su [GitLab → Settings → SSH Keys](https://gitlab.com/-/user_settings/ssh_keys)
-2. Nel campo **Key**, incolla la chiave pubblica (copiata prima con `pbcopy`)
+1. Vai su [GitHub → Settings → SSH and GPG keys](https://github.com/settings/keys)
+2. Clicca **New SSH key**
 3. Nel campo **Title**, inserisci un nome descrittivo (es. "MacBook Pro - Lavoro")
-4. Lascia **Expiration date** vuoto (o imposta una data se preferisci)
-5. Clicca **Add key**
+4. Nel campo **Key**, incolla la chiave pubblica (copiata prima con `pbcopy`)
+5. Clicca **Add SSH key**
 
 ### Verifica connessione SSH
 
 ```bash
-ssh -T git@gitlab.com
+ssh -T git@github.com
 ```
 
-Dovresti vedere: `Welcome to GitLab, @tuousername!`
+Dovresti vedere: `Hi tuousername! You've successfully authenticated...`
 
 ---
 
@@ -185,77 +186,71 @@ Dovresti vedere: `Welcome to GitLab, @tuousername!`
 
 Il repository del progetto è privato. Per ottenere l'accesso:
 
-### Informazioni Repository
+### Repository
 
-- **URL**: `gitlab.com/nwdesigns/adv.nwdesigns.it`
+- **URL**: `github.com/nwdesigns/landingpages`
 - **Admin**: lushano.perera
 
 ### Come richiedere l'accesso
 
-1. Vai su [GitLab](https://gitlab.com) e accedi con il tuo account
-2. Cerca l'utente **lushano.perera**
-3. Invia un messaggio con le seguenti informazioni:
+1. Vai su [GitHub](https://github.com) e accedi con il tuo account
+2. Contatta **lushano.perera** con le seguenti informazioni:
 
 ```
 Ciao,
 
 sono [Il Tuo Nome] e avrei bisogno dell'accesso al repository
-adv.nwdesigns.it per [motivo: es. "collaborare allo sviluppo
-delle landing page"].
+landingpages per [motivo: es. "collaborare allo sviluppo delle landing page"].
 
-Il mio username GitLab è: [il_tuo_username]
+Il mio username GitHub è: [il_tuo_username]
 
 Grazie!
 ```
 
 ### Livelli di accesso
 
-| Livello | Permessi |
-|---------|----------|
-| **Reporter** | Solo lettura (clone, visualizzazione) |
-| **Developer** | Lettura + scrittura (push, MR) |
-| **Maintainer** | Tutto + gestione progetto |
+| Livello        | Permessi                              |
+| -------------- | ------------------------------------- |
+| **Read**       | Solo lettura (clone, visualizzazione) |
+| **Write**      | Lettura + scrittura (push, PR)        |
+| **Maintainer** | Tutto + gestione progetto             |
 
-Per contribuire attivamente, richiedi il livello **Developer**.
+Per contribuire attivamente, richiedi il livello **Write**.
 
 ---
 
-## 7. Configurazione glab (GitLab CLI)
+## 7. Configurazione gh (GitHub CLI)
 
-glab ti permette di gestire Merge Request, issue e pipeline direttamente da terminale.
+gh ti permette di gestire Pull Request, issue e Actions direttamente da terminale.
 
 ### Autenticazione
 
 ```bash
-glab auth login
+gh auth login
 ```
 
 Segui le istruzioni interattive:
 
-1. **What GitLab instance do you want to log into?** → Seleziona `gitlab.com`
-2. **How would you like to login?** → Scegli `Login with a web browser` (consigliato)
-3. Si aprirà il browser per completare l'autenticazione
-4. Torna al terminale quando richiesto
+1. **What account do you want to log into?** → Seleziona `GitHub.com`
+2. **What is your preferred protocol for Git operations?** → Scegli `SSH` (consigliato)
+3. **How would you like to authenticate?** → Scegli `Login with a web browser`
+4. Si aprirà il browser per completare l'autenticazione
+5. Copia il codice mostrato nel terminale e incollalo nel browser
+6. Autorizza l'accesso e torna al terminale
 
 ### Verifica
 
 ```bash
-glab auth status
+gh auth status
 ```
 
 Dovresti vedere:
-```
-gitlab.com
-  ✓ Logged in to gitlab.com as il_tuo_username
-  ✓ Git operations for gitlab.com configured to use https protocol.
-  ✓ Token found
-```
 
-### Configurazione protocollo (opzionale)
-
-Se preferisci usare SSH invece di HTTPS:
-```bash
-glab config set git_protocol ssh
+```
+github.com
+  ✓ Logged in to github.com as il_tuo_username
+  ✓ Git operations for github.com configured to use ssh protocol.
+  ✓ Token: gho_****
 ```
 
 ---
@@ -278,15 +273,6 @@ Claude Code è l'assistente AI che ti aiuterà nello sviluppo.
 3. Accedi con il tuo account Anthropic (o creane uno)
 4. Completa l'onboarding iniziale
 
-### Integrazione con VSCode (opzionale)
-
-Se usi Visual Studio Code:
-
-1. Apri VSCode
-2. Vai su Extensions (⌘+Shift+X)
-3. Cerca "Claude" o "Claude Code"
-4. Installa l'estensione ufficiale
-
 ### Integrazione con Google Chrome (Consigliato)
 
 L'estensione Claude per Chrome permette a Claude Code di interagire direttamente con il browser per testare le landing page, fare screenshot e debug visuale.
@@ -304,10 +290,12 @@ L'estensione Claude per Chrome permette a Claude Code di interagire direttamente
 Per permettere a Claude Code Desktop di controllare Chrome:
 
 1. **Abilita l'estensione**:
+
    - Clicca sull'icona di Claude nella barra delle estensioni
    - Accedi con lo stesso account Anthropic usato in Claude Code Desktop
 
 2. **Verifica la connessione**:
+
    - Apri Claude Code Desktop
    - L'estensione Chrome dovrebbe connettersi automaticamente
    - Puoi verificare lo stato nella barra delle estensioni (icona verde = connesso)
@@ -320,23 +308,58 @@ Per permettere a Claude Code Desktop di controllare Chrome:
 
 Una volta configurato, Claude Code può:
 
-| Funzionalità | Descrizione |
-|--------------|-------------|
-| **Navigazione** | Aprire URL e navigare tra le pagine |
-| **Screenshot** | Catturare screenshot delle pagine per verifica visuale |
-| **Ispezione DOM** | Analizzare la struttura HTML delle pagine |
-| **Console** | Leggere errori e log dalla console JavaScript |
-| **Network** | Monitorare richieste di rete |
-| **Test visuale** | Verificare che le landing page siano renderizzate correttamente |
+| Funzionalità      | Descrizione                                                     |
+| ----------------- | --------------------------------------------------------------- |
+| **Navigazione**   | Aprire URL e navigare tra le pagine                             |
+| **Screenshot**    | Catturare screenshot delle pagine per verifica visuale          |
+| **Ispezione DOM** | Analizzare la struttura HTML delle pagine                       |
+| **Console**       | Leggere errori e log dalla console JavaScript                   |
+| **Network**       | Monitorare richieste di rete                                    |
+| **Test visuale**  | Verificare che le landing page siano renderizzate correttamente |
 
 #### Uso pratico per questo progetto
 
 Dopo aver avviato il server di sviluppo (`bun dev`), puoi chiedere a Claude:
 
-- *"Apri http://localhost:3000/luxury/ e fammi uno screenshot"*
-- *"Verifica che il form di contatto funzioni"*
-- *"Controlla se ci sono errori nella console"*
-- *"Testa la versione mobile della pagina"*
+- _"Apri http://localhost:3000/luxury/ e fammi uno screenshot"_
+- _"Verifica che il form di contatto funzioni"_
+- _"Controlla se ci sono errori nella console"_
+- _"Testa la versione mobile della pagina"_
+
+### Integrazione con GitHub (Consigliato)
+
+L'integrazione GitHub permette a Claude Code di creare PR, push commit e accedere al contesto del repository direttamente.
+
+#### Installazione GitHub App per Claude Code
+
+1. Apri **Claude Code Desktop**
+2. Vai su **Settings → Integrations → GitHub**
+3. Clicca **Connect GitHub**
+4. Si aprirà il browser per autorizzare l'app
+5. Autorizza **Claude Code GitHub App**
+6. Seleziona i repository a cui dare accesso:
+   - Includi `nwdesigns/landingpages`
+7. Conferma e torna a Claude Code Desktop
+
+#### Cosa può fare Claude con GitHub
+
+Una volta configurato, Claude Code può:
+
+| Funzionalità       | Descrizione                                |
+| ------------------ | ------------------------------------------ |
+| **Creare PR**      | Aprire Pull Request direttamente da Claude |
+| **Push commit**    | Caricare modifiche su GitHub               |
+| **Leggere codice** | Accedere al contesto del repository        |
+| **Review PR**      | Commentare e revisionare Pull Request      |
+| **Issue**          | Creare e gestire issue                     |
+
+#### Uso pratico per questo progetto
+
+Con l'integrazione GitHub, puoi chiedere a Claude:
+
+- _"Crea una PR con le modifiche al form di contatto"_
+- _"Push questi cambiamenti su GitHub"_
+- _"Mostrami le PR aperte su GitHub"_
 
 ---
 
@@ -348,13 +371,13 @@ Usa lo script di bootstrap che installa tutto automaticamente:
 
 ```bash
 # Scarica ed esegui lo script
-curl -fsSL https://raw.githubusercontent.com/nwdesigns/adv.nwdesigns.it/main/scripts/bootstrap.sh | bash
+curl -fsSL https://raw.githubusercontent.com/nwdesigns/landingpages/main/scripts/bootstrap.sh | bash
 ```
 
 Oppure, se hai già clonato il progetto:
 
 ```bash
-cd adv.nwdesigns.it
+cd landingpages
 ./scripts/bootstrap.sh
 ```
 
@@ -364,10 +387,10 @@ Se preferisci procedere manualmente:
 
 ```bash
 # Clona il repository
-git clone git@gitlab.com:nwdesigns/adv.nwdesigns.it.git
+git clone git@github.com:nwdesigns/landingpages.git
 
 # Entra nella cartella del progetto
-cd adv.nwdesigns.it
+cd landingpages
 
 # Installa le dipendenze
 bun install
@@ -387,7 +410,7 @@ bun dev
 ## 10. Struttura Progetto
 
 ```
-adv.nwdesigns.it/
+landingpages/
 ├── app/                      # Next.js App Router
 │   ├── layout.tsx            # Layout principale
 │   └── page.tsx              # Redirect a /luxury/
@@ -419,6 +442,10 @@ adv.nwdesigns.it/
 ├── scripts/                  # Script di utilità
 │   └── bootstrap.sh          # Setup automatico
 │
+├── .github/                  # GitHub configuration
+│   └── workflows/            # GitHub Actions
+│       └── sync-gitlab.yml   # Sync to GitLab
+│
 ├── package.json              # Dipendenze progetto
 ├── bun.lock                  # Lockfile Bun
 ├── next.config.ts            # Configurazione Next.js
@@ -431,46 +458,46 @@ adv.nwdesigns.it/
 
 ### Verticali (Landing Page)
 
-| Verticale | URL Locale | URL Produzione |
-|-----------|------------|----------------|
-| Luxury | http://localhost:3000/luxury/ | https://adv.nwdesigns.it/luxury/ |
-| Automotive | http://localhost:3000/automotive/ | https://adv.nwdesigns.it/automotive/ |
-| Gold Traders | http://localhost:3000/gold-traders/ | https://adv.nwdesigns.it/gold-traders/ |
-| Watch Dealers | http://localhost:3000/watch-dealers/ | https://adv.nwdesigns.it/watch-dealers/ |
-| Private Schools | http://localhost:3000/private-schools/ | https://adv.nwdesigns.it/private-schools/ |
-| Senior Living | http://localhost:3000/senior-living/ | https://adv.nwdesigns.it/senior-living/ |
+| Verticale        | URL Locale                              | URL Produzione                             |
+| ---------------- | --------------------------------------- | ------------------------------------------ |
+| Luxury           | http://localhost:3000/luxury/           | https://adv.nwdesigns.it/luxury/           |
+| Automotive       | http://localhost:3000/automotive/       | https://adv.nwdesigns.it/automotive/       |
+| Gold Traders     | http://localhost:3000/gold-traders/     | https://adv.nwdesigns.it/gold-traders/     |
+| Watch Dealers    | http://localhost:3000/watch-dealers/    | https://adv.nwdesigns.it/watch-dealers/    |
+| Private Schools  | http://localhost:3000/private-schools/  | https://adv.nwdesigns.it/private-schools/  |
+| Senior Living    | http://localhost:3000/senior-living/    | https://adv.nwdesigns.it/senior-living/    |
 | Family Companies | http://localhost:3000/family-companies/ | https://adv.nwdesigns.it/family-companies/ |
 
 ---
 
-## 11. Configurazione Deploy (Opzionale)
+## 11. Deploy
 
-Questa sezione è necessaria solo se devi effettuare deploy in produzione.
+### Tramite Claude Code Desktop (Consigliato)
 
-### Ottenere il Token Vercel
+Il modo più semplice per fare deploy è chiedere a Claude Code:
 
-Il token Vercel per il deploy viene fornito direttamente dall'admin del progetto. **Non è necessario creare un account Vercel.**
+- _"Deploy to production"_ → esegue `./deploy.sh`
+- _"Deploy preview"_ → esegue `./deploy.sh --preview`
 
-**Per richiedere il token:**
+### Setup Token Vercel
 
-1. Contatta **lushano.perera** su GitLab
-2. Specifica che hai bisogno del token Vercel per il deploy di adv.nwdesigns.it
-3. Riceverai il token via canale sicuro
+Prima di poter fare deploy, devi configurare il token Vercel:
 
-### Configurazione locale
-
-Una volta ricevuto il token, crea il file `.env.deployment` nella root del progetto:
+1. Contatta **lushano.perera** per ricevere il token Vercel
+2. Crea il file `.env.deployment` nella root del progetto:
 
 ```bash
 echo 'VERCEL_TOKEN=il_token_ricevuto' > .env.deployment
 ```
 
 **Importante**:
+
 - Questo file è nel `.gitignore` e non verrà committato
 - Non condividere mai il token con altri
-- Non salvare il token in file che potrebbero essere committati
 
-### Test Deploy
+### Deploy Manuale
+
+Se preferisci fare deploy manualmente:
 
 ```bash
 # Deploy di preview (per testare)
@@ -486,40 +513,40 @@ echo 'VERCEL_TOKEN=il_token_ricevuto' > .env.deployment
 
 ### Sviluppo
 
-| Comando | Descrizione |
-|---------|-------------|
-| `bun dev` | Avvia server di sviluppo (http://localhost:3000) |
-| `bun build` | Build di produzione |
-| `bun start` | Avvia server di produzione locale |
+| Comando     | Descrizione                                      |
+| ----------- | ------------------------------------------------ |
+| `bun dev`   | Avvia server di sviluppo (http://localhost:3000) |
+| `bun build` | Build di produzione                              |
+| `bun start` | Avvia server di produzione locale                |
 
 ### Git
 
-| Comando | Descrizione |
-|---------|-------------|
-| `git status` | Mostra stato modifiche |
-| `git pull` | Scarica ultime modifiche |
-| `git add .` | Aggiungi tutte le modifiche |
-| `git commit -m "messaggio"` | Crea commit |
-| `git push` | Carica modifiche su GitLab |
+| Comando                     | Descrizione                 |
+| --------------------------- | --------------------------- |
+| `git status`                | Mostra stato modifiche      |
+| `git pull`                  | Scarica ultime modifiche    |
+| `git add .`                 | Aggiungi tutte le modifiche |
+| `git commit -m "messaggio"` | Crea commit                 |
+| `git push`                  | Carica modifiche su GitHub  |
 
-### GitLab (glab)
+### GitHub (gh)
 
-| Comando | Descrizione |
-|---------|-------------|
-| `glab mr list` | Lista Merge Request aperte |
-| `glab mr create` | Crea nuova MR |
-| `glab mr view 123` | Visualizza MR #123 |
-| `glab mr checkout 123` | Checkout branch della MR #123 |
-| `glab mr merge 123` | Merge MR #123 |
-| `glab issue list` | Lista issue |
-| `glab ci status` | Stato pipeline CI/CD |
+| Comando              | Descrizione                   |
+| -------------------- | ----------------------------- |
+| `gh pr list`         | Lista Pull Request aperte     |
+| `gh pr create`       | Crea nuova PR                 |
+| `gh pr view 123`     | Visualizza PR #123            |
+| `gh pr checkout 123` | Checkout branch della PR #123 |
+| `gh pr merge 123`    | Merge PR #123                 |
+| `gh issue list`      | Lista issue                   |
+| `gh run list`        | Stato workflow GitHub Actions |
 
 ### Deploy
 
-| Comando | Descrizione |
-|---------|-------------|
-| `./deploy.sh` | Deploy in produzione |
-| `./deploy.sh --preview` | Deploy di preview |
+| Comando                 | Descrizione          |
+| ----------------------- | -------------------- |
+| `./deploy.sh`           | Deploy in produzione |
+| `./deploy.sh --preview` | Deploy di preview    |
 
 ---
 
@@ -536,18 +563,19 @@ Il terminale non trova Bun. Soluzioni:
    source ~/.zshrc
    ```
 
-### "command not found: glab"
+### "command not found: gh"
 
-glab non è installato. Soluzione:
+gh non è installato. Soluzione:
+
 ```bash
-brew install glab
+brew install gh
 ```
 
 ### "Permission denied (publickey)"
 
-GitLab non riconosce la tua chiave SSH. Verifica:
+GitHub non riconosce la tua chiave SSH. Verifica:
 
-1. La chiave è stata aggiunta su GitLab?
+1. La chiave è stata aggiunta su GitHub?
    ```bash
    # Mostra la chiave pubblica
    cat ~/.ssh/id_ed25519.pub
@@ -559,7 +587,7 @@ GitLab non riconosce la tua chiave SSH. Verifica:
    ```
 3. Testa la connessione:
    ```bash
-   ssh -T git@gitlab.com
+   ssh -T git@github.com
    ```
 
 ### "Error: EADDRINUSE: address already in use :::3000"
@@ -577,18 +605,18 @@ La porta 3000 è già occupata. Soluzioni:
    kill -9 <PID>
    ```
 
-### "glab auth: error authenticating"
+### "gh auth: error authenticating"
 
-Problemi con l'autenticazione glab:
+Problemi con l'autenticazione gh:
 
 1. **Riprova il login**:
    ```bash
-   glab auth login --hostname gitlab.com
+   gh auth login --hostname github.com
    ```
 2. **Usa un Personal Access Token**:
-   - Vai su GitLab → Settings → Access Tokens
-   - Crea un token con scope `api`, `read_api`, `read_repository`, `write_repository`
-   - Usa il token durante `glab auth login`
+   - Vai su GitHub → Settings → Developer settings → Personal access tokens
+   - Crea un token con scope `repo`, `read:org`
+   - Usa il token durante `gh auth login`
 
 ### Le modifiche non si vedono nel browser
 
@@ -608,20 +636,20 @@ Problemi con l'autenticazione glab:
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Bun Documentation](https://bun.sh/docs)
-- [GitLab glab CLI](https://gitlab.com/gitlab-org/cli/-/blob/main/README.md)
+- [GitHub gh CLI](https://cli.github.com/manual/)
 - [Claude Code Documentation](https://docs.anthropic.com/claude-code)
 
 ### Design System
 
 Il progetto usa il design system di nwdesigns:
 
-| Colore | Variabile | Valore |
-|--------|-----------|--------|
-| Background | `--nw-bg` | `#F0F0F0` |
-| Foreground | `--nw-fg` | `#2B2B2B` |
-| Accent | `--nw-accent` | `#D61313` |
-| Muted | `--nw-muted` | `#828282` |
-| Dark | `--nw-dark` | `#1E1E1E` |
+| Colore     | Variabile     | Valore    |
+| ---------- | ------------- | --------- |
+| Background | `--nw-bg`     | `#F0F0F0` |
+| Foreground | `--nw-fg`     | `#2B2B2B` |
+| Accent     | `--nw-accent` | `#D61313` |
+| Muted      | `--nw-muted`  | `#828282` |
+| Dark       | `--nw-dark`   | `#1E1E1E` |
 
 ### Font
 
@@ -633,7 +661,7 @@ Il progetto usa il design system di nwdesigns:
 
 Per problemi o domande:
 
-- **Repository Admin**: lushano.perera (GitLab)
+- **Repository Admin**: lushano.perera (GitHub)
 - **Sito principale**: [nwdesigns.it](https://www.nwdesigns.it)
 
 ---
@@ -643,12 +671,12 @@ Per problemi o domande:
 Prima di iniziare a lavorare, verifica di aver completato tutti i passaggi:
 
 - [ ] Homebrew installato
-- [ ] Git, Bun e glab installati
+- [ ] Git, Bun e gh installati
 - [ ] Git configurato (nome, email)
-- [ ] Chiave SSH generata e aggiunta a GitLab
-- [ ] Account GitLab creato
+- [ ] Chiave SSH generata e aggiunta a GitHub
+- [ ] Account GitHub creato
 - [ ] Accesso al repository ottenuto
-- [ ] glab autenticato
+- [ ] gh autenticato
 - [ ] Claude Code Desktop installato
 - [ ] Estensione Claude per Chrome installata e connessa
 - [ ] Progetto clonato
@@ -660,4 +688,4 @@ Prima di iniziare a lavorare, verifica di aver completato tutti i passaggi:
 
 ---
 
-*Ultimo aggiornamento: Gennaio 2026*
+_Ultimo aggiornamento: Gennaio 2026_
