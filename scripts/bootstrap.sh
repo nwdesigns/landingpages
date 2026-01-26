@@ -53,8 +53,9 @@ header() {
 }
 
 # Variabili
-PROJECT_NAME="landingpages"
-REPO_URL="git@github.com:nwdesigns/landingpages.git"
+PROJECT_NAME="adv.nwdesigns.it"
+REPO_URL="git@gitlab.com:nwdesigns/adv.nwdesigns.it.git"
+GITHUB_URL="git@github.com:nwdesigns/landingpages.git"
 MIN_MACOS_VERSION="12.0"
 
 # Mostra aiuto
@@ -67,7 +68,7 @@ Uso:
 
 Opzioni:
     --check     Solo verifica dipendenze senza installare
-    --deps      Installa solo dipendenze di sistema (Homebrew, git, bun, gh)
+    --deps      Installa solo dipendenze di sistema (Homebrew, git, bun, glab, gh)
     --project   Solo setup progetto (clone, install, verifica)
     --help      Mostra questo messaggio
 
@@ -153,6 +154,19 @@ check_bun() {
     fi
 }
 
+# Verifica glab
+check_glab() {
+    if command_exists glab; then
+        local version
+        version=$(glab --version | head -n1 | awk '{print $3}')
+        success "glab installato (v$version)"
+        return 0
+    else
+        warning "glab non installato"
+        return 1
+    fi
+}
+
 # Verifica gh
 check_gh() {
     if command_exists gh; then
@@ -192,6 +206,19 @@ check_ssh_key() {
     fi
 }
 
+# Verifica autenticazione glab
+check_glab_auth() {
+    if glab auth status &> /dev/null; then
+        local user
+        user=$(glab auth status 2>&1 | grep "Logged in" | awk '{print $NF}')
+        success "glab autenticato ($user)"
+        return 0
+    else
+        warning "glab non autenticato"
+        return 1
+    fi
+}
+
 # Verifica autenticazione gh
 check_gh_auth() {
     if gh auth status &> /dev/null; then
@@ -207,7 +234,7 @@ check_gh_auth() {
 
 # Installa pacchetti con Homebrew
 install_packages() {
-    local packages=("git" "bun" "gh")
+    local packages=("git" "bun" "glab" "gh")
     local to_install=()
 
     for pkg in "${packages[@]}"; do
@@ -257,8 +284,9 @@ generate_ssh_key() {
 
     success "Chiave SSH generata"
     echo ""
-    echo -e "${YELLOW}${KEY} IMPORTANTE: Copia questa chiave su GitHub${NC}"
-    echo -e "${YELLOW}   Vai su: https://github.com/settings/keys${NC}"
+    echo -e "${YELLOW}${KEY} IMPORTANTE: Aggiungi questa chiave a GitLab e GitHub${NC}"
+    echo -e "${YELLOW}   GitLab: https://gitlab.com/-/user_settings/ssh_keys${NC}"
+    echo -e "${YELLOW}   GitHub: https://github.com/settings/keys${NC}"
     echo ""
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     cat ~/.ssh/id_ed25519.pub
@@ -270,7 +298,20 @@ generate_ssh_key() {
     success "Chiave copiata negli appunti (⌘+V per incollare)"
 
     echo ""
-    read -p "Premi INVIO dopo aver aggiunto la chiave su GitHub..."
+    read -p "Premi INVIO dopo aver aggiunto la chiave su GitLab e GitHub..."
+}
+
+# Autentica glab
+authenticate_glab() {
+    info "Autenticazione glab..."
+    echo ""
+    echo -e "${YELLOW}Per autenticarti con GitLab:${NC}"
+    echo "1. Vai su https://gitlab.com/-/user_settings/personal_access_tokens"
+    echo "2. Crea un token con scope: api, read_user, read_repository, write_repository"
+    echo "3. Copia il token e incollalo quando richiesto"
+    echo ""
+    glab auth login --hostname gitlab.com
+    success "glab autenticato"
 }
 
 # Autentica gh
@@ -294,9 +335,16 @@ clone_project() {
         fi
     fi
 
-    info "Clone del repository..."
+    info "Clone del repository da GitLab..."
     git clone "$REPO_URL" "$target_dir"
-    success "Repository clonato in $target_dir"
+
+    # Aggiungi GitHub come remote secondario
+    cd "$target_dir"
+    info "Aggiunta GitHub come remote secondario..."
+    git remote add github "$GITHUB_URL" 2>/dev/null || true
+    cd - > /dev/null
+
+    success "Repository clonato in $target_dir (con remote GitHub)"
 }
 
 # Installa dipendenze progetto
@@ -354,12 +402,14 @@ check_all() {
     check_homebrew || all_ok=false
     check_git || all_ok=false
     check_bun || all_ok=false
+    check_glab || all_ok=false
     check_gh || all_ok=false
 
     echo ""
     info "Configurazione"
     check_git_config || all_ok=false
     check_ssh_key || all_ok=false
+    check_glab_auth || all_ok=false
     check_gh_auth || all_ok=false
 
     echo ""
@@ -392,6 +442,11 @@ setup_deps() {
     # Chiave SSH
     if ! check_ssh_key; then
         generate_ssh_key
+    fi
+
+    # Autenticazione glab
+    if ! check_glab_auth; then
+        authenticate_glab
     fi
 
     # Autenticazione gh
