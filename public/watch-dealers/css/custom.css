@@ -5,12 +5,12 @@
 
 /* ---- CSS Variables ---- */
 :root {
-  --nw-background: #F0F0F0;
-  --nw-foreground: #2B2B2B;
-  --nw-accent: #D61313;
+  --nw-background: #f0f0f0;
+  --nw-foreground: #2b2b2b;
+  --nw-accent: #d61313;
   --nw-muted: #828282;
-  --nw-white: #FFFFFF;
-  --nw-dark: #1E1E1E;
+  --nw-white: #ffffff;
+  --nw-dark: #1e1e1e;
 }
 
 /* ---- Font Notes ---- */
@@ -35,10 +35,8 @@
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: transform 0.15s ease-out,
-              border-color 0.3s ease,
-              width 0.3s ease,
-              height 0.3s ease;
+  transition: transform 0.15s ease-out, border-color 0.3s ease, width 0.3s ease,
+    height 0.3s ease;
   will-change: transform, border-color;
 }
 
@@ -51,10 +49,8 @@
   pointer-events: none;
   z-index: 9998;
   transform: translate(-50%, -50%);
-  transition: transform 0.08s ease-out,
-              background-color 0.3s ease,
-              width 0.3s ease,
-              height 0.3s ease;
+  transition: transform 0.08s ease-out, background-color 0.3s ease,
+    width 0.3s ease, height 0.3s ease;
   will-change: transform, background-color;
 }
 
@@ -90,8 +86,8 @@
 
 /* ---- Typographic Watermark ---- */
 .watermark-text {
-  font-family: 'aktiv-grotesk-extended', 'Inter', system-ui, sans-serif;
-  font-size: clamp(120px, 25vw, 350px);
+  font-family: "aktiv-grotesk-extended", "Inter", system-ui, sans-serif;
+  font-size: clamp(150px, 30vw, 418px);
   font-weight: 400;
   color: rgba(43, 43, 43, 0.06);
   text-transform: uppercase;
@@ -186,7 +182,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 5px;
   top: 2px;
@@ -264,7 +260,7 @@ html {
 }
 
 .form-loading button[type="submit"]::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -309,7 +305,7 @@ h2.font-aktiv {
 }
 
 .stat-number {
-  font-family: 'aktiv-grotesk-extended', 'Inter', system-ui, sans-serif;
+  font-family: "aktiv-grotesk-extended", "Inter", system-ui, sans-serif;
   font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 400;
   line-height: 1;
@@ -317,7 +313,7 @@ h2.font-aktiv {
 }
 
 .stat-label {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 3px;

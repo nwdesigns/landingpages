@@ -1,912 +1,1467 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marketing Digitale per Compro Oro | nwdesigns</title>
-  <meta name="description" content="Strategie digitali per compro oro e banchi metalli. Costruisci la tua reputazione, domina le ricerche locali, distinguiti dalla concorrenza.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketing Digitale per Compro Oro | nwdesigns</title>
+    <meta
+      name="description"
+      content="Strategie digitali per compro oro e banchi metalli. Costruisci la tua reputazione, domina le ricerche locali, distinguiti dalla concorrenza."
+    />
 
-  <!-- SEO & Social -->
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-  <meta name="theme-color" content="#D61313">
-  <link rel="canonical" href="https://adv.nwdesigns.it/gold-traders/">
+    <!-- SEO & Social -->
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large"
+    />
+    <meta name="theme-color" content="#D61313" />
+    <link rel="canonical" href="https://adv.nwdesigns.it/gold-traders/" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Marketing per Compro Oro | nwdesigns">
-  <meta property="og:description" content="Comunicazione professionale per operatori oro e banco metalli. Compliance OAM, fiducia e reputazione online.">
-  <meta property="og:image" content="https://adv.nwdesigns.it/_shared/img/og-gold.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://adv.nwdesigns.it/gold-traders/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="it_IT">
-  <meta property="og:site_name" content="nwdesigns">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Marketing per Compro Oro | nwdesigns" />
+    <meta
+      property="og:description"
+      content="Comunicazione professionale per operatori oro e banco metalli. Compliance OAM, fiducia e reputazione online."
+    />
+    <meta
+      property="og:image"
+      content="https://adv.nwdesigns.it/_shared/img/og-gold.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://adv.nwdesigns.it/gold-traders/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:site_name" content="nwdesigns" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Marketing per Compro Oro | nwdesigns">
-  <meta name="twitter:description" content="Comunicazione professionale per operatori oro e banco metalli.">
-  <meta name="twitter:image" content="https://adv.nwdesigns.it/_shared/img/og-gold.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Marketing per Compro Oro | nwdesigns" />
+    <meta
+      name="twitter:description"
+      content="Comunicazione professionale per operatori oro e banco metalli."
+    />
+    <meta
+      name="twitter:image"
+      content="https://adv.nwdesigns.it/_shared/img/og-gold.jpg"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Adobe Fonts (Aktiv Grotesk Extended) -->
-  <link rel="stylesheet" href="https://use.typekit.net/nya6otj.css">
-  <!-- Google Fonts (Mulish, Space Mono) -->
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Adobe Fonts (Aktiv Grotesk Extended) -->
+    <link rel="stylesheet" href="https://use.typekit.net/nya6otj.css" />
+    <!-- Google Fonts (Mulish, Space Mono) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'nw-bg': '#F0F0F0',
-            'nw-bg-alt': '#FAFAFA',
-            'nw-fg': '#2B2B2B',
-            'nw-fg-secondary': '#4A4A4A',
-            'nw-accent': '#D61313',
-            'nw-muted': '#828282',
-            'nw-dark': '#1E1E1E',
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "nw-bg": "#F0F0F0",
+              "nw-bg-alt": "#EDEDED",
+              "nw-fg": "#2B2B2B",
+              "nw-fg-secondary": "#545454",
+              "nw-accent": "#D61313",
+              "nw-muted": "#828282",
+              "nw-dark": "#1E1E1E",
+              "nw-white": "#FFFFFF",
+              "nw-light": "#F0F0F0",
+            },
+            fontFamily: {
+              aktiv: [
+                "aktiv-grotesk-extended",
+                "Inter",
+                "SF Pro Display",
+                "system-ui",
+                "sans-serif",
+              ],
+              mulish: ["Mulish", "sans-serif"],
+              mono: ["Space Mono", "monospace"],
+            },
+            letterSpacing: {
+              label: "2.8px",
+              footer: "1.4px",
+              "wide-3": "3px",
+            },
           },
-          fontFamily: {
-            'aktiv': ['aktiv-grotesk-extended', 'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'],
-            'mulish': ['Mulish', 'sans-serif'],
-            'mono': ['Space Mono', 'monospace'],
+        },
+      };
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/_shared/css/main.css" />
+    <link rel="stylesheet" href="/gold-traders/css/custom.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Come comunicate la conformità OAM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Creiamo sezioni dedicate sul sito che evidenziano l'iscrizione all'elenco OAM, le certificazioni di legge e le procedure di trasparenza. La conformità diventa un punto di forza nella comunicazione, non un obbligo nascosto."
+            }
           },
-          letterSpacing: {
-            'label': '3px',
-            'footer': '1.4px',
-            'wide-3': '0.3em',
+          {
+            "@type": "Question",
+            "name": "Come gestite le recensioni negative?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Implementiamo strategie di reputation management: monitoraggio attivo, risposte professionali, e programmi per incentivare recensioni positive dai clienti soddisfatti. L'obiettivo è superare le 500 recensioni con rating medio 4.5+."
+            }
           },
-        }
+          {
+            "@type": "Question",
+            "name": "Come aumentate la fiducia online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trasparenza è la parola chiave: quotazioni aggiornate in tempo reale, video del processo di valutazione, testimonianze verificate, e certificazioni ben visibili. Ogni elemento del sito comunica professionalità e affidabilità."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Lavorate con catene multi-sede?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì, gestiamo strategie per operatori con più punti vendita: local SEO per ogni sede, campagne geolocalizzate, e dashboard centralizzate per monitorare le performance di ogni location."
+            }
+          }
+        ]
       }
-    }
-  </script>
+    </script>
+  </head>
+  <body class="bg-nw-bg text-nw-fg antialiased">
+    <!-- Custom Cursor (Desktop Only) -->
+    <div id="cursor-ring" class="cursor-ring hidden md:block"></div>
+    <div id="cursor-dot" class="cursor-dot hidden md:block"></div>
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="/_shared/css/main.css">
-  <link rel="stylesheet" href="/gold-traders/css/custom.css">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Come comunicate la conformità OAM?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Creiamo sezioni dedicate sul sito che evidenziano l'iscrizione all'elenco OAM, le certificazioni di legge e le procedure di trasparenza. La conformità diventa un punto di forza nella comunicazione, non un obbligo nascosto."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Come gestite le recensioni negative?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Implementiamo strategie di reputation management: monitoraggio attivo, risposte professionali, e programmi per incentivare recensioni positive dai clienti soddisfatti. L'obiettivo è superare le 500 recensioni con rating medio 4.5+."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Come aumentate la fiducia online?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Trasparenza è la parola chiave: quotazioni aggiornate in tempo reale, video del processo di valutazione, testimonianze verificate, e certificazioni ben visibili. Ogni elemento del sito comunica professionalità e affidabilità."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Lavorate con catene multi-sede?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sì, gestiamo strategie per operatori con più punti vendita: local SEO per ogni sede, campagne geolocalizzate, e dashboard centralizzate per monitorare le performance di ogni location."
-        }
-      }
-    ]
-  }
-  </script>
-</head>
-<body class="bg-nw-bg text-nw-fg antialiased">
-
-  <!-- Custom Cursor (Desktop Only) -->
-  <div id="cursor-ring" class="cursor-ring hidden md:block"></div>
-  <div id="cursor-dot" class="cursor-dot hidden md:block"></div>
-
-  <!-- Skip to Content (Accessibility) -->
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-nw-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-[50px]">
-    Vai al contenuto principale
-  </a>
-
-  <!-- Navbar -->
-  <nav class="fixed top-5 md:top-[34px] left-1/2 -translate-x-1/2 w-[calc(100%-32px)] md:w-[calc(100%-80px)] max-w-[1299px] flex items-center justify-center md:justify-between px-6 md:px-20 py-4 md:py-5 bg-[rgba(240,240,240,0.8)] backdrop-blur-[2px] rounded-[50px] md:rounded-[80px] shadow-[0px_2px_4px_rgba(0,0,0,0.1)] z-50">
-    <!-- Logo -->
-    <a href="https://www.nwdesigns.it" class="flex-shrink-0 interactive" aria-label="nwdesigns Home">
-      <svg xmlns="http://www.w3.org/2000/svg" width="186" height="20" viewBox="0 0 186 20" fill="none" aria-hidden="true">
-        <path d="M54.0675 3.18301H56.6897L59.2952 11.8304L61.9725 5.27105C62.0606 5.06171 62.2699 4.92215 62.5013 4.92215H64.4514L67.2718 11.8411L69.8939 3.17765H72.4554L68.5663 14.4444H65.9773L63.2229 7.76165L60.4686 14.4444H57.9401L54.0675 3.17765V3.18301Z" fill="#2B2B2B"></path>
-        <path d="M78.0743 3.18301H83.2084C85.4008 3.18301 87.0699 3.66611 88.2212 4.62692C89.3725 5.58774 89.9454 6.9887 89.9454 8.81372C89.9454 10.6387 89.334 12.0021 88.1166 12.979C86.8992 13.956 85.1584 14.4444 82.8999 14.4444H78.0743V3.18301ZM82.966 12.5228C85.9792 12.5228 87.4831 11.2829 87.4831 8.79761C87.4831 6.31238 86.0618 5.10465 83.2249 5.10465H80.4375V12.5174H82.966V12.5228Z" fill="#2B2B2B"></path>
-        <path d="M96.1647 3.18301H105.755V5.0134H98.5335V7.75628H103.965V9.58667H98.5335V12.6194H106.113L105.821 14.4444H96.1647V3.18301Z" fill="#2B2B2B"></path>
-        <path d="M111.38 11.0091H113.792C113.925 11.664 114.272 12.1417 114.845 12.4584C115.418 12.7751 116.227 12.9307 117.274 12.9307C118.265 12.9307 119.026 12.7965 119.543 12.5174C120.061 12.2437 120.32 11.8572 120.32 11.3526C120.32 10.934 120.149 10.6012 119.808 10.365C119.466 10.1288 118.916 9.95704 118.15 9.84968L116.128 9.54909C114.553 9.31828 113.418 8.93718 112.724 8.40578C112.035 7.87437 111.688 7.1229 111.688 6.15671C111.688 5.12612 112.173 4.32633 113.137 3.75199C114.101 3.17765 115.434 2.89316 117.131 2.89316C118.684 2.89316 119.891 3.14544 120.744 3.64464C121.598 4.14383 122.16 4.93825 122.43 6.01715L120.144 6.30164C119.907 5.72193 119.555 5.30862 119.081 5.06171C118.613 4.81479 117.946 4.69133 117.081 4.69133C116.117 4.69133 115.379 4.81479 114.856 5.05634C114.332 5.29788 114.068 5.64678 114.068 6.09767C114.068 6.51635 114.233 6.83841 114.564 7.05312C114.894 7.26782 115.473 7.43959 116.304 7.56842L118.651 7.91732C120.067 8.11592 121.097 8.49166 121.747 9.03916C122.397 9.58667 122.716 10.3435 122.716 11.3097C122.716 12.4047 122.248 13.2474 121.306 13.8432C120.37 14.4391 119.02 14.7343 117.274 14.7343C113.616 14.7343 111.65 13.4943 111.38 11.0091Z" fill="#2B2B2B"></path>
-        <path d="M131.249 3.18301H128.853V14.4498H131.249V3.18301Z" fill="#2B2B2B"></path>
-        <path d="M149.863 13.183C149.153 13.6768 148.31 14.0579 147.335 14.3263C146.365 14.5947 145.346 14.7289 144.288 14.7289C142.873 14.7289 141.655 14.4927 140.636 14.0257C139.617 13.5588 138.835 12.8878 138.289 12.0129C137.744 11.1433 137.469 10.0912 137.469 8.85666C137.469 7.62209 137.744 6.53245 138.295 5.64678C138.846 4.76112 139.617 4.07942 140.603 3.60169C141.589 3.12934 142.735 2.89316 144.029 2.89316C145.572 2.89316 146.811 3.20449 147.737 3.82177C148.662 4.44442 149.29 5.27105 149.615 6.31238L147.219 6.61297C146.982 5.99031 146.597 5.53406 146.062 5.23884C145.528 4.94362 144.828 4.79869 143.963 4.79869C142.658 4.79869 141.655 5.15832 140.967 5.87223C140.278 6.58613 139.931 7.57378 139.931 8.82445C139.931 10.0751 140.306 11.1057 141.055 11.7928C141.804 12.4745 142.884 12.818 144.288 12.818C145.605 12.818 146.723 12.6087 147.643 12.1846V10.1342H144.321V8.3521H149.863V13.183Z" fill="#2B2B2B"></path>
-        <path d="M156.182 3.18301H158.385L165.271 11.2614V3.18301H167.568V14.4444H165.365L158.479 6.35532V14.4444H156.182V3.18301Z" fill="#2B2B2B"></path>
-        <path d="M173.561 11.0091H175.974C176.101 11.664 176.453 12.1417 177.026 12.4584C177.599 12.7751 178.409 12.9307 179.456 12.9307C180.447 12.9307 181.207 12.7965 181.725 12.5174C182.243 12.2437 182.502 11.8572 182.502 11.3526C182.502 10.934 182.331 10.6012 181.99 10.365C181.648 10.1288 181.097 9.95704 180.332 9.84968L178.31 9.54909C176.734 9.31828 175.6 8.93718 174.906 8.40578C174.217 7.87437 173.87 7.1229 173.87 6.15671C173.87 5.12612 174.355 4.32633 175.319 3.75199C176.283 3.17765 177.616 2.89316 179.312 2.89316C180.866 2.89316 182.072 3.14544 182.921 3.64464C183.775 4.14383 184.336 4.93825 184.606 6.01715L182.32 6.30164C182.083 5.72193 181.731 5.30862 181.257 5.06171C180.789 4.81479 180.122 4.69133 179.257 4.69133C178.293 4.69133 177.555 4.81479 177.032 5.05634C176.509 5.29788 176.244 5.64678 176.244 6.09767C176.244 6.51635 176.409 6.83841 176.74 7.05312C177.07 7.26782 177.649 7.43959 178.481 7.56842L180.827 7.91732C182.243 8.11592 183.273 8.49166 183.923 9.03916C184.568 9.58667 184.893 10.3435 184.893 11.3097C184.893 12.4047 184.425 13.2474 183.483 13.8432C182.546 14.4391 181.196 14.7343 179.45 14.7343C175.792 14.7343 173.826 13.4943 173.556 11.0091" fill="#2B2B2B"></path>
-        <path d="M6.68752 4.80406L4.33532 13.285C4.23616 13.6446 3.71284 13.6393 3.61368 13.285L0 0.15564H5.39849L6.68752 4.80406Z" fill="#E21518"></path>
-        <path d="M20.2774 0.15564L17.7489 9.25924L15.4077 0.80513L15.2259 0.15564H10.1855L10.0092 0.810497L4.99636 18.9264H10.4114L10.505 18.5883L12.703 10.6065L15.0001 18.9264H20.4977L25.6704 0.15564H20.2774Z" fill="#2B2B2B"></path>
-        <path d="M37.0458 3.18296H39.2492L46.1295 11.2613V3.18296H48.4322V14.4444H46.2287L39.3429 6.35526V14.4444H37.0458V3.18296Z" fill="#2B2B2B"></path>
-      </svg>
+    <!-- Skip to Content (Accessibility) -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-nw-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-[50px]"
+    >
+      Vai al contenuto principale
     </a>
 
-    <!-- CTA (Desktop Only) -->
-    <a href="#contatto" class="hidden md:inline-flex interactive bg-nw-accent text-white rounded-[50px] px-[26px] py-2 font-mulish font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-5 md:top-[34px] left-1/2 -translate-x-1/2 w-[calc(100%-32px)] md:w-[calc(100%-80px)] max-w-[1299px] flex items-center justify-center md:justify-between px-6 md:px-20 py-4 md:py-5 bg-[rgba(240,240,240,0.8)] backdrop-blur-[2px] rounded-[50px] md:rounded-[80px] shadow-[0px_2px_4px_rgba(0,0,0,0.1)] z-50"
+    >
+      <!-- Logo -->
+      <a
+        href="https://www.nwdesigns.it"
+        class="flex-shrink-0 interactive"
+        aria-label="nwdesigns Home"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="186"
+          height="20"
+          viewBox="0 0 186 20"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M54.0675 3.18301H56.6897L59.2952 11.8304L61.9725 5.27105C62.0606 5.06171 62.2699 4.92215 62.5013 4.92215H64.4514L67.2718 11.8411L69.8939 3.17765H72.4554L68.5663 14.4444H65.9773L63.2229 7.76165L60.4686 14.4444H57.9401L54.0675 3.17765V3.18301Z"
+            fill="#2B2B2B"
+          ></path>
+          <path
+            d="M78.0743 3.18301H83.2084C85.4008 3.18301 87.0699 3.66611 88.2212 4.62692C89.3725 5.58774 89.9454 6.9887 89.9454 8.81372C89.9454 10.6387 89.334 12.0021 88.1166 12.979C86.8992 13.956 85.1584 14.4444 82.8999 14.4444H78.0743V3.18301ZM82.966 12.5228C85.9792 12.5228 87.4831 11.2829 87.4831 8.79761C87.4831 6.31238 86.0618 5.10465 83.2249 5.10465H80.4375V12.5174H82.966V12.5228Z"
+            fill="#2B2B2B"
+          ></path>
+          <path
+            d="M96.1647 3.18301H105.755V5.0134H98.5335V7.75628H103.965V9.58667H98.5335V12.6194H106.113L105.821 14.4444H96.1647V3.18301Z"
+            fill="#2B2B2B"
+          ></path>
+          <path
+            d="M111.38 11.0091H113.792C113.925 11.664 114.272 12.1417 114.845 12.4584C115.418 12.7751 116.227 12.9307 117.274 12.9307C118.265 12.9307 119.026 12.7965 119.543 12.5174C120.061 12.2437 120.32 11.8572 120.32 11.3526C120.32 10.934 120.149 10.6012 119.808 10.365C119.466 10.1288 118.916 9.95704 118.15 9.84968L116.128 9.54909C114.553 9.31828 113.418 8.93718 112.724 8.40578C112.035 7.87437 111.688 7.1229 111.688 6.15671C111.688 5.12612 112.173 4.32633 113.137 3.75199C114.101 3.17765 115.434 2.89316 117.131 2.89316C118.684 2.89316 119.891 3.14544 120.744 3.64464C121.598 4.14383 122.16 4.93825 122.43 6.01715L120.144 6.30164C119.907 5.72193 119.555 5.30862 119.081 5.06171C118.613 4.81479 117.946 4.69133 117.081 4.69133C116.117 4.69133 115.379 4.81479 114.856 5.05634C114.332 5.29788 114.068 5.64678 114.068 6.09767C114.068 6.51635 114.233 6.83841 114.564 7.05312C114.894 7.26782 115.473 7.43959 116.304 7.56842L118.651 7.91732C120.067 8.11592 121.097 8.49166 121.747 9.03916C122.397 9.58667 122.716 10.3435 122.716 11.3097C122.716 12.4047 122.248 13.2474 121.306 13.8432C120.37 14.4391 119.02 14.7343 117.274 14.7343C113.616 14.7343 111.65 13.4943 111.38 11.0091Z"
+            fill="#2B2B2B"
+          ></path>
+          <path
+            d="M131.249 3.18301H128.853V14.4498H131.249V3.18301Z"
+            fill="#2B2B2B"
+          ></path>
+          <path
+            d="M149.863 13.183C149.153 13.6768 148.31 14.0579 147.335 14.3263C146.365 14.5947 145.346 14.7289 144.288 14.7289C142.873 14.7289 141.655 14.4927 140.636 14.0257C139.617 13.5588 138.835 12.8878 138.289 12.0129C137.744 11.1433 137.469 10.0912 137.469 8.85666C137.469 7.62209 137.744 6.53245 138.295 5.64678C138.846 4.76112 139.617 4.07942 140.603 3.60169C141.589 3.12934 142.735 2.89316 144.029 2.89316C145.572 2.89316 146.811 3.20449 147.737 3.82177C148.662 4.44442 149.29 5.27105 149.615 6.31238L147.219 6.61297C146.982 5.99031 146.597 5.53406 146.062 5.23884C145.528 4.94362 144.828 4.79869 143.963 4.79869C142.658 4.79869 141.655 5.15832 140.967 5.87223C140.278 6.58613 139.931 7.57378 139.931 8.82445C139.931 10.0751 140.306 11.1057 141.055 11.7928C141.804 12.4745 142.884 12.818 144.288 12.818C145.605 12.818 146.723 12.6087 147.643 12.1846V10.1342H144.321V8.3521H149.863V13.183Z"
+            fill="#2B2B2B"
+          ></path>
+          <path
+            d="M156.182 3.18301H158.385L165.271 11.2614V3.18301H167.568V14.4444H165.365L158.479 6.35532V14.4444H156.182V3.18301Z"
+            fill="#2B2B2B"
+          ></path>
+          <path
+            d="M173.561 11.0091H175.974C176.101 11.664 176.453 12.1417 177.026 12.4584C177.599 12.7751 178.409 12.9307 179.456 12.9307C180.447 12.9307 181.207 12.7965 181.725 12.5174C182.243 12.2437 182.502 11.8572 182.502 11.3526C182.502 10.934 182.331 10.6012 181.99 10.365C181.648 10.1288 181.097 9.95704 180.332 9.84968L178.31 9.54909C176.734 9.31828 175.6 8.93718 174.906 8.40578C174.217 7.87437 173.87 7.1229 173.87 6.15671C173.87 5.12612 174.355 4.32633 175.319 3.75199C176.283 3.17765 177.616 2.89316 179.312 2.89316C180.866 2.89316 182.072 3.14544 182.921 3.64464C183.775 4.14383 184.336 4.93825 184.606 6.01715L182.32 6.30164C182.083 5.72193 181.731 5.30862 181.257 5.06171C180.789 4.81479 180.122 4.69133 179.257 4.69133C178.293 4.69133 177.555 4.81479 177.032 5.05634C176.509 5.29788 176.244 5.64678 176.244 6.09767C176.244 6.51635 176.409 6.83841 176.74 7.05312C177.07 7.26782 177.649 7.43959 178.481 7.56842L180.827 7.91732C182.243 8.11592 183.273 8.49166 183.923 9.03916C184.568 9.58667 184.893 10.3435 184.893 11.3097C184.893 12.4047 184.425 13.2474 183.483 13.8432C182.546 14.4391 181.196 14.7343 179.45 14.7343C175.792 14.7343 173.826 13.4943 173.556 11.0091"
+            fill="#2B2B2B"
+          ></path>
+          <path
+            d="M6.68752 4.80406L4.33532 13.285C4.23616 13.6446 3.71284 13.6393 3.61368 13.285L0 0.15564H5.39849L6.68752 4.80406Z"
+            fill="#E21518"
+          ></path>
+          <path
+            d="M20.2774 0.15564L17.7489 9.25924L15.4077 0.80513L15.2259 0.15564H10.1855L10.0092 0.810497L4.99636 18.9264H10.4114L10.505 18.5883L12.703 10.6065L15.0001 18.9264H20.4977L25.6704 0.15564H20.2774Z"
+            fill="#2B2B2B"
+          ></path>
+          <path
+            d="M37.0458 3.18296H39.2492L46.1295 11.2613V3.18296H48.4322V14.4444H46.2287L39.3429 6.35526V14.4444H37.0458V3.18296Z"
+            fill="#2B2B2B"
+          ></path>
+        </svg>
+      </a>
+
+      <!-- CTA (Desktop Only) -->
+      <a
+        href="#contatto"
+        class="hidden md:inline-flex interactive border border-nw-fg rounded-[50px] bg-transparent text-nw-fg px-[26px] py-2 font-mulish font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-fg hover:text-nw-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent"
+      >
+        Analisi Gratuita
+      </a>
+    </nav>
+
+    <!-- Floating CTA (Mobile Only) -->
+    <a
+      href="#contatto"
+      class="floating-cta md:hidden fixed bottom-5 right-5 z-50 interactive bg-nw-accent text-white px-6 py-3 rounded-[50px] font-aktiv font-bold text-xs uppercase tracking-wide shadow-lg transition-all duration-300 active:scale-95 text-center whitespace-nowrap"
+      aria-label="Richiedi analisi gratuita"
+    >
       Analisi Gratuita
     </a>
-  </nav>
 
-  <!-- Floating CTA (Mobile Only) -->
-  <a href="#contatto" class="floating-cta md:hidden fixed bottom-5 right-5 z-50 interactive bg-nw-accent text-white px-6 py-3 rounded-[50px] font-aktiv font-bold text-xs uppercase tracking-wide shadow-lg transition-all duration-300 active:scale-95 text-center whitespace-nowrap" aria-label="Richiedi analisi gratuita">
-    Analisi Gratuita
-  </a>
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-screen flex items-center pt-32 md:pt-40 pb-20 px-5 md:px-20 overflow-hidden"
+      >
+        <!-- Hero Background Image -->
+        <div
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30 pointer-events-none"
+          style="background-image: url('/_shared/video/gold-poster.jpg')"
+          aria-hidden="true"
+        ></div>
 
-  <main id="main-content">
-
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-32 md:pt-40 pb-20 px-5 md:px-20 overflow-hidden">
-      <!-- Hero Background Image -->
-      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30 pointer-events-none"
-           style="background-image: url('/_shared/video/gold-poster.jpg');"
-           aria-hidden="true">
-      </div>
-
-      <!-- Watermark Marquee -->
-      <div class="watermark-container" aria-hidden="true">
-        <div class="watermark-track">
-          <span class="watermark-text">COMPRO ORO</span>
-          <span class="watermark-text">COMPRO ORO</span>
-          <span class="watermark-text">COMPRO ORO</span>
-          <span class="watermark-text">COMPRO ORO</span>
-        </div>
-      </div>
-
-      <!-- Starburst Graphic -->
-      <div class="starburst-graphic absolute -top-20 -right-20 md:-top-32 md:-right-32 w-64 h-64 md:w-96 md:h-96 opacity-[0.03] pointer-events-none select-none" aria-hidden="true">
-        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g>
-            <path d="M100 0L103.09 96.91L200 100L103.09 103.09L100 200L96.91 103.09L0 100L96.91 96.91L100 0Z" fill="currentColor"/>
-            <circle cx="100" cy="100" r="30" fill="currentColor"/>
-          </g>
-        </svg>
-      </div>
-
-      <div class="relative z-10 max-w-[1280px] mx-auto w-full">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <!-- Left Column: Hero Content -->
-          <div class="max-w-2xl">
-            <!-- Label -->
-            <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
-              Marketing Digitale Compro Oro
-            </span>
-
-            <!-- Headline -->
-            <h1 class="font-aktiv text-[36px] md:text-[56px] lg:text-[72px] leading-[1.08] tracking-tight mb-8">
-              Il 30% degli italiani<br>
-              ha venduto oro.<br>
-              <span class="text-nw-accent">Ti hanno scelto per fiducia?</span>
-            </h1>
-
-            <!-- Subheadline -->
-            <p class="font-mulish text-xl md:text-2xl leading-relaxed text-nw-fg max-w-2xl mb-10">
-              In un settore dove "c'è un compro oro in ogni angolo" e la reputazione è tutto, <strong>la tua presenza digitale fa la differenza</strong>.
-            </p>
-
-            <!-- CTA -->
-            <a href="#contatto" class="interactive inline-flex items-center gap-3 bg-nw-accent text-white rounded-[50px] px-8 py-4 font-aktiv font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-              Richiedi la tua Analisi Digitale Gratuita
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-              </svg>
-            </a>
+        <!-- Watermark Marquee -->
+        <div class="watermark-container" aria-hidden="true">
+          <div class="watermark-track">
+            <span class="watermark-text">COMPRO ORO</span>
+            <span class="watermark-text">COMPRO ORO</span>
+            <span class="watermark-text">COMPRO ORO</span>
+            <span class="watermark-text">COMPRO ORO</span>
           </div>
+        </div>
 
-          <!-- Right Column: Gold Widget (Desktop Only) -->
-          <div class="hidden lg:flex justify-end">
-            <div id="gold-widget" class="gold-widget gold-widget--light">
-              <!-- Header con live indicator -->
-              <div class="gold-widget-header">
-                <div class="gold-widget-title">
-                  <svg class="gold-widget-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                  </svg>
-                  <span>XAU/EUR</span>
-                </div>
-                <div class="gold-widget-status">
-                  <span class="gold-widget-live-dot"></span>
-                  <span>LIVE</span>
-                </div>
-              </div>
+        <!-- Starburst Graphic -->
+        <div
+          class="starburst-graphic absolute -top-20 -right-20 md:-top-32 md:-right-32 w-64 h-64 md:w-96 md:h-96 opacity-[0.03] pointer-events-none select-none"
+          aria-hidden="true"
+        >
+          <svg
+            viewBox="0 0 200 200"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M100 0L103.09 96.91L200 100L103.09 103.09L100 200L96.91 103.09L0 100L96.91 96.91L100 0Z"
+                fill="currentColor"
+              />
+              <circle cx="100" cy="100" r="30" fill="currentColor" />
+            </g>
+          </svg>
+        </div>
 
-              <!-- Main price display -->
-              <div class="gold-widget-price-container">
-                <span data-gold-price class="gold-widget-price">€--,--</span>
-                <span class="gold-widget-unit">/g</span>
-              </div>
+        <div class="relative z-10 max-w-[1280px] mx-auto w-full">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <!-- Left Column: Hero Content -->
+            <div class="max-w-2xl">
+              <!-- Label -->
+              <span
+                class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block"
+              >
+                Marketing Digitale Compro Oro
+              </span>
 
-              <!-- Details grid -->
-              <div class="gold-widget-details">
-                <div class="gold-widget-detail">
-                  <span class="gold-widget-detail-label">Purezza</span>
-                  <span class="gold-widget-detail-value">24K (999,9)</span>
-                </div>
-                <div class="gold-widget-detail">
-                  <span class="gold-widget-detail-label">Aggiornato</span>
-                  <span data-gold-timestamp class="gold-widget-detail-value">--:--</span>
-                </div>
-              </div>
+              <!-- Headline -->
+              <h1
+                class="font-aktiv text-[36px] md:text-[56px] lg:text-[72px] leading-[1.08] tracking-tight mb-8"
+              >
+                Il 30% degli italiani<br />
+                ha venduto oro.<br />
+                <span class="text-nw-accent">Ti hanno scelto per fiducia?</span>
+              </h1>
 
-              <!-- Footer -->
-              <div class="gold-widget-footer">
-                <span>Fonte: London Bullion Market</span>
+              <!-- Subheadline -->
+              <p
+                class="font-mulish text-xl md:text-2xl leading-relaxed text-nw-fg max-w-2xl mb-10"
+              >
+                In un settore dove "c'è un compro oro in ogni angolo" e la
+                reputazione è tutto,
+                <strong>la tua presenza digitale fa la differenza</strong>.
+              </p>
+
+              <!-- CTA -->
+              <a
+                href="#contatto"
+                class="interactive inline-flex items-center gap-3 bg-nw-accent text-white rounded-[50px] px-8 py-4 font-aktiv font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Richiedi la tua Analisi Digitale Gratuita
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Right Column: Gold Widget (Desktop Only) -->
+            <div class="hidden lg:flex justify-end">
+              <div id="gold-widget" class="gold-widget gold-widget--light">
+                <!-- Header con live indicator -->
+                <div class="gold-widget-header">
+                  <div class="gold-widget-title">
+                    <svg
+                      class="gold-widget-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                      />
+                    </svg>
+                    <span>XAU/EUR</span>
+                  </div>
+                  <div class="gold-widget-status">
+                    <span class="gold-widget-live-dot"></span>
+                    <span>LIVE</span>
+                  </div>
+                </div>
+
+                <!-- Main price display -->
+                <div class="gold-widget-price-container">
+                  <span data-gold-price class="gold-widget-price">€--,--</span>
+                  <span class="gold-widget-unit">/g</span>
+                </div>
+
+                <!-- Details grid -->
+                <div class="gold-widget-details">
+                  <div class="gold-widget-detail">
+                    <span class="gold-widget-detail-label">Purezza</span>
+                    <span class="gold-widget-detail-value">24K (999,9)</span>
+                  </div>
+                  <div class="gold-widget-detail">
+                    <span class="gold-widget-detail-label">Aggiornato</span>
+                    <span data-gold-timestamp class="gold-widget-detail-value"
+                      >--:--</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="gold-widget-footer">
+                  <span>Fonte: London Bullion Market</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Client Logos Marquee (Operatori Partner) -->
-    <section class="py-16 md:py-24 bg-nw-bg overflow-hidden">
-      <div class="max-w-[1280px] mx-auto px-5 md:px-20 mb-8">
-        <span class="font-mulish text-sm uppercase tracking-label text-nw-muted">
-          Operatori Partner
-        </span>
-      </div>
+      <!-- Client Logos Marquee (Operatori Partner) -->
+      <section class="py-16 md:py-24 bg-nw-bg overflow-hidden">
+        <div class="max-w-[1280px] mx-auto px-5 md:px-20 mb-8">
+          <span
+            class="font-mulish text-sm uppercase tracking-label text-nw-muted"
+          >
+            Operatori Partner
+          </span>
+        </div>
 
-      <div class="marquee-container">
-        <div class="marquee-track">
-          <!-- Logo items - duplicated for seamless loop -->
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-hassler.svg" alt="Hassler Roma">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-trenitalia.svg" alt="Trenitalia">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-eurobet.svg" alt="Eurobet">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-kraft.svg" alt="Kraft">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-bonanno.svg" alt="Bonanno">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-ambrosiano.svg" alt="Ambrosiano">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-imago.svg" alt="Imago">
-          </div>
-          <!-- Duplicate for seamless loop -->
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-hassler.svg" alt="Hassler Roma">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-trenitalia.svg" alt="Trenitalia">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-eurobet.svg" alt="Eurobet">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-kraft.svg" alt="Kraft">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-bonanno.svg" alt="Bonanno">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-ambrosiano.svg" alt="Ambrosiano">
-          </div>
-          <div class="marquee-item">
-            <img src="/_shared/img/clients/client-imago.svg" alt="Imago">
+        <div class="marquee-container">
+          <div class="marquee-track">
+            <!-- Logo items - duplicated for seamless loop -->
+            <div class="marquee-item">
+              <img
+                src="/_shared/img/clients/client-hassler.svg"
+                alt="Hassler Roma"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/_shared/img/clients/client-trenitalia.svg"
+                alt="Trenitalia"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/_shared/img/clients/client-eurobet.svg"
+                alt="Eurobet"
+              />
+            </div>
+            <div class="marquee-item">
+              <img src="/_shared/img/clients/client-kraft.svg" alt="Kraft" />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/_shared/img/clients/client-bonanno.svg"
+                alt="Bonanno"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/_shared/img/clients/client-ambrosiano.svg"
+                alt="Ambrosiano"
+              />
+            </div>
+            <div class="marquee-item">
+              <img src="/_shared/img/clients/client-imago.svg" alt="Imago" />
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-item">
+              <img
+                src="/_shared/img/clients/client-hassler.svg"
+                alt="Hassler Roma"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/_shared/img/clients/client-trenitalia.svg"
+                alt="Trenitalia"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/_shared/img/clients/client-eurobet.svg"
+                alt="Eurobet"
+              />
+            </div>
+            <div class="marquee-item">
+              <img src="/_shared/img/clients/client-kraft.svg" alt="Kraft" />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/_shared/img/clients/client-bonanno.svg"
+                alt="Bonanno"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/_shared/img/clients/client-ambrosiano.svg"
+                alt="Ambrosiano"
+              />
+            </div>
+            <div class="marquee-item">
+              <img src="/_shared/img/clients/client-imago.svg" alt="Imago" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Stats Section with Gold Price Widget -->
-    <section class="py-16 md:py-24 px-5 md:px-20 bg-nw-dark text-nw-bg" data-cursor-light>
-      <div class="max-w-[1280px] mx-auto">
-        <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-12 block">
-          Il mercato italiano oggi
-        </span>
+      <!-- Stats Section with Gold Price Widget -->
+      <section
+        class="py-16 md:py-24 px-5 md:px-20 bg-nw-dark text-nw-bg"
+        data-cursor-light
+      >
+        <div class="max-w-[1280px] mx-auto">
+          <span
+            class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-12 block"
+          >
+            Il mercato italiano oggi
+          </span>
 
-        <div class="grid md:grid-cols-3 gap-8 md:gap-12 mb-16">
-          <!-- Stat 1 -->
-          <div class="stat-card">
-            <div class="stat-number text-nw-bg" data-counter="30" data-suffix="%">30%</div>
-            <div class="stat-label">degli italiani ha venduto metalli preziosi nell'ultimo anno</div>
-          </div>
+          <div class="grid md:grid-cols-3 gap-8 md:gap-12 mb-16">
+            <!-- Stat 1 -->
+            <div class="stat-card">
+              <div
+                class="stat-number text-nw-bg"
+                data-counter="30"
+                data-suffix="%"
+              >
+                30%
+              </div>
+              <div class="stat-label">
+                degli italiani ha venduto metalli preziosi nell'ultimo anno
+              </div>
+            </div>
 
-          <!-- Stat 2 -->
-          <div class="stat-card">
-            <div class="stat-number text-nw-bg" data-counter="500" data-suffix="+">500+</div>
-            <div class="stat-label">le recensioni Google dei top operator del settore</div>
-          </div>
+            <!-- Stat 2 -->
+            <div class="stat-card">
+              <div
+                class="stat-number text-nw-bg"
+                data-counter="500"
+                data-suffix="+"
+              >
+                500+
+              </div>
+              <div class="stat-label">
+                le recensioni Google dei top operator del settore
+              </div>
+            </div>
 
-          <!-- Stat 3 -->
-          <div class="stat-card">
-            <div class="stat-number text-nw-bg" data-counter="80" data-suffix="%">80%</div>
-            <div class="stat-label">dei clienti verifica le recensioni online prima di scegliere</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pain Points Section -->
-    <section class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
-      <div class="max-w-[1280px] mx-auto">
-        <!-- Section Label -->
-        <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-12 block">
-          Le sfide del settore compro oro
-        </span>
-
-        <div class="grid md:grid-cols-3 gap-12 md:gap-8">
-          <!-- Pain Point 1 -->
-          <div class="space-y-4">
-            <span class="font-aktiv text-6xl md:text-7xl font-light text-nw-accent/50">01</span>
-            <h3 class="font-aktiv text-xl md:text-2xl font-semibold uppercase">
-              Lo stigma mediatico<br>del settore
-            </h3>
-            <p class="font-mulish text-lg text-nw-fg-secondary leading-relaxed">
-              Anni di cronaca negativa hanno creato diffidenza. Anche gli operatori seri <strong>soffrono del pregiudizio</strong> verso l'intero comparto. Il cliente entra già sulla difensiva.
-            </p>
-          </div>
-
-          <!-- Pain Point 2 -->
-          <div class="space-y-4">
-            <span class="font-aktiv text-6xl md:text-7xl font-light text-nw-accent/50">02</span>
-            <h3 class="font-aktiv text-xl md:text-2xl font-semibold uppercase">
-              Concorrenza sleale e<br>"prezzi civetta"
-            </h3>
-            <p class="font-mulish text-lg text-nw-fg-secondary leading-relaxed">
-              Pubblicità con quotazioni impossibili danneggiano tutto il settore. Chi lavora <strong>in conformità alle normative OAM</strong> e con bilance certificate fatica a competere con chi promette l'impossibile.
-            </p>
-          </div>
-
-          <!-- Pain Point 3 -->
-          <div class="space-y-4">
-            <span class="font-aktiv text-6xl md:text-7xl font-light text-nw-accent/50">03</span>
-            <h3 class="font-aktiv text-xl md:text-2xl font-semibold uppercase">
-              Differenziarsi in un<br>mercato saturo
-            </h3>
-            <p class="font-mulish text-lg text-nw-fg-secondary leading-relaxed">
-              "Un compro oro in ogni angolo" non è solo un modo di dire. Come emergere dalla massa? <strong>La risposta è online</strong>: recensioni, visibilità, autorevolezza.
-            </p>
+            <!-- Stat 3 -->
+            <div class="stat-card">
+              <div
+                class="stat-number text-nw-bg"
+                data-counter="80"
+                data-suffix="%"
+              >
+                80%
+              </div>
+              <div class="stat-label">
+                dei clienti verifica le recensioni online prima di scegliere
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Value Proposition Section -->
-    <section class="py-20 md:py-32 px-5 md:px-20 bg-nw-dark text-nw-bg" data-cursor-light>
-      <div class="max-w-[1280px] mx-auto">
-        <div class="grid lg:grid-cols-2 gap-16 items-start">
-          <!-- Left Column -->
-          <div>
-            <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
-              Il nostro approccio
+      <!-- Pain Points Section -->
+      <section class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
+        <div class="max-w-[1280px] mx-auto">
+          <!-- Section Label -->
+          <span
+            class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-12 block"
+          >
+            Le sfide del settore compro oro
+          </span>
+
+          <div class="grid md:grid-cols-3 gap-12 md:gap-8">
+            <!-- Pain Point 1 -->
+            <div class="space-y-4">
+              <span
+                class="font-aktiv text-6xl md:text-7xl font-light text-nw-accent/50"
+                >01</span
+              >
+              <h3
+                class="font-aktiv text-xl md:text-2xl font-semibold uppercase"
+              >
+                Lo stigma mediatico<br />del settore
+              </h3>
+              <p
+                class="font-mulish text-lg text-nw-fg-secondary leading-relaxed"
+              >
+                Anni di cronaca negativa hanno creato diffidenza. Anche gli
+                operatori seri <strong>soffrono del pregiudizio</strong> verso
+                l'intero comparto. Il cliente entra già sulla difensiva.
+              </p>
+            </div>
+
+            <!-- Pain Point 2 -->
+            <div class="space-y-4">
+              <span
+                class="font-aktiv text-6xl md:text-7xl font-light text-nw-accent/50"
+                >02</span
+              >
+              <h3
+                class="font-aktiv text-xl md:text-2xl font-semibold uppercase"
+              >
+                Concorrenza sleale e<br />"prezzi civetta"
+              </h3>
+              <p
+                class="font-mulish text-lg text-nw-fg-secondary leading-relaxed"
+              >
+                Pubblicità con quotazioni impossibili danneggiano tutto il
+                settore. Chi lavora
+                <strong>in conformità alle normative OAM</strong> e con bilance
+                certificate fatica a competere con chi promette l'impossibile.
+              </p>
+            </div>
+
+            <!-- Pain Point 3 -->
+            <div class="space-y-4">
+              <span
+                class="font-aktiv text-6xl md:text-7xl font-light text-nw-accent/50"
+                >03</span
+              >
+              <h3
+                class="font-aktiv text-xl md:text-2xl font-semibold uppercase"
+              >
+                Differenziarsi in un<br />mercato saturo
+              </h3>
+              <p
+                class="font-mulish text-lg text-nw-fg-secondary leading-relaxed"
+              >
+                "Un compro oro in ogni angolo" non è solo un modo di dire. Come
+                emergere dalla massa? <strong>La risposta è online</strong>:
+                recensioni, visibilità, autorevolezza.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Value Proposition Section -->
+      <section
+        class="py-20 md:py-32 px-5 md:px-20 bg-nw-dark text-nw-bg"
+        data-cursor-light
+      >
+        <div class="max-w-[1280px] mx-auto">
+          <div class="grid lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Column -->
+            <div>
+              <span
+                class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block"
+              >
+                Il nostro approccio
+              </span>
+              <h2 class="font-aktiv text-3xl md:text-5xl leading-tight mb-8">
+                Da operatore locale<br />
+                a riferimento<br />
+                <em>di fiducia</em>
+              </h2>
+              <p class="font-mulish text-xl leading-relaxed text-nw-bg/80 mb-8">
+                Non parliamo di "trucchi per vendere di più". Costruiamo la
+                vostra <strong>reputazione digitale</strong> solida,
+                verificabile, che rassicura il cliente prima ancora che varchi
+                la soglia. Nel vostro settore, la fiducia è l'unica moneta che
+                conta.
+              </p>
+              <a
+                href="#contatto"
+                class="interactive inline-block font-aktiv font-bold text-[15px] uppercase border-b-2 border-nw-accent pb-2 transition-colors duration-300 hover:text-nw-accent"
+              >
+                Scopri come possiamo aiutarti
+              </a>
+            </div>
+
+            <!-- Right Column: Services -->
+            <div class="space-y-8">
+              <!-- Service 1 -->
+              <div class="border-l-2 border-nw-accent pl-6">
+                <h3
+                  class="font-aktiv text-lg md:text-xl font-semibold uppercase mb-3"
+                >
+                  Reputation Management Avanzato
+                </h3>
+                <p class="font-mulish text-nw-bg/70">
+                  Monitoraggio e gestione attiva delle recensioni. Gestiamo le
+                  recensioni negative
+                  <em>trasformandole in opportunità di trasparenza</em>. Ogni
+                  critica diventa una prova della vostra professionalità.
+                </p>
+              </div>
+
+              <!-- Service 2 -->
+              <div class="border-l-2 border-nw-muted pl-6">
+                <h3
+                  class="font-aktiv text-lg md:text-xl font-semibold uppercase mb-3"
+                >
+                  Local SEO Dominante
+                </h3>
+                <p class="font-mulish text-nw-bg/70">
+                  Apparire per primi nelle ricerche "compro oro vicino a me",
+                  "valutazione oro [città]". Google Business ottimizzato,
+                  citazioni locali, <em>presenza impeccabile</em>.
+                </p>
+              </div>
+
+              <!-- Service 3 -->
+              <div class="border-l-2 border-nw-muted pl-6">
+                <h3
+                  class="font-aktiv text-lg md:text-xl font-semibold uppercase mb-3"
+                >
+                  Content Marketing Educativo
+                </h3>
+                <p class="font-mulish text-nw-bg/70">
+                  Contenuti che educano il cliente: come si valuta l'oro, cosa
+                  verificare, quali garanzie pretendere.
+                  <em>Diventate il punto di riferimento</em> informato.
+                </p>
+              </div>
+
+              <!-- Service 4 -->
+              <div class="border-l-2 border-nw-muted pl-6">
+                <h3
+                  class="font-aktiv text-lg md:text-xl font-semibold uppercase mb-3"
+                >
+                  Campagne Google & Social
+                </h3>
+                <p class="font-mulish text-nw-bg/70">
+                  Pubblicità mirata che attrae clienti nella vostra zona.
+                  Targeting preciso, messaggi che <em>costruiscono fiducia</em>,
+                  tracciamento delle conversioni.
+                </p>
+              </div>
+
+              <!-- Service 5 -->
+              <div class="border-l-2 border-nw-muted pl-6">
+                <h3
+                  class="font-aktiv text-lg md:text-xl font-semibold uppercase mb-3"
+                >
+                  Widget Quotazione Oro
+                </h3>
+                <p class="font-mulish text-nw-bg/70">
+                  Integrazione sul vostro sito con quotazione dell'oro in tempo
+                  reale. <em>Aumenta il tempo di permanenza</em>, dimostra
+                  trasparenza, differenzia dai competitor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Showreel Section -->
+      <section id="showreel" class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
+        <div class="max-w-[1280px] mx-auto">
+          <div class="text-center mb-12">
+            <span
+              class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block"
+            >
+              Il nostro lavoro
             </span>
-            <h2 class="font-aktiv text-3xl md:text-5xl leading-tight mb-8">
-              Da operatore locale<br>
-              a riferimento<br>
-              <em>di fiducia</em>
+            <h2 class="font-aktiv text-3xl md:text-5xl leading-tight mb-6">
+              Guarda come trasformiamo<br />
+              la presenza digitale
             </h2>
-            <p class="font-mulish text-xl leading-relaxed text-nw-bg/80 mb-8">
-              Non parliamo di "trucchi per vendere di più". Costruiamo la vostra <strong>reputazione digitale</strong> solida, verificabile, che rassicura il cliente prima ancora che varchi la soglia. Nel vostro settore, la fiducia è l'unica moneta che conta.
+            <p class="font-mulish text-xl text-nw-fg/80 max-w-2xl mx-auto">
+              Scopri esempi concreti di come abbiamo aiutato operatori del
+              settore a costruire reputazione e visibilità.
             </p>
-            <a href="#contatto" class="interactive inline-block font-aktiv font-bold text-[15px] uppercase border-b-2 border-nw-accent pb-2 transition-colors duration-300 hover:text-nw-accent">
-              Scopri come possiamo aiutarti
-            </a>
           </div>
 
-          <!-- Right Column: Services -->
-          <div class="space-y-8">
-            <!-- Service 1 -->
-            <div class="border-l-2 border-nw-accent pl-6">
-              <h3 class="font-aktiv text-lg md:text-xl font-semibold uppercase mb-3">
-                Reputation Management Avanzato
-              </h3>
-              <p class="font-mulish text-nw-bg/70">
-                Monitoraggio e gestione attiva delle recensioni. Gestiamo le recensioni negative <em>trasformandole in opportunità di trasparenza</em>. Ogni critica diventa una prova della vostra professionalità.
+          <div
+            class="aspect-video max-w-4xl mx-auto rounded-2xl overflow-hidden bg-nw-dark"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/edAWGZ5PLo4?rel=0&modestbranding=1"
+              title="nwdesigns Showreel"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+              class="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonianze" class="py-20 md:py-32 px-5 md:px-20 bg-white">
+        <div class="max-w-[1280px] mx-auto">
+          <div class="text-center mb-16">
+            <span
+              class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block"
+            >
+              Testimonianze
+            </span>
+            <h2 class="font-aktiv text-3xl md:text-5xl leading-tight">
+              Cosa dicono i nostri clienti
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card bg-nw-bg p-8 rounded-2xl">
+              <div class="mb-6">
+                <svg
+                  class="w-8 h-8 text-nw-accent/30"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+                  />
+                </svg>
+              </div>
+              <p class="font-mulish text-lg italic text-nw-fg/90 mb-6">
+                "La strategia digitale ha aumentato la visibilità del mio
+                negozio del 150% in soli 3 mesi. Ora i clienti ci trovano
+                facilmente su Google e le recensioni positive parlano da sole."
               </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-nw-muted/30 rounded-full flex items-center justify-center"
+                >
+                  <span class="font-aktiv font-bold text-nw-fg/60">MR</span>
+                </div>
+                <div>
+                  <p class="font-aktiv font-semibold text-nw-fg">Marco R.</p>
+                  <p class="font-mulish text-sm text-nw-muted">
+                    Compro Oro Milano
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <!-- Service 2 -->
-            <div class="border-l-2 border-nw-muted pl-6">
-              <h3 class="font-aktiv text-lg md:text-xl font-semibold uppercase mb-3">
-                Local SEO Dominante
-              </h3>
-              <p class="font-mulish text-nw-bg/70">
-                Apparire per primi nelle ricerche "compro oro vicino a me", "valutazione oro [città]". Google Business ottimizzato, citazioni locali, <em>presenza impeccabile</em>.
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card bg-nw-bg p-8 rounded-2xl">
+              <div class="mb-6">
+                <svg
+                  class="w-8 h-8 text-nw-accent/30"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+                  />
+                </svg>
+              </div>
+              <p class="font-mulish text-lg italic text-nw-fg/90 mb-6">
+                "Avevamo un problema di reputazione online dopo alcune
+                recensioni negative. Il team ha gestito tutto con
+                professionalità, ora abbiamo 4.8 stelle su Google."
               </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-nw-muted/30 rounded-full flex items-center justify-center"
+                >
+                  <span class="font-aktiv font-bold text-nw-fg/60">LB</span>
+                </div>
+                <div>
+                  <p class="font-aktiv font-semibold text-nw-fg">Laura B.</p>
+                  <p class="font-mulish text-sm text-nw-muted">
+                    Banco Metalli Roma
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <!-- Service 3 -->
-            <div class="border-l-2 border-nw-muted pl-6">
-              <h3 class="font-aktiv text-lg md:text-xl font-semibold uppercase mb-3">
-                Content Marketing Educativo
-              </h3>
-              <p class="font-mulish text-nw-bg/70">
-                Contenuti che educano il cliente: come si valuta l'oro, cosa verificare, quali garanzie pretendere. <em>Diventate il punto di riferimento</em> informato.
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card bg-nw-bg p-8 rounded-2xl">
+              <div class="mb-6">
+                <svg
+                  class="w-8 h-8 text-nw-accent/30"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+                  />
+                </svg>
+              </div>
+              <p class="font-mulish text-lg italic text-nw-fg/90 mb-6">
+                "Con la campagna locale su Google Ads abbiamo triplicato le
+                richieste di valutazione. Il ROI è stato incredibile, ogni euro
+                investito ne ha portati 5."
               </p>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="border-l-2 border-nw-muted pl-6">
-              <h3 class="font-aktiv text-lg md:text-xl font-semibold uppercase mb-3">
-                Campagne Google & Social
-              </h3>
-              <p class="font-mulish text-nw-bg/70">
-                Pubblicità mirata che attrae clienti nella vostra zona. Targeting preciso, messaggi che <em>costruiscono fiducia</em>, tracciamento delle conversioni.
-              </p>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="border-l-2 border-nw-muted pl-6">
-              <h3 class="font-aktiv text-lg md:text-xl font-semibold uppercase mb-3">
-                Widget Quotazione Oro
-              </h3>
-              <p class="font-mulish text-nw-bg/70">
-                Integrazione sul vostro sito con quotazione dell'oro in tempo reale. <em>Aumenta il tempo di permanenza</em>, dimostra trasparenza, differenzia dai competitor.
-              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-nw-muted/30 rounded-full flex items-center justify-center"
+                >
+                  <span class="font-aktiv font-bold text-nw-fg/60">GV</span>
+                </div>
+                <div>
+                  <p class="font-aktiv font-semibold text-nw-fg">Giuseppe V.</p>
+                  <p class="font-mulish text-sm text-nw-muted">
+                    Oro Compro Napoli
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Video Showreel Section -->
-    <section id="showreel" class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
-      <div class="max-w-[1280px] mx-auto">
-        <div class="text-center mb-12">
-          <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
-            Il nostro lavoro
+      <!-- FAQ Section -->
+      <section class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
+        <div class="max-w-[1280px] mx-auto">
+          <span
+            class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block"
+          >
+            Domande frequenti
           </span>
-          <h2 class="font-aktiv text-3xl md:text-5xl leading-tight mb-6">
-            Guarda come trasformiamo<br>
-            la presenza digitale
+          <h2 class="font-aktiv text-3xl md:text-[48px] leading-tight mb-16">
+            Le risposte che cercavi
           </h2>
-          <p class="font-mulish text-xl text-nw-fg/80 max-w-2xl mx-auto">
-            Scopri esempi concreti di come abbiamo aiutato operatori del settore a costruire reputazione e visibilità.
-          </p>
-        </div>
 
-        <div class="aspect-video max-w-4xl mx-auto rounded-2xl overflow-hidden bg-nw-dark">
-          <iframe
-            src="https://www.youtube.com/embed/edAWGZ5PLo4?rel=0&modestbranding=1"
-            title="nwdesigns Showreel"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            loading="lazy"
-            class="w-full h-full"
-          ></iframe>
-        </div>
-      </div>
-    </section>
+          <div class="max-w-3xl space-y-0">
+            <details class="faq-item group border-b border-nw-muted/30 py-6">
+              <summary
+                class="flex justify-between items-center cursor-pointer list-none"
+              >
+                <h3 class="font-aktiv text-lg md:text-xl text-nw-fg pr-8">
+                  Come comunicate la conformità OAM?
+                </h3>
+                <span
+                  class="faq-icon text-nw-accent text-2xl font-light flex-shrink-0"
+                  aria-hidden="true"
+                  >+</span
+                >
+              </summary>
+              <p class="font-mulish text-lg text-nw-fg-secondary mt-4 pr-12">
+                Creiamo sezioni dedicate sul sito che evidenziano l'iscrizione
+                all'elenco OAM, le certificazioni di legge e le procedure di
+                trasparenza. La conformità diventa un punto di forza nella
+                comunicazione, non un obbligo nascosto.
+              </p>
+            </details>
 
-    <!-- Testimonials Section -->
-    <section id="testimonianze" class="py-20 md:py-32 px-5 md:px-20 bg-white">
-      <div class="max-w-[1280px] mx-auto">
-        <div class="text-center mb-16">
-          <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
-            Testimonianze
-          </span>
-          <h2 class="font-aktiv text-3xl md:text-5xl leading-tight">
-            Cosa dicono i nostri clienti
-          </h2>
-        </div>
+            <details class="faq-item group border-b border-nw-muted/30 py-6">
+              <summary
+                class="flex justify-between items-center cursor-pointer list-none"
+              >
+                <h3 class="font-aktiv text-lg md:text-xl text-nw-fg pr-8">
+                  Come gestite le recensioni negative?
+                </h3>
+                <span
+                  class="faq-icon text-nw-accent text-2xl font-light flex-shrink-0"
+                  aria-hidden="true"
+                  >+</span
+                >
+              </summary>
+              <p class="font-mulish text-lg text-nw-fg-secondary mt-4 pr-12">
+                Implementiamo strategie di reputation management: monitoraggio
+                attivo, risposte professionali, e programmi per incentivare
+                recensioni positive dai clienti soddisfatti. L'obiettivo è
+                superare le 500 recensioni con rating medio 4.5+.
+              </p>
+            </details>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Testimonial Card 1 -->
-          <div class="testimonial-card bg-nw-bg p-8 rounded-2xl">
-            <div class="mb-6">
-              <svg class="w-8 h-8 text-nw-accent/30" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-              </svg>
-            </div>
-            <p class="font-mulish text-lg italic text-nw-fg/90 mb-6">
-              "La strategia digitale ha aumentato la visibilità del mio negozio del 150% in soli 3 mesi. Ora i clienti ci trovano facilmente su Google e le recensioni positive parlano da sole."
-            </p>
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-nw-muted/30 rounded-full flex items-center justify-center">
-                <span class="font-aktiv font-bold text-nw-fg/60">MR</span>
+            <details class="faq-item group border-b border-nw-muted/30 py-6">
+              <summary
+                class="flex justify-between items-center cursor-pointer list-none"
+              >
+                <h3 class="font-aktiv text-lg md:text-xl text-nw-fg pr-8">
+                  Come aumentate la fiducia online?
+                </h3>
+                <span
+                  class="faq-icon text-nw-accent text-2xl font-light flex-shrink-0"
+                  aria-hidden="true"
+                  >+</span
+                >
+              </summary>
+              <p class="font-mulish text-lg text-nw-fg-secondary mt-4 pr-12">
+                Trasparenza è la parola chiave: quotazioni aggiornate in tempo
+                reale, video del processo di valutazione, testimonianze
+                verificate, e certificazioni ben visibili. Ogni elemento del
+                sito comunica professionalità e affidabilità.
+              </p>
+            </details>
+
+            <details class="faq-item group border-b border-nw-muted/30 py-6">
+              <summary
+                class="flex justify-between items-center cursor-pointer list-none"
+              >
+                <h3 class="font-aktiv text-lg md:text-xl text-nw-fg pr-8">
+                  Lavorate con catene multi-sede?
+                </h3>
+                <span
+                  class="faq-icon text-nw-accent text-2xl font-light flex-shrink-0"
+                  aria-hidden="true"
+                  >+</span
+                >
+              </summary>
+              <p class="font-mulish text-lg text-nw-fg-secondary mt-4 pr-12">
+                Sì, gestiamo strategie per operatori con più punti vendita:
+                local SEO per ogni sede, campagne geolocalizzate, e dashboard
+                centralizzate per monitorare le performance di ogni location.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Us Section -->
+      <section class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
+        <div class="max-w-[1280px] mx-auto">
+          <div class="max-w-3xl">
+            <span
+              class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block"
+            >
+              Perché nwdesigns
+            </span>
+            <h2 class="font-aktiv text-3xl md:text-4xl leading-tight mb-12">
+              Non siamo l'ennesima agenzia generica.<br />
+              <span class="text-nw-muted"
+                >Costruiamo reputazioni che durano.</span
+              >
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Point 1 -->
+            <div class="space-y-3">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <svg
+                  class="w-8 h-8 text-nw-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  ></path>
+                </svg>
               </div>
-              <div>
-                <p class="font-aktiv font-semibold text-nw-fg">Marco R.</p>
-                <p class="font-mulish text-sm text-nw-muted">Compro Oro Milano</p>
+              <h3 class="font-aktiv text-sm uppercase font-semibold">
+                Conformità Normativa
+              </h3>
+              <p class="font-mulish text-nw-fg/70 text-sm">
+                Vi aiutiamo a comunicare la vostra conformità: registrazione
+                OAM, bilance certificate, procedure a norma Banca d'Italia.
+              </p>
+            </div>
+
+            <!-- Point 2 -->
+            <div class="space-y-3">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <svg
+                  class="w-8 h-8 text-nw-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
               </div>
+              <h3 class="font-aktiv text-sm uppercase font-semibold">
+                Esperti Local
+              </h3>
+              <p class="font-mulish text-nw-fg/70 text-sm">
+                Il vostro business è locale. Dominiamo le ricerche nella vostra
+                zona con strategie mirate.
+              </p>
             </div>
-          </div>
 
-          <!-- Testimonial Card 2 -->
-          <div class="testimonial-card bg-nw-bg p-8 rounded-2xl">
-            <div class="mb-6">
-              <svg class="w-8 h-8 text-nw-accent/30" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-              </svg>
-            </div>
-            <p class="font-mulish text-lg italic text-nw-fg/90 mb-6">
-              "Avevamo un problema di reputazione online dopo alcune recensioni negative. Il team ha gestito tutto con professionalità, ora abbiamo 4.8 stelle su Google."
-            </p>
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-nw-muted/30 rounded-full flex items-center justify-center">
-                <span class="font-aktiv font-bold text-nw-fg/60">LB</span>
+            <!-- Point 3 -->
+            <div class="space-y-3">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <svg
+                  class="w-8 h-8 text-nw-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
+                </svg>
               </div>
-              <div>
-                <p class="font-aktiv font-semibold text-nw-fg">Laura B.</p>
-                <p class="font-mulish text-sm text-nw-muted">Banco Metalli Roma</p>
+              <h3 class="font-aktiv text-sm uppercase font-semibold">
+                Risultati Misurabili
+              </h3>
+              <p class="font-mulish text-nw-fg/70 text-sm">
+                Report chiari su recensioni, visibilità, traffico e clienti
+                generati. Saprete esattamente cosa funziona.
+              </p>
+            </div>
+
+            <!-- Point 4 -->
+            <div class="space-y-3">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <svg
+                  class="w-8 h-8 text-nw-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  ></path>
+                </svg>
               </div>
-            </div>
-          </div>
-
-          <!-- Testimonial Card 3 -->
-          <div class="testimonial-card bg-nw-bg p-8 rounded-2xl">
-            <div class="mb-6">
-              <svg class="w-8 h-8 text-nw-accent/30" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-              </svg>
-            </div>
-            <p class="font-mulish text-lg italic text-nw-fg/90 mb-6">
-              "Con la campagna locale su Google Ads abbiamo triplicato le richieste di valutazione. Il ROI è stato incredibile, ogni euro investito ne ha portati 5."
-            </p>
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-nw-muted/30 rounded-full flex items-center justify-center">
-                <span class="font-aktiv font-bold text-nw-fg/60">GV</span>
-              </div>
-              <div>
-                <p class="font-aktiv font-semibold text-nw-fg">Giuseppe V.</p>
-                <p class="font-mulish text-sm text-nw-muted">Oro Compro Napoli</p>
-              </div>
+              <h3 class="font-aktiv text-sm uppercase font-semibold">
+                Base a Roma
+              </h3>
+              <p class="font-mulish text-nw-fg/70 text-sm">
+                Esperti del mercato italiano con sede nella Capitale. Conosciamo
+                le dinamiche locali del settore.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FAQ Section -->
-    <section class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
-      <div class="max-w-[1280px] mx-auto">
-        <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
-          Domande frequenti
-        </span>
-        <h2 class="font-aktiv text-3xl md:text-[48px] leading-tight mb-16">
-          Le risposte che cercavi
-        </h2>
-
-        <div class="max-w-3xl space-y-0">
-          <details class="faq-item group border-b border-nw-muted/30 py-6">
-            <summary class="flex justify-between items-center cursor-pointer list-none">
-              <h3 class="font-aktiv text-lg md:text-xl text-nw-fg pr-8">Come comunicate la conformità OAM?</h3>
-              <span class="faq-icon text-nw-accent text-2xl font-light flex-shrink-0" aria-hidden="true">+</span>
-            </summary>
-            <p class="font-mulish text-lg text-nw-fg-secondary mt-4 pr-12">
-              Creiamo sezioni dedicate sul sito che evidenziano l'iscrizione all'elenco OAM, le certificazioni di legge e le procedure di trasparenza. La conformità diventa un punto di forza nella comunicazione, non un obbligo nascosto.
-            </p>
-          </details>
-
-          <details class="faq-item group border-b border-nw-muted/30 py-6">
-            <summary class="flex justify-between items-center cursor-pointer list-none">
-              <h3 class="font-aktiv text-lg md:text-xl text-nw-fg pr-8">Come gestite le recensioni negative?</h3>
-              <span class="faq-icon text-nw-accent text-2xl font-light flex-shrink-0" aria-hidden="true">+</span>
-            </summary>
-            <p class="font-mulish text-lg text-nw-fg-secondary mt-4 pr-12">
-              Implementiamo strategie di reputation management: monitoraggio attivo, risposte professionali, e programmi per incentivare recensioni positive dai clienti soddisfatti. L'obiettivo è superare le 500 recensioni con rating medio 4.5+.
-            </p>
-          </details>
-
-          <details class="faq-item group border-b border-nw-muted/30 py-6">
-            <summary class="flex justify-between items-center cursor-pointer list-none">
-              <h3 class="font-aktiv text-lg md:text-xl text-nw-fg pr-8">Come aumentate la fiducia online?</h3>
-              <span class="faq-icon text-nw-accent text-2xl font-light flex-shrink-0" aria-hidden="true">+</span>
-            </summary>
-            <p class="font-mulish text-lg text-nw-fg-secondary mt-4 pr-12">
-              Trasparenza è la parola chiave: quotazioni aggiornate in tempo reale, video del processo di valutazione, testimonianze verificate, e certificazioni ben visibili. Ogni elemento del sito comunica professionalità e affidabilità.
-            </p>
-          </details>
-
-          <details class="faq-item group border-b border-nw-muted/30 py-6">
-            <summary class="flex justify-between items-center cursor-pointer list-none">
-              <h3 class="font-aktiv text-lg md:text-xl text-nw-fg pr-8">Lavorate con catene multi-sede?</h3>
-              <span class="faq-icon text-nw-accent text-2xl font-light flex-shrink-0" aria-hidden="true">+</span>
-            </summary>
-            <p class="font-mulish text-lg text-nw-fg-secondary mt-4 pr-12">
-              Sì, gestiamo strategie per operatori con più punti vendita: local SEO per ogni sede, campagne geolocalizzate, e dashboard centralizzate per monitorare le performance di ogni location.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Us Section -->
-    <section class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
-      <div class="max-w-[1280px] mx-auto">
-        <div class="max-w-3xl">
-          <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
-            Perché nwdesigns
-          </span>
-          <h2 class="font-aktiv text-3xl md:text-4xl leading-tight mb-12">
-            Non siamo l'ennesima agenzia generica.<br>
-            <span class="text-nw-muted">Costruiamo reputazioni che durano.</span>
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Point 1 -->
-          <div class="space-y-3">
-            <div class="w-12 h-12 flex items-center justify-center">
-              <svg class="w-8 h-8 text-nw-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-              </svg>
-            </div>
-            <h3 class="font-aktiv text-sm uppercase font-semibold">Conformità Normativa</h3>
-            <p class="font-mulish text-nw-fg/70 text-sm">
-              Vi aiutiamo a comunicare la vostra conformità: registrazione OAM, bilance certificate, procedure a norma Banca d'Italia.
-            </p>
+      <!-- CTA Section with Collaborative Cursor Pointers -->
+      <section
+        class="py-20 md:py-32 px-5 md:px-20 bg-nw-dark text-nw-bg"
+        data-cursor-light
+      >
+        <div class="max-w-[1280px] mx-auto text-center relative">
+          <!-- Collaborative Cursor Pointers (decorative) -->
+          <div
+            class="hidden md:block absolute -top-12 left-1/4 w-8 h-8 opacity-60"
+            aria-hidden="true"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z"
+                fill="#D61313"
+                stroke="#D61313"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div
+            class="hidden md:block absolute top-1/2 right-1/3 w-8 h-8 opacity-60"
+            aria-hidden="true"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z"
+                fill="#F0F0F0"
+                stroke="#F0F0F0"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div
+            class="hidden md:block absolute bottom-8 left-1/3 w-8 h-8 opacity-60"
+            aria-hidden="true"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z"
+                fill="#828282"
+                stroke="#828282"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
 
-          <!-- Point 2 -->
-          <div class="space-y-3">
-            <div class="w-12 h-12 flex items-center justify-center">
-              <svg class="w-8 h-8 text-nw-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-            </div>
-            <h3 class="font-aktiv text-sm uppercase font-semibold">Esperti Local</h3>
-            <p class="font-mulish text-nw-fg/70 text-sm">
-              Il vostro business è locale. Dominiamo le ricerche nella vostra zona con strategie mirate.
-            </p>
-          </div>
-
-          <!-- Point 3 -->
-          <div class="space-y-3">
-            <div class="w-12 h-12 flex items-center justify-center">
-              <svg class="w-8 h-8 text-nw-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-              </svg>
-            </div>
-            <h3 class="font-aktiv text-sm uppercase font-semibold">Risultati Misurabili</h3>
-            <p class="font-mulish text-nw-fg/70 text-sm">
-              Report chiari su recensioni, visibilità, traffico e clienti generati. Saprete esattamente cosa funziona.
-            </p>
-          </div>
-
-          <!-- Point 4 -->
-          <div class="space-y-3">
-            <div class="w-12 h-12 flex items-center justify-center">
-              <svg class="w-8 h-8 text-nw-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-              </svg>
-            </div>
-            <h3 class="font-aktiv text-sm uppercase font-semibold">Base a Roma</h3>
-            <p class="font-mulish text-nw-fg/70 text-sm">
-              Esperti del mercato italiano con sede nella Capitale. Conosciamo le dinamiche locali del settore.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section with Collaborative Cursor Pointers -->
-    <section class="py-20 md:py-32 px-5 md:px-20 bg-nw-dark text-nw-bg" data-cursor-light>
-      <div class="max-w-[1280px] mx-auto text-center relative">
-        <!-- Collaborative Cursor Pointers (decorative) -->
-        <div class="hidden md:block absolute -top-12 left-1/4 w-8 h-8 opacity-60" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" fill="#D61313" stroke="#D61313" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="hidden md:block absolute top-1/2 right-1/3 w-8 h-8 opacity-60" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" fill="#F0F0F0" stroke="#F0F0F0" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="hidden md:block absolute bottom-8 left-1/3 w-8 h-8 opacity-60" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" fill="#828282" stroke="#828282" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-        </div>
-
-        <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
-          Inizia ora
-        </span>
-        <h2 class="font-aktiv text-3xl md:text-5xl leading-tight mb-8">
-          Costruiamo insieme<br>
-          la tua reputazione digitale
-        </h2>
-        <p class="font-mulish text-xl text-nw-bg/80 max-w-2xl mx-auto mb-10">
-          Il primo passo è un'analisi gratuita della tua presenza online.<br>
-          Scopri cosa vedono i tuoi potenziali clienti.
-        </p>
-        <a href="#contatto" class="interactive inline-flex items-center gap-3 bg-nw-accent text-white rounded-[50px] px-8 py-4 font-aktiv font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent">
-          Richiedi analisi gratuita
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <!-- Lead Capture Form Section -->
-    <section id="contatto" class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
-      <div class="max-w-[800px] mx-auto">
-        <!-- Section Header -->
-        <div class="text-center mb-16">
-          <span class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block">
+          <span
+            class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block"
+          >
             Inizia ora
           </span>
-          <h2 class="font-aktiv text-3xl md:text-5xl leading-tight mb-6">
-            Richiedi un'analisi gratuita
+          <h2 class="font-aktiv text-3xl md:text-5xl leading-tight mb-8">
+            Costruiamo insieme<br />
+            la tua reputazione digitale
           </h2>
-          <p class="font-mulish text-xl text-nw-fg/80">
-            Analizziamo la tua presenza online e ti mostriamo come costruire una reputazione che attira clienti.
+          <p class="font-mulish text-xl text-nw-bg/80 max-w-2xl mx-auto mb-10">
+            Il primo passo è un'analisi gratuita della tua presenza online.<br />
+            Scopri cosa vedono i tuoi potenziali clienti.
+          </p>
+          <a
+            href="#contatto"
+            class="interactive inline-flex items-center gap-3 bg-nw-accent text-white rounded-[50px] px-8 py-4 font-aktiv font-bold text-sm uppercase tracking-wide transition-all duration-300 hover:bg-nw-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent"
+          >
+            Richiedi analisi gratuita
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Lead Capture Form Section -->
+      <section id="contatto" class="py-20 md:py-32 px-5 md:px-20 bg-nw-bg">
+        <div class="max-w-[800px] mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <span
+              class="font-mulish text-sm uppercase tracking-label text-nw-muted mb-6 block"
+            >
+              Inizia ora
+            </span>
+            <h2 class="font-aktiv text-3xl md:text-5xl leading-tight mb-6">
+              Richiedi un'analisi gratuita
+            </h2>
+            <p class="font-mulish text-xl text-nw-fg/80">
+              Analizziamo la tua presenza online e ti mostriamo come costruire
+              una reputazione che attira clienti.
+            </p>
+          </div>
+
+          <!-- Form Progress Bar -->
+          <div class="form-progress mb-8">
+            <div
+              class="form-progress-bar bg-nw-muted/20 h-1 rounded-full overflow-hidden"
+            >
+              <div
+                class="form-progress-fill bg-nw-accent h-full w-0 transition-all duration-300"
+              ></div>
+            </div>
+            <p
+              class="form-progress-text font-mulish text-sm text-nw-muted mt-2 text-center"
+            >
+              0% completato
+            </p>
+          </div>
+
+          <!-- Form -->
+          <form
+            id="lead-form"
+            action="#"
+            method="POST"
+            class="space-y-8"
+            novalidate
+          >
+            <!-- Honeypot fields (spam protection) -->
+            <div aria-hidden="true" style="position: absolute; left: -9999px">
+              <input
+                type="text"
+                name="website_url"
+                tabindex="-1"
+                autocomplete="off"
+              />
+              <input
+                type="text"
+                name="fax_number"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+
+            <fieldset class="space-y-8">
+              <legend class="sr-only">Informazioni di contatto</legend>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Nome Completo -->
+                <div class="form-group">
+                  <label
+                    for="nome"
+                    class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block"
+                  >
+                    Nome completo *
+                  </label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    required
+                    autocomplete="name"
+                    class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
+                    placeholder="Mario Rossi"
+                  />
+                  <span
+                    class="error-message hidden text-nw-accent text-sm mt-1 font-mulish"
+                    role="alert"
+                    aria-live="polite"
+                    >Inserisci il tuo nome</span
+                  >
+                </div>
+
+                <!-- Email Aziendale -->
+                <div class="form-group">
+                  <label
+                    for="email"
+                    class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block"
+                  >
+                    Email Aziendale *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
+                    placeholder="email@tuaattività.it"
+                  />
+                  <span
+                    class="error-message hidden text-nw-accent text-sm mt-1 font-mulish"
+                    role="alert"
+                    aria-live="polite"
+                    >Inserisci un'email valida</span
+                  >
+                </div>
+
+                <!-- Telefono -->
+                <div class="form-group">
+                  <label
+                    for="telefono"
+                    class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block"
+                  >
+                    Telefono *
+                  </label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required
+                    autocomplete="tel"
+                    class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
+                    placeholder="+39 000 000 0000"
+                  />
+                  <span
+                    class="error-message hidden text-nw-accent text-sm mt-1 font-mulish"
+                    role="alert"
+                    aria-live="polite"
+                    >Inserisci il tuo telefono</span
+                  >
+                </div>
+              </div>
+
+              <!-- Privacy Consent -->
+              <div class="form-group">
+                <label
+                  class="flex items-start gap-3 cursor-pointer interactive"
+                >
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    name="privacy"
+                    required
+                    class="mt-1 w-5 h-5 accent-nw-accent cursor-pointer"
+                  />
+                  <span class="font-mulish text-sm text-nw-fg/80">
+                    Ho letto e accetto la
+                    <a
+                      href="https://www.nwdesigns.it/privacy-policy/"
+                      target="_blank"
+                      class="text-nw-fg underline hover:text-nw-accent transition-colors"
+                      >Privacy Policy</a
+                    >. Autorizzo il trattamento dei miei dati personali ai sensi
+                    del GDPR. *
+                  </span>
+                </label>
+                <span
+                  class="error-message hidden text-nw-accent text-sm mt-1 font-mulish"
+                  role="alert"
+                  aria-live="polite"
+                  >Accetta la privacy policy per continuare</span
+                >
+              </div>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <div class="pt-4">
+              <button
+                type="submit"
+                class="interactive w-full bg-nw-accent text-white rounded-[50px] px-8 py-4 font-aktiv font-bold text-lg uppercase tracking-wide transition-all duration-300 hover:bg-nw-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Richiedi la tua Analisi Digitale Gratuita
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-nw-dark text-nw-bg py-16 md:py-20 px-5 md:px-20 border-t border-nw-accent"
+      data-cursor-light
+    >
+      <div class="max-w-[1280px] mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8"
+        >
+          <!-- Logo (Monogram) -->
+          <a
+            href="https://www.nwdesigns.it"
+            class="interactive"
+            aria-label="nwdesigns Home"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="38"
+              viewBox="0 0 50 38"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M13.0251 9.41182L8.4441 26.5798C8.25219 27.3033 7.23577 27.3033 7.04386 26.5798L0 0H10.5125L13.0251 9.41182Z"
+                fill="#E21518"
+              ></path>
+              <path
+                d="M39.491 0L34.5724 18.4313L30.0056 1.3137V1.3101L29.6538 0H19.8415L19.4896 1.32449L15.1787 17.4883L9.73057 38H20.2821L20.4634 37.309L24.7459 21.1523L29.2131 38H39.9282L50 0H39.491Z"
+                fill="#F2F2F2"
+              ></path>
+            </svg>
+          </a>
+
+          <!-- Links -->
+          <div class="flex flex-col md:flex-row gap-6 md:gap-10">
+            <a
+              href="https://www.nwdesigns.it"
+              class="interactive font-mulish font-normal text-sm tracking-footer uppercase border-b-2 border-transparent py-1 transition-colors duration-300 hover:border-nw-accent"
+            >
+              Visita il sito
+            </a>
+            <a
+              href="https://www.nwdesigns.it/privacy-policy/"
+              class="interactive font-mulish font-normal text-sm tracking-footer uppercase border-b-2 border-transparent py-1 transition-colors duration-300 hover:border-nw-accent"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="mailto:info@nwdesigns.it"
+              class="interactive font-mulish font-normal text-sm tracking-footer uppercase border-b-2 border-transparent py-1 transition-colors duration-300 hover:border-nw-accent"
+            >
+              info@nwdesigns.it
+            </a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-12 pt-8 border-t border-nw-bg/20">
+          <p class="font-mulish text-sm tracking-footer text-nw-bg uppercase">
+            Copyright &copy; 2026 nwdesigns
+            <span class="text-nw-muted">|</span> Pinworth s.r.l.
+            <span class="text-nw-muted">|</span> P.IVA 15095411003
           </p>
         </div>
-
-        <!-- Form Progress Bar -->
-        <div class="form-progress mb-8">
-          <div class="form-progress-bar bg-nw-muted/20 h-1 rounded-full overflow-hidden">
-            <div class="form-progress-fill bg-nw-accent h-full w-0 transition-all duration-300"></div>
-          </div>
-          <p class="form-progress-text font-mulish text-sm text-nw-muted mt-2 text-center">0% completato</p>
-        </div>
-
-        <!-- Form -->
-        <form id="lead-form" action="#" method="POST" class="space-y-8" novalidate>
-          <!-- Honeypot fields (spam protection) -->
-          <div aria-hidden="true" style="position: absolute; left: -9999px;">
-            <input type="text" name="website_url" tabindex="-1" autocomplete="off">
-            <input type="text" name="fax_number" tabindex="-1" autocomplete="off">
-          </div>
-
-          <fieldset class="space-y-8">
-            <legend class="sr-only">Informazioni di contatto</legend>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <!-- Nome Completo -->
-              <div class="form-group">
-                <label for="nome" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-                  Nome completo *
-                </label>
-                <input
-                  type="text"
-                  id="nome"
-                  name="nome"
-                  required
-                  autocomplete="name"
-                  class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
-                  placeholder="Mario Rossi"
-                >
-                <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Inserisci il tuo nome</span>
-              </div>
-
-              <!-- Email Aziendale -->
-              <div class="form-group">
-                <label for="email" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-                  Email Aziendale *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  autocomplete="email"
-                  class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
-                  placeholder="email@tuaattività.it"
-                >
-                <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Inserisci un'email valida</span>
-              </div>
-
-              <!-- Telefono -->
-              <div class="form-group">
-                <label for="telefono" class="font-mulish text-xs uppercase tracking-label text-nw-muted mb-2 block">
-                  Telefono *
-                </label>
-                <input
-                  type="tel"
-                  id="telefono"
-                  name="telefono"
-                  required
-                  autocomplete="tel"
-                  class="interactive w-full bg-transparent border-0 border-b-2 border-nw-fg py-3 font-mulish text-lg text-nw-fg placeholder:text-nw-muted outline-none transition-colors duration-300 focus:border-nw-accent"
-                  placeholder="+39 000 000 0000"
-                >
-                <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Inserisci il tuo telefono</span>
-              </div>
-            </div>
-
-            <!-- Privacy Consent -->
-            <div class="form-group">
-              <label class="flex items-start gap-3 cursor-pointer interactive">
-                <input
-                  type="checkbox"
-                  id="privacy"
-                  name="privacy"
-                  required
-                  class="mt-1 w-5 h-5 accent-nw-accent cursor-pointer"
-                >
-                <span class="font-mulish text-sm text-nw-fg/80">
-                  Ho letto e accetto la <a href="https://www.nwdesigns.it/privacy-policy/" target="_blank" class="text-nw-fg underline hover:text-nw-accent transition-colors">Privacy Policy</a>. Autorizzo il trattamento dei miei dati personali ai sensi del GDPR. *
-                </span>
-              </label>
-              <span class="error-message hidden text-nw-accent text-sm mt-1 font-mulish" role="alert" aria-live="polite">Accetta la privacy policy per continuare</span>
-            </div>
-
-          </fieldset>
-
-          <!-- Submit Button -->
-          <div class="pt-4">
-            <button
-              type="submit"
-              class="interactive w-full bg-nw-accent text-white rounded-[50px] px-8 py-4 font-aktiv font-bold text-lg uppercase tracking-wide transition-all duration-300 hover:bg-nw-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nw-accent disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              Richiedi la tua Analisi Digitale Gratuita
-            </button>
-          </div>
-        </form>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-nw-dark text-nw-bg py-16 md:py-20 px-5 md:px-20 border-t border-nw-accent" data-cursor-light>
-    <div class="max-w-[1280px] mx-auto">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-        <!-- Logo (Monogram) -->
-        <a href="https://www.nwdesigns.it" class="interactive" aria-label="nwdesigns Home">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="38" viewBox="0 0 50 38" fill="none" aria-hidden="true">
-            <path d="M13.0251 9.41182L8.4441 26.5798C8.25219 27.3033 7.23577 27.3033 7.04386 26.5798L0 0H10.5125L13.0251 9.41182Z" fill="#E21518"></path>
-            <path d="M39.491 0L34.5724 18.4313L30.0056 1.3137V1.3101L29.6538 0H19.8415L19.4896 1.32449L15.1787 17.4883L9.73057 38H20.2821L20.4634 37.309L24.7459 21.1523L29.2131 38H39.9282L50 0H39.491Z" fill="#F2F2F2"></path>
-          </svg>
-        </a>
-
-        <!-- Links -->
-        <div class="flex flex-col md:flex-row gap-6 md:gap-10">
-          <a href="https://www.nwdesigns.it" class="interactive font-mulish font-normal text-sm tracking-footer uppercase border-b-2 border-transparent py-1 transition-colors duration-300 hover:border-nw-accent">
-            Visita il sito
-          </a>
-          <a href="https://www.nwdesigns.it/privacy-policy/" class="interactive font-mulish font-normal text-sm tracking-footer uppercase border-b-2 border-transparent py-1 transition-colors duration-300 hover:border-nw-accent">
-            Privacy Policy
-          </a>
-          <a href="mailto:info@nwdesigns.it" class="interactive font-mulish font-normal text-sm tracking-footer uppercase border-b-2 border-transparent py-1 transition-colors duration-300 hover:border-nw-accent">
-            info@nwdesigns.it
-          </a>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="mt-12 pt-8 border-t border-nw-bg/20">
-        <p class="font-mulish text-sm tracking-footer text-nw-bg uppercase">
-          Copyright &copy; 2026 nwdesigns <span class="text-nw-muted">|</span> Pinworth s.r.l. <span class="text-nw-muted">|</span> P.IVA 15095411003
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="/_shared/js/modules/CustomCursor.js"></script>
-  <script src="/_shared/js/modules/FormValidation.js"></script>
-  <script src="/_shared/js/modules/SmoothScroll.js"></script>
-  <script src="/_shared/js/modules/ScrollAnimations.js"></script>
-  <script src="/_shared/js/modules/CounterAnimation.js"></script>
-  <script src="/_shared/js/modules/FloatingCTA.js"></script>
-  <script src="/_shared/js/modules/GoldPriceWidget.js"></script>
-  <script src="/_shared/js/main.js" data-source="gold-traders"></script>
-</body>
+    <!-- JavaScript -->
+    <script src="/_shared/js/modules/CustomCursor.js"></script>
+    <script src="/_shared/js/modules/FormValidation.js"></script>
+    <script src="/_shared/js/modules/SmoothScroll.js"></script>
+    <script src="/_shared/js/modules/ScrollAnimations.js"></script>
+    <script src="/_shared/js/modules/CounterAnimation.js"></script>
+    <script src="/_shared/js/modules/FloatingCTA.js"></script>
+    <script src="/_shared/js/modules/GoldPriceWidget.js"></script>
+    <script src="/_shared/js/main.js" data-source="gold-traders"></script>
+  </body>
 </html>

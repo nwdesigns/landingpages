@@ -5,12 +5,12 @@
 
 /* ---- CSS Variables ---- */
 :root {
-  --nw-background: #F0F0F0;
-  --nw-foreground: #2B2B2B;
-  --nw-accent: #D61313;
+  --nw-background: #f0f0f0;
+  --nw-foreground: #2b2b2b;
+  --nw-accent: #d61313;
   --nw-muted: #828282;
-  --nw-white: #FFFFFF;
-  --nw-dark: #1E1E1E;
+  --nw-white: #ffffff;
+  --nw-dark: #1e1e1e;
 }
 
 /* ---- Font Notes ---- */
@@ -35,10 +35,8 @@
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: transform 0.15s ease-out,
-              border-color 0.3s ease,
-              width 0.3s ease,
-              height 0.3s ease;
+  transition: transform 0.15s ease-out, border-color 0.3s ease, width 0.3s ease,
+    height 0.3s ease;
   will-change: transform, border-color;
 }
 
@@ -51,10 +49,8 @@
   pointer-events: none;
   z-index: 9998;
   transform: translate(-50%, -50%);
-  transition: transform 0.08s ease-out,
-              background-color 0.3s ease,
-              width 0.3s ease,
-              height 0.3s ease;
+  transition: transform 0.08s ease-out, background-color 0.3s ease,
+    width 0.3s ease, height 0.3s ease;
   will-change: transform, background-color;
 }
 
@@ -90,8 +86,8 @@
 
 /* ---- Typographic Watermark ---- */
 .watermark-text {
-  font-family: 'aktiv-grotesk-extended', 'Inter', system-ui, sans-serif;
-  font-size: clamp(120px, 25vw, 350px);
+  font-family: "aktiv-grotesk-extended", "Inter", system-ui, sans-serif;
+  font-size: clamp(150px, 30vw, 418px);
   font-weight: 400;
   color: rgba(43, 43, 43, 0.06);
   text-transform: uppercase;
@@ -186,7 +182,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 5px;
   top: 2px;
@@ -264,7 +260,7 @@ html {
 }
 
 .form-loading button[type="submit"]::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -309,7 +305,7 @@ h2.font-aktiv {
 }
 
 .stat-number {
-  font-family: 'aktiv-grotesk-extended', 'Inter', system-ui, sans-serif;
+  font-family: "aktiv-grotesk-extended", "Inter", system-ui, sans-serif;
   font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 400;
   line-height: 1;
@@ -317,7 +313,7 @@ h2.font-aktiv {
 }
 
 .stat-label {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -399,8 +395,7 @@ h2.font-aktiv {
   border-top: 3px solid var(--nw-accent);
   border-radius: 12px;
   padding: 1.25rem;
-  box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.2),
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -419,27 +414,27 @@ h2.font-aktiv {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: 0.875rem;
   font-weight: 700;
-  color: #FFD700;
+  color: #ffd700;
   letter-spacing: 0.05em;
 }
 
 .gold-widget-icon {
   width: 18px;
   height: 18px;
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .gold-widget-status {
   display: flex;
   align-items: center;
   gap: 0.375rem;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: 0.625rem;
   font-weight: 700;
-  color: #22C55E;
+  color: #22c55e;
   letter-spacing: 0.1em;
 }
 
@@ -447,14 +442,21 @@ h2.font-aktiv {
 .gold-widget-live-dot {
   width: 6px;
   height: 6px;
-  background: #22C55E;
+  background: #22c55e;
   border-radius: 50%;
   animation: pulse-live 2s ease-in-out infinite;
 }
 
 @keyframes pulse-live {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.8); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
 }
 
 /* Price display */
@@ -466,7 +468,7 @@ h2.font-aktiv {
 }
 
 .gold-widget-price {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--nw-white);
@@ -475,7 +477,7 @@ h2.font-aktiv {
 }
 
 .gold-widget-unit {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: 0.875rem;
   color: var(--nw-muted);
 }
@@ -497,7 +499,7 @@ h2.font-aktiv {
 }
 
 .gold-widget-detail-label {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 0.625rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -505,7 +507,7 @@ h2.font-aktiv {
 }
 
 .gold-widget-detail-value {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: 0.75rem;
   color: var(--nw-white);
 }
@@ -513,7 +515,7 @@ h2.font-aktiv {
 /* Footer */
 .gold-widget-footer {
   margin-top: 0.75rem;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 0.625rem;
   color: rgba(255, 255, 255, 0.4);
 }
@@ -521,8 +523,7 @@ h2.font-aktiv {
 /* Hover effect */
 .gold-widget:hover {
   border-color: rgba(255, 255, 255, 0.15);
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.3),
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
@@ -532,8 +533,13 @@ h2.font-aktiv {
 }
 
 @keyframes price-flash {
-  0%, 100% { color: var(--nw-white); }
-  50% { color: #22C55E; }
+  0%,
+  100% {
+    color: var(--nw-white);
+  }
+  50% {
+    color: #22c55e;
+  }
 }
 
 /* ---- Gold Widget Light Variant (for light backgrounds) ---- */
@@ -544,13 +550,9 @@ h2.font-aktiv {
     rgba(30, 30, 30, 0.9) 100%
   );
   border-color: rgba(255, 255, 255, 0.1);
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.15),
-    0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gold-widget--light:hover {
-  box-shadow:
-    0 12px 48px rgba(0, 0, 0, 0.2),
-    0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
 }
