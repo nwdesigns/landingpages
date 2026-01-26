@@ -58,8 +58,39 @@ bun install          # Install dependencies
 bun dev              # Start dev server (port 3000)
 bun build            # Build for production
 ./deploy.sh          # Deploy to production
-./deploy.sh --preview # Deploy preview
+./deploy.sh --preview # Deploy preview (returns public URL)
 ```
+
+## Previewing Changes
+
+### Recommended: Vercel Preview Deployment
+
+Use preview deployments to test changes on a real, publicly accessible URL:
+
+```bash
+./deploy.sh --preview
+```
+
+This will:
+1. Build the project
+2. Deploy to a unique preview URL (e.g., `adv-nwdesigns-it-xxx-yyy.vercel.app`)
+3. Return the URL for testing
+
+**Use preview deployments when:**
+- Testing in a sandboxed environment (localhost not accessible)
+- Sharing changes with stakeholders before production
+- Testing on mobile devices
+- Verifying production-like behavior
+
+### Local Development
+
+For rapid iteration on a local machine:
+
+```bash
+bun dev
+```
+
+Opens at http://localhost:3000. Use this when you have direct browser access.
 
 ## Form Submission
 
@@ -112,13 +143,25 @@ Deployed via Vercel using token-based authentication:
 ### Deploy Commands
 
 ```bash
-./deploy.sh          # Production deployment
-./deploy.sh --preview # Preview deployment
+./deploy.sh --preview  # Preview deployment (test before going live)
+./deploy.sh            # Production deployment (goes live immediately)
 ```
 
-Or manually (note: `--token` flag is required!):
+### Preview vs Production
+
+| Type | Command | URL | Use Case |
+|------|---------|-----|----------|
+| Preview | `./deploy.sh --preview` | `adv-nwdesigns-it-xxx.vercel.app` | Testing, review, sandboxed environments |
+| Production | `./deploy.sh` | `adv.nwdesigns.it` | Final deployment, goes live |
+
+**Important:** Always deploy a preview first to verify changes before deploying to production.
+
+### Manual Deployment
+
+If needed (note: `--token` flag is required!):
 ```bash
-source .env.deployment && vercel --token "$VERCEL_TOKEN" --prod --yes
+source .env.deployment && vercel --token "$VERCEL_TOKEN" --yes        # Preview
+source .env.deployment && vercel --token "$VERCEL_TOKEN" --prod --yes # Production
 ```
 
 ### Setup (if .env.deployment missing)
@@ -127,4 +170,19 @@ source .env.deployment && vercel --token "$VERCEL_TOKEN" --prod --yes
 echo 'VERCEL_TOKEN=your_token' > .env.deployment
 ```
 
-Get token from: https://vercel.com/account/tokens
+Get token from: https://vercel.com/account/tokens (contact lushano.perera for access)
+
+### Deployment from Sandboxed Environments
+
+The `.env.deployment` file is gitignored and cannot be added to sandboxed environments (Claude Code remote, etc.). The workflow is:
+
+1. **In sandbox**: Make changes, commit, and push to GitHub
+2. **On local machine**: Pull changes and run `./deploy.sh --preview`
+
+```bash
+# On local machine
+git pull origin <branch-name>
+./deploy.sh --preview
+```
+
+This ensures the Vercel token stays secure on your local machine while allowing development in any environment.
