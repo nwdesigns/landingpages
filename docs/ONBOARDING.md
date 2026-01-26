@@ -319,12 +319,17 @@ Una volta configurato, Claude Code può:
 
 #### Uso pratico per questo progetto
 
-Dopo aver avviato il server di sviluppo (`bun dev`), puoi chiedere a Claude:
+**In ambiente locale** (dopo `bun dev`), puoi chiedere a Claude:
 
 - _"Apri http://localhost:3000/luxury/ e fammi uno screenshot"_
 - _"Verifica che il form di contatto funzioni"_
 - _"Controlla se ci sono errori nella console"_
 - _"Testa la versione mobile della pagina"_
+
+**In ambiente sandbox** (es. Claude Code remoto), usa il deploy di preview:
+
+- _"Fai un deploy preview e apri la pagina luxury"_
+- _"Verifica le modifiche sul preview"_
 
 ### Integrazione con GitHub (Consigliato)
 
@@ -476,8 +481,28 @@ landingpages/
 
 Il modo più semplice per fare deploy è chiedere a Claude Code:
 
-- _"Deploy to production"_ → esegue `./deploy.sh`
-- _"Deploy preview"_ → esegue `./deploy.sh --preview`
+- _"Deploy preview"_ → esegue `./deploy.sh --preview` (per testare)
+- _"Deploy to production"_ → esegue `./deploy.sh` (va live)
+
+### Preview vs Produzione
+
+| Tipo | Comando | URL | Quando usarlo |
+|------|---------|-----|---------------|
+| **Preview** | `./deploy.sh --preview` | `adv-nwdesigns-it-xxx.vercel.app` | Test, revisione, ambienti sandbox |
+| **Produzione** | `./deploy.sh` | `adv.nwdesigns.it` | Deploy finale, va online |
+
+**Best practice:** Fai sempre un deploy di preview prima di andare in produzione per verificare le modifiche.
+
+### Quando usare Preview
+
+Il deploy di preview è particolarmente utile quando:
+
+- **Lavori in ambiente sandbox** (es. Claude Code remoto) dove `localhost` non è accessibile
+- **Vuoi condividere** le modifiche con altri prima di andare live
+- **Testi su mobile** o altri dispositivi
+- **Verifichi** il comportamento in un ambiente simile alla produzione
+
+Il preview genera un URL pubblico unico che puoi aprire in qualsiasi browser.
 
 ### Setup Token Vercel
 
@@ -494,16 +519,32 @@ echo 'VERCEL_TOKEN=il_token_ricevuto' > .env.deployment
 
 - Questo file è nel `.gitignore` e non verrà committato
 - Non condividere mai il token con altri
+- Il token è necessario sia per preview che per produzione
+
+### Deploy da Ambienti Sandbox
+
+Se lavori in un ambiente sandbox (es. Claude Code remoto), il file `.env.deployment` non può essere aggiunto per motivi di sicurezza. Il workflow è:
+
+1. **Nell'ambiente sandbox**: Fai le modifiche, commit e push su GitHub
+2. **Sul tuo computer locale**: Pull delle modifiche e deploy
+
+```bash
+# Sul tuo computer locale
+git pull origin <nome-branch>
+./deploy.sh --preview
+```
+
+Questo garantisce che il token Vercel resti sicuro sul tuo computer locale.
 
 ### Deploy Manuale
 
 Se preferisci fare deploy manualmente:
 
 ```bash
-# Deploy di preview (per testare)
+# Deploy di preview (per testare) - genera URL pubblico
 ./deploy.sh --preview
 
-# Deploy in produzione
+# Deploy in produzione (va live su adv.nwdesigns.it)
 ./deploy.sh
 ```
 
@@ -543,10 +584,10 @@ Se preferisci fare deploy manualmente:
 
 ### Deploy
 
-| Comando                 | Descrizione          |
-| ----------------------- | -------------------- |
-| `./deploy.sh`           | Deploy in produzione |
-| `./deploy.sh --preview` | Deploy di preview    |
+| Comando                 | Descrizione                                      |
+| ----------------------- | ------------------------------------------------ |
+| `./deploy.sh --preview` | Deploy di preview (genera URL pubblico per test) |
+| `./deploy.sh`           | Deploy in produzione (va live)                   |
 
 ---
 
